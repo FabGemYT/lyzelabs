@@ -7,7 +7,7 @@ export const products = [
     originalPrice: "₹15,999",
     priceUSD: "$155",
     rating: 4.9,
-    reviews: 127,
+    reviewCount: 127,
     image: "https://images.unsplash.com/photo-1626420925443-c6421f87daa9",
     badge: "Bestseller",
     category: "GLP-1 Agonists",
@@ -32,7 +32,7 @@ export const products = [
       storage: "-20°C freezer storage required",
       reconstitution: "Bacteriostatic water (not included)"
     },
-    reviews: [
+    customerReviews: [
       {
         id: 1,
         author: "Dr. S. Rajan",
