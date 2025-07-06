@@ -19,6 +19,7 @@ import {
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { products, getProductById } from "../data/products";
+import { formatPrice, formatPriceSimple } from "../utils/currency";
 
 const ProductPage = () => {
   const { productId } = useParams();
