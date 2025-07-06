@@ -156,15 +156,6 @@ export const products = [
         date: "1 month ago"
       }
     ],
-      {
-        id: 4,
-        author: "Lab Manager S. Gupta",
-        location: "Gurgaon Biotech",
-        rating: 5,
-        text: "Professional service and high-quality research compound. Highly recommend for academic research.",
-        date: "3 weeks ago"
-      }
-    ],
     faqs: [
       {
         question: "What is the shelf life of Semaglutide RC?",
