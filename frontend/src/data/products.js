@@ -31,7 +31,7 @@ export const products = [
       concentration: "10mg per vial",
       purity: ">99%",
       formulation: "Lyophilized powder",
-      storage: "-20°C freezer storage required",
+      storage: "Stable at room temperature (22–25°C) if kept sealed and out of direct light. Refrigeration not required.",
       reconstitution: "Bacteriostatic water (not included)"
     },
     customerReviews: [
