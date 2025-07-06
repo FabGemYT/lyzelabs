@@ -125,28 +125,37 @@ export const products = [
     customerReviews: [
       {
         id: 1,
-        author: "Dr. A. Kumar",
-        location: "IIT Bombay",
+        author: "Tomasz P.",
+        location: "Warsaw, Poland 🇵🇱",
         rating: 5,
-        text: "Excellent quality and consistent results. Perfect for our metabolic research protocols.",
+        text: "Arrived in Poland in 10 days, stealth packaging worked perfectly through EU customs. Stable at room temperature for weeks.",
         date: "1 week ago"
       },
       {
         id: 2,
-        author: "Research Scientist P. Reddy",
-        location: "Hyderabad Pharma",
+        author: "Rafael S.",
+        location: "São Paulo, Brazil 🇧🇷",
         rating: 5,
-        text: "Outstanding purity and stability. COA documentation is thorough and professional.",
+        text: "Outstanding purity and stability. Used for GLP-1 receptor pathway research with excellent reproducible results.",
         date: "2 weeks ago"
       },
       {
         id: 3,
-        author: "Dr. M. Joshi",
-        location: "Pune Research Center",
+        author: "Sameer Q.",
+        location: "Dubai, UAE 🇦🇪",
         rating: 4,
-        text: "Good quality compound with reliable results. Delivery was prompt and packaging excellent.",
+        text: "Good quality compound with reliable results. Delivery was prompt to Middle East, packaging excellent for lab storage.",
         date: "1 month ago"
       },
+      {
+        id: 4,
+        author: "Arjun V.",
+        location: "Mumbai, India 🇮🇳",
+        rating: 5,
+        text: "Perfect for our metabolic research protocols. COA documentation is thorough and professional. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
       {
         id: 4,
         author: "Lab Manager S. Gupta",
