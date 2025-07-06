@@ -13,14 +13,16 @@ const PeptideVial3D = ({ className = '' }) => {
     const mobile = window.innerWidth < 768;
     setIsMobile(mobile);
 
-    // Initialize Three.js
+    // Initialize Three.js with a small delay to ensure DOM is ready
     const initThreeJS = () => {
       try {
         console.log('Initializing Three.js...');
         
         // Only proceed if we have a mount point
         if (!mountRef.current) {
-          console.log('No mount point available');
+          console.log('No mount point available, retrying...');
+          // Retry after a short delay
+          setTimeout(initThreeJS, 100);
           return;
         }
 
