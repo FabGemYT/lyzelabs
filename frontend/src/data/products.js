@@ -158,20 +158,20 @@ export const products = [
     ],
     faqs: [
       {
-        question: "What is the shelf life of Semaglutide RC?",
-        answer: "When stored at 2-8°C, the compound maintains stability for 12 months from manufacturing date. Avoid freezing the liquid formulation."
+        question: "How to store MK677 and Semaglutide at room temperature?",
+        answer: "Most compounds are stable at room temperature (22–25°C) for extended periods if kept dry, dark, and sealed. When stored at 2-8°C, the compound maintains stability for 12 months. Cold-chain not required unless specified. Avoid freezing liquid formulations."
       },
       {
-        question: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?",
-        answer: "Yes, we provide refrigerated shipping to all major Indian cities with temperature monitoring throughout transit."
+        question: "Where to buy Semaglutide online for metabolic research in USA/Europe?",
+        answer: "We provide global shipping with stealth packaging to USA, Europe, and worldwide. All compounds are lab-grade for research use only, not for human consumption. Express shipping available."
       },
       {
-        question: "What's the average delivery time for research orders?",
-        answer: "Standard delivery is 2-4 business days for metro cities, with express options available for urgent research needs."
+        question: "Are these research chemicals that mimic Ozempic effects?",
+        answer: "Our Semaglutide RC is a pharmaceutical-grade GLP-1 receptor agonist specifically for research applications. All compounds are for laboratory and scientific research purposes only, not for human consumption."
       },
       {
-        question: "How is the product packaged and labeled?",
-        answer: "Supplied in sterile glass vials with rubber stoppers, clearly labeled with concentration, batch number, and storage requirements."
+        question: "What shipping methods ensure peptides for metabolic research arrive safely?",
+        answer: "We use proven stealth packaging methods with discreet labeling and tamper-proof shipping. 99%+ of shipments globally pass through safely. Temperature monitoring throughout transit for sensitive compounds."
       }
     ]
   },
