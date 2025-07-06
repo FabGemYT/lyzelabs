@@ -16,12 +16,22 @@ import Footer from "../components/Footer";
 import { products, categories, getProductsByCategory, searchProducts } from "../data/products";
 
 const ProductsPage = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("name");
   const [viewMode, setViewMode] = useState("grid");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    // Initialize from URL parameters
+    const urlSearch = searchParams.get('search') || '';
+    const urlCategory = searchParams.get('category') || 'All';
+    
+    setSearchTerm(urlSearch);
+    setSelectedCategory(urlCategory);
+  }, [searchParams]);
 
   useEffect(() => {
     filterAndSearchProducts();
