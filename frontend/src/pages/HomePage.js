@@ -787,9 +787,9 @@ const HomePage = () => {
       <section id="lab-reports" className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Transparency Through Testing</h2>
+            <h2 className="text-4xl font-bold mb-4">Verified Research Quality</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Every batch is tested by Janoshik Labs for independent verification. Download complete purity analysis reports for full transparency.
+              Every batch undergoes comprehensive third-party laboratory testing. Access detailed purity analysis and batch verification for complete research confidence.
             </p>
           </div>
           
