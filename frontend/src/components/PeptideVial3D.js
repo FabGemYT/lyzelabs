@@ -59,18 +59,19 @@ const PeptideVial3D = ({ className = '' }) => {
         // Create vial group
         const vialGroup = new THREE.Group();
 
-        // Create glass vial body (cylinder)
-        const vialGeometry = new THREE.CylinderGeometry(0.6, 0.6, 2.5, mobile ? 16 : 32);
+        // Create glass vial body (cylinder) - More realistic peptide vial
+        const vialGeometry = new THREE.CylinderGeometry(0.4, 0.4, 3.0, mobile ? 16 : 32);
         const glassMaterial = new THREE.MeshPhysicalMaterial({
-          color: 0x88ccff,
+          color: 0xffffff,
           transparent: true,
-          opacity: 0.25,
-          roughness: 0.1,
-          metalness: 0.1,
-          transmission: mobile ? 0.5 : 0.9,
-          thickness: 0.1,
-          clearcoat: mobile ? 0.5 : 1.0,
-          clearcoatRoughness: 0.1,
+          opacity: 0.15,
+          roughness: 0.05,
+          metalness: 0.02,
+          transmission: mobile ? 0.85 : 0.95,
+          thickness: 0.2,
+          clearcoat: mobile ? 0.8 : 1.0,
+          clearcoatRoughness: 0.05,
+          ior: 1.5,
         });
         const vialBody = new THREE.Mesh(vialGeometry, glassMaterial);
         if (!mobile) {
@@ -78,57 +79,59 @@ const PeptideVial3D = ({ className = '' }) => {
           vialBody.receiveShadow = true;
         }
 
-        // Create vial cap (cylinder)
-        const capGeometry = new THREE.CylinderGeometry(0.7, 0.7, 0.25, mobile ? 16 : 32);
+        // Create metal vial cap (cylinder) - Silver/metallic
+        const capGeometry = new THREE.CylinderGeometry(0.45, 0.45, 0.4, mobile ? 16 : 32);
         const capMaterial = new THREE.MeshPhysicalMaterial({
-          color: 0x2563eb,
-          roughness: 0.2,
-          metalness: 0.8,
-          clearcoat: mobile ? 0.5 : 1.0,
+          color: 0xc0c0c0,
+          roughness: 0.15,
+          metalness: 0.9,
+          clearcoat: mobile ? 0.7 : 1.0,
+          clearcoatRoughness: 0.1,
         });
         const vialCap = new THREE.Mesh(capGeometry, capMaterial);
-        vialCap.position.y = 1.4;
+        vialCap.position.y = 1.7;
         if (!mobile) vialCap.castShadow = true;
 
-        // Create liquid inside vial
-        const liquidGeometry = new THREE.CylinderGeometry(0.5, 0.5, 2.3, mobile ? 16 : 32);
+        // Create blue liquid inside vial
+        const liquidGeometry = new THREE.CylinderGeometry(0.35, 0.35, 2.6, mobile ? 16 : 32);
         const liquidMaterial = new THREE.MeshPhysicalMaterial({
           color: 0x4f46e5,
           transparent: true,
-          opacity: 0.7,
+          opacity: 0.8,
           roughness: 0.1,
           metalness: 0.1,
-          transmission: 0.3,
+          transmission: 0.4,
+          ior: 1.33,
         });
         const liquid = new THREE.Mesh(liquidGeometry, liquidMaterial);
-        liquid.position.y = -0.05;
+        liquid.position.y = -0.1;
 
-        // Create simple label
-        const labelGeometry = new THREE.PlaneGeometry(1.5, 0.6);
+        // Create simple label strip - minimal and clean
+        const labelGeometry = new THREE.PlaneGeometry(1.2, 0.4);
         const labelMaterial = new THREE.MeshBasicMaterial({
-          color: 0xffffff,
+          color: 0xf8f9fa,
           transparent: true,
-          opacity: 0.8,
+          opacity: 0.9,
         });
         const label = new THREE.Mesh(labelGeometry, labelMaterial);
-        label.position.set(0, -0.3, 0.65);
+        label.position.set(0, -0.5, 0.42);
 
-        // Add floating particles (fewer on mobile)
-        const particleCount = mobile ? 8 : 15;
-        const particleGeometry = new THREE.SphereGeometry(0.015, 6, 6);
+        // Add floating particles (fewer, more subtle)
+        const particleCount = mobile ? 3 : 6;
+        const particleGeometry = new THREE.SphereGeometry(0.008, 6, 6);
         const particleMaterial = new THREE.MeshBasicMaterial({
           color: 0x88ccff,
           transparent: true,
-          opacity: 0.5,
+          opacity: 0.3,
         });
 
         const particles = [];
         for (let i = 0; i < particleCount; i++) {
           const particle = new THREE.Mesh(particleGeometry, particleMaterial);
           particle.position.set(
-            (Math.random() - 0.5) * 6,
             (Math.random() - 0.5) * 4,
-            (Math.random() - 0.5) * 3
+            (Math.random() - 0.5) * 3,
+            (Math.random() - 0.5) * 2
           );
           particles.push(particle);
           scene.add(particle);
