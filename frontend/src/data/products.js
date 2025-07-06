@@ -376,7 +376,7 @@ export const products = [
       storage: "Room temperature, protect from light",
       volume: "30mL per bottle"
     },
-    reviews: [
+    customerReviews: [
       {
         id: 1,
         author: "Dr. P. Bansal",
