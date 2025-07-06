@@ -209,18 +209,19 @@ const HomePage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(https://images.pexels.com/photos/8728559/pexels-photo-8728559.jpeg)' }}
-        ></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <section className="relative bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white overflow-hidden min-h-screen flex items-center">
+        {/* 3D Vial Background */}
+        <PeptideVial3D className="z-0" />
+        
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent z-10"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 z-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center"
+            className="text-center lg:text-left lg:max-w-2xl"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Redefining Research.
