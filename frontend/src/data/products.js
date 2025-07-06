@@ -12,14 +12,14 @@ export const products = [
     certificate: "/certificates/semaglutide-janoshik.pdf",
     rating: 4.9,
     reviewCount: 156,
-    price: 60,
-    originalPrice: 75,
+    price: 125,
+    originalPrice: 155,
     variants: [
-      { dose: "5mg", price: 60, originalPrice: 75 },
-      { dose: "10mg", price: 80, originalPrice: 95 },
-      { dose: "15mg", price: 100, originalPrice: 120 },
-      { dose: "20mg", price: 110, originalPrice: 130 },
-      { dose: "30mg", price: 130, originalPrice: 155 }
+      { dose: "5mg", price: 125, originalPrice: 155 },
+      { dose: "10mg", price: 150, originalPrice: 185 },
+      { dose: "15mg", price: 175, originalPrice: 220 },
+      { dose: "20mg", price: 190, originalPrice: 240 },
+      { dose: "30mg", price: 215, originalPrice: 270 }
     ],
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
@@ -107,19 +107,19 @@ export const products = [
     certificate: "/certificates/tirzepatide-janoshik.pdf",
     rating: 4.8,
     reviewCount: 134,
-    price: 60,
-    originalPrice: 75,
+    price: 125,
+    originalPrice: 155,
     variants: [
-      { dose: "5mg", price: 60, originalPrice: 75 },
-      { dose: "10mg", price: 85, originalPrice: 105 },
-      { dose: "15mg", price: 100, originalPrice: 125 },
-      { dose: "20mg", price: 120, originalPrice: 145 },
-      { dose: "30mg", price: 150, originalPrice: 180 },
-      { dose: "40mg", price: 185, originalPrice: 220 },
-      { dose: "50mg", price: 230, originalPrice: 275 },
-      { dose: "60mg", price: 260, originalPrice: 310 },
-      { dose: "100mg (10ml)", price: 420, originalPrice: 500 },
-      { dose: "120mg (10ml)", price: 500, originalPrice: 600 }
+      { dose: "5mg", price: 125, originalPrice: 155 },
+      { dose: "10mg", price: 160, originalPrice: 200 },
+      { dose: "15mg", price: 175, originalPrice: 220 },
+      { dose: "20mg", price: 200, originalPrice: 250 },
+      { dose: "30mg", price: 240, originalPrice: 300 },
+      { dose: "40mg", price: 280, originalPrice: 350 },
+      { dose: "50mg", price: 340, originalPrice: 425 },
+      { dose: "60mg", price: 375, originalPrice: 470 },
+      { dose: "100mg (10ml)", price: 575, originalPrice: 720 },
+      { dose: "120mg (10ml)", price: 675, originalPrice: 845 }
     ],
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
@@ -199,12 +199,12 @@ export const products = [
     certificate: "/certificates/bpc157-janoshik.pdf",
     rating: 4.9,
     reviewCount: 189,
-    price: 35,
-    originalPrice: 45,
+    price: 95,
+    originalPrice: 120,
     variants: [
-      { dose: "5mg", price: 35, originalPrice: 45 },
-      { dose: "10mg", price: 55, originalPrice: 70 },
-      { dose: "20mg", price: 85, originalPrice: 105 }
+      { dose: "5mg", price: 95, originalPrice: 120 },
+      { dose: "10mg", price: 125, originalPrice: 155 },
+      { dose: "20mg", price: 195, originalPrice: 245 }
     ],
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
@@ -284,12 +284,11 @@ export const products = [
     certificate: "/certificates/tb500-janoshik.pdf",
     rating: 4.8,
     reviewCount: 143,
-    price: 45,
-    originalPrice: 55,
+    price: 140,
+    originalPrice: 175,
     variants: [
-      { dose: "5mg", price: 45, originalPrice: 55 },
-      { dose: "10mg", price: 75, originalPrice: 90 },
-      { dose: "20mg", price: 120, originalPrice: 145 }
+      { dose: "5mg", price: 140, originalPrice: 175 },
+      { dose: "10mg", price: 220, originalPrice: 275 }
     ],
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
@@ -369,12 +368,12 @@ export const products = [
     certificate: "/certificates/ipamorelin-janoshik.pdf",
     rating: 4.9,
     reviewCount: 167,
-    price: 40,
-    originalPrice: 50,
+    price: 75,
+    originalPrice: 95,
     variants: [
-      { dose: "5mg", price: 40, originalPrice: 50 },
-      { dose: "10mg", price: 65, originalPrice: 80 },
-      { dose: "20mg", price: 105, originalPrice: 130 }
+      { dose: "2mg", price: 75, originalPrice: 95 },
+      { dose: "5mg", price: 105, originalPrice: 130 },
+      { dose: "10mg", price: 150, originalPrice: 190 }
     ],
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
@@ -540,11 +539,11 @@ export const products = [
     certificate: "/certificates/mk677-janoshik.pdf",
     rating: 4.8,
     reviewCount: 203,
-    price: 35,
-    originalPrice: 45,
+    price: 95,
+    originalPrice: 120,
     variants: [
-      { dose: "10mg (100 tablets)", price: 35, originalPrice: 45 },
-      { dose: "25mg (100 tablets)", price: 65, originalPrice: 80 }
+      { dose: "10mg (100 tablets)", price: 95, originalPrice: 120 },
+      { dose: "25mg (100 tablets)", price: 95, originalPrice: 120 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
@@ -623,11 +622,11 @@ export const products = [
     certificate: "/certificates/tadalafil-janoshik.pdf",
     rating: 4.9,
     reviewCount: 178,
-    price: 25,
-    originalPrice: 35,
+    price: 70,
+    originalPrice: 90,
     variants: [
-      { dose: "10mg (100 tablets)", price: 25, originalPrice: 35 },
-      { dose: "20mg (100 tablets)", price: 40, originalPrice: 50 }
+      { dose: "10mg (100 tablets)", price: 70, originalPrice: 90 },
+      { dose: "20mg (100 tablets)", price: 70, originalPrice: 90 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
@@ -706,11 +705,11 @@ export const products = [
     certificate: "/certificates/finasteride-janoshik.pdf",
     rating: 4.8,
     reviewCount: 156,
-    price: 30,
-    originalPrice: 40,
+    price: 75,
+    originalPrice: 95,
     variants: [
-      { dose: "1mg (100 tablets)", price: 30, originalPrice: 40 },
-      { dose: "5mg (100 tablets)", price: 45, originalPrice: 55 }
+      { dose: "1mg (100 tablets)", price: 75, originalPrice: 95 },
+      { dose: "5mg (100 tablets)", price: 75, originalPrice: 95 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
@@ -790,11 +789,11 @@ export const products = [
     certificate: "/certificates/rad140-janoshik.pdf",
     rating: 4.9,
     reviewCount: 167,
-    price: 40,
-    originalPrice: 50,
+    price: 105,
+    originalPrice: 130,
     variants: [
-      { dose: "10mg (100 tablets)", price: 40, originalPrice: 50 },
-      { dose: "20mg (100 tablets)", price: 70, originalPrice: 85 }
+      { dose: "10mg (100 tablets)", price: 105, originalPrice: 130 },
+      { dose: "20mg (100 tablets)", price: 105, originalPrice: 130 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
@@ -873,11 +872,11 @@ export const products = [
     certificate: "/certificates/lgd4033-janoshik.pdf",
     rating: 4.8,
     reviewCount: 145,
-    price: 35,
-    originalPrice: 45,
+    price: 90,
+    originalPrice: 115,
     variants: [
-      { dose: "10mg (100 tablets)", price: 35, originalPrice: 45 },
-      { dose: "20mg (100 tablets)", price: 60, originalPrice: 75 }
+      { dose: "10mg (100 tablets)", price: 90, originalPrice: 115 },
+      { dose: "20mg (100 tablets)", price: 90, originalPrice: 115 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
@@ -956,11 +955,11 @@ export const products = [
     certificate: "/certificates/ostarine-janoshik.pdf",
     rating: 4.7,
     reviewCount: 189,
-    price: 30,
-    originalPrice: 40,
+    price: 95,
+    originalPrice: 120,
     variants: [
-      { dose: "10mg (100 tablets)", price: 30, originalPrice: 40 },
-      { dose: "25mg (100 tablets)", price: 50, originalPrice: 65 }
+      { dose: "10mg (100 tablets)", price: 95, originalPrice: 120 },
+      { dose: "25mg (100 tablets)", price: 95, originalPrice: 120 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
@@ -1040,11 +1039,11 @@ export const products = [
     certificate: "/certificates/test-cyp-janoshik.pdf",
     rating: 4.9,
     reviewCount: 123,
-    price: 45,
-    originalPrice: 55,
+    price: 70,
+    originalPrice: 90,
     variants: [
-      { dose: "250mg/ml (10ml)", price: 45, originalPrice: 55 },
-      { dose: "200mg/ml (10ml)", price: 40, originalPrice: 50 }
+      { dose: "250mg/ml (10ml)", price: 70, originalPrice: 90 },
+      { dose: "200mg/ml (10ml)", price: 70, originalPrice: 90 }
     ],
     specifications: {
       formulation: "Injectable solution, 10ml vial",
@@ -1123,11 +1122,11 @@ export const products = [
     certificate: "/certificates/tren-ace-janoshik.pdf",
     rating: 4.8,
     reviewCount: 98,
-    price: 65,
-    originalPrice: 80,
+    price: 75,
+    originalPrice: 95,
     variants: [
-      { dose: "100mg/ml (10ml)", price: 65, originalPrice: 80 },
-      { dose: "200mg/ml (10ml)", price: 110, originalPrice: 135 }
+      { dose: "100mg/ml (10ml)", price: 75, originalPrice: 95 },
+      { dose: "200mg/ml (10ml)", price: 100, originalPrice: 125 }
     ],
     specifications: {
       formulation: "Injectable solution, 10ml vial",
