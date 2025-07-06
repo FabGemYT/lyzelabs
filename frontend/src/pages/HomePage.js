@@ -805,8 +805,8 @@ const HomePage = () => {
                 <div className="flex items-center mb-4">
                   <FileText className="h-8 w-8 text-blue-400 mr-3" />
                   <div>
-                    <h3 className="font-semibold">Janoshik Lab Report</h3>
-                    <p className="text-sm text-gray-300">Batch #LZ-{1000 + index}</p>
+                    <h3 className="font-semibold">Laboratory Verification</h3>
+                    <p className="text-sm text-gray-300">Batch #LZ-{1000 + index} | Verified</p>
                   </div>
                 </div>
                 <div className="space-y-2 mb-4">
