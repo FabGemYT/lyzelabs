@@ -40,7 +40,7 @@ const HomePage = () => {
   const [activeFAQ, setActiveFAQ] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const products = getAllProducts().slice(0, 5); // Show first 5 products
+  const products = getFeaturedProducts(12); // Show first 12 products
 
   useEffect(() => {
     const timer = setTimeout(() => {
