@@ -232,6 +232,7 @@ const PeptideVial3D = ({ className = '' }) => {
 
         animate();
         setIsLoaded(true);
+        console.log('Three.js scene initialized successfully!');
 
         // Cleanup function
         return () => {
