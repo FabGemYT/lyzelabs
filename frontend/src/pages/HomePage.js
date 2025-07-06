@@ -717,7 +717,7 @@ const HomePage = () => {
                         rel="noopener noreferrer"
                       >
                         <FileText className="w-4 h-4" />
-                        Janoshik Report
+                        Lab Report
                       </a>
                     )}
                   </div>
