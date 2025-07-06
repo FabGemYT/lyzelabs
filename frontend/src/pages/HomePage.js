@@ -665,7 +665,7 @@ const HomePage = () => {
 
                   <div className="flex items-center justify-between text-sm">
                     <Link 
-                      to={`/product/${product.id}`}
+                      to={`/products/${product.id}`}
                       className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
                     >
                       View Details
