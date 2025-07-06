@@ -494,7 +494,7 @@ const ProductPage = () => {
         <div className="flex items-center justify-between">
           <div>
             <div className="text-2xl font-bold text-gray-900">{formatPriceSimple(currentPrice * quantity)}</div>
-            <div className="text-sm text-gray-600">{quantity} unit{quantity > 1 ? 's' : ''}</div>
+            <div className="text-sm text-gray-600">{quantity} box{quantity > 1 ? 'es' : ''}</div>
           </div>
           <div className="flex gap-3">
             <motion.button
