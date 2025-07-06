@@ -491,11 +491,11 @@ const HomePage = () => {
                 <span className="ml-2 text-gray-600 font-medium">5.0</span>
               </div>
               <p className="text-gray-700 mb-4 italic">
-                "The crypto payment option and stealth shipping makes procurement seamless. Highly recommend for institutional research."
+                "Arrived in Mumbai in 2 days with professional stealth packaging. Perfect for our metabolic research protocols."
               </p>
               <div className="text-sm">
-                <p className="font-semibold text-gray-900">Prof. Michael Chen</p>
-                <p className="text-gray-600">Research Lab, Stanford University</p>
+                <p className="font-semibold text-gray-900">Priya N. 🇮🇳</p>
+                <p className="text-gray-600">Bangalore, India</p>
               </div>
             </motion.div>
           </div>
