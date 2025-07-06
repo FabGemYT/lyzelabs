@@ -76,22 +76,23 @@ const ProductPage = () => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": product.name,
-          "description": product.description,
+          "name": product.name || "",
+          "description": product.description || "",
+          "image": product.image || "",
           "brand": {
             "@type": "Brand",
             "name": "Lyze Labs"
           },
           "offers": {
             "@type": "Offer",
-            "price": product.price.replace('₹', ''),
-            "priceCurrency": "INR",
+            "price": currentPrice || "0",
+            "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
           },
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": product.rating,
-            "reviewCount": product.customerReviews.length
+            "ratingValue": product.rating || "4.8",
+            "reviewCount": product.reviewCount || "0"
           },
           "review": product.customerReviews.map(review => ({
             "@type": "Review",
