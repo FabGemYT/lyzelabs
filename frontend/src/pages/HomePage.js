@@ -275,18 +275,12 @@ const HomePage = () => {
 
             {/* Multiple CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <motion.a
-                href="#products"
-                whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(59, 130, 246, 0.5)" }}
-                whileTap={{ scale: 0.95 }}
+              <Link
+                to="/products"
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-blue-500 inline-block text-center"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-                }}
               >
                 Shop Now
-              </motion.a>
+              </Link>
               <motion.a
                 href="https://wa.me/919876543210"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(34, 197, 94, 0.5)" }}
