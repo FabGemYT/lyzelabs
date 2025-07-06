@@ -420,7 +420,7 @@ const TermsPage = () => {
                 <p><strong>Legal Department:</strong> legal@lyzelabs.com</p>
                 <p><strong>Customer Service:</strong> support@lyzelabs.com</p>
                 <p><strong>Compliance Officer:</strong> compliance@lyzelabs.com</p>
-                <p><strong>WhatsApp:</strong> +91-9999999999</p>
+                <p><strong>WhatsApp:</strong> +91-8879243924</p>
               </div>
             </div>
           </section>
