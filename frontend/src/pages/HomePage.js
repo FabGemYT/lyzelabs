@@ -228,10 +228,10 @@ const HomePage = () => {
               <br />
               <span className="text-blue-400">Empowering Progress.</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl lg:max-w-2xl mx-auto lg:mx-0">
               Premium research compounds for licensed institutions. Pharmaceutical-grade quality with complete transparency.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <motion.a
                 href="#products"
                 whileHover={{ scale: 1.05 }}
@@ -247,7 +247,7 @@ const HomePage = () => {
             </div>
             
             {/* Search Bar */}
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-2xl mx-auto lg:mx-0">
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                 <input
