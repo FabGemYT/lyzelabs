@@ -2629,6 +2629,9 @@ export const products = [
       }
     ]
   }
+];
+
+// Product categories for filtering
 export const categories = [
   "All",
   "Peptides",
