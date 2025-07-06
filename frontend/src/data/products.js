@@ -71,19 +71,19 @@ export const products = [
     faqs: [
       {
         question: "What is the recommended storage temperature for Retatrutide RC?",
-        answer: "Store at -20°C in a freezer immediately upon receipt. Once reconstituted, use within 30 days when stored at 2-8°C."
+        answer: "Most compounds are stable at room temperature (22–25°C) for extended periods if kept dry, dark, and sealed. However, for optimal stability, store at -20°C in a freezer. Once reconstituted, use within 30 days when stored at 2-8°C. Cold-chain not required unless specified."
       },
       {
-        question: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?",
-        answer: "Yes, we offer express delivery to all major Indian cities including Mumbai, Delhi, and Bangalore with temperature-controlled packaging."
+        question: "How to buy Semaglutide online for research in India?",
+        answer: "We offer express delivery to all major Indian cities including Mumbai, Delhi, and Bangalore with stealth packaging. All compounds are for research use only, not for human consumption."
       },
       {
-        question: "What's the average delivery time for research institutions?",
-        answer: "Domestic delivery typically takes 2-3 business days for metro cities, 3-5 days for other locations. International shipping available."
+        question: "What's the average delivery time for research institutions globally?",
+        answer: "India Metro: 1-2 days (Free shipping), India Other: 2-3 days (₹199), Asia: 5-7 days ($10-15), Europe & Americas: 7-12 days ($30 max). 99%+ of shipments pass through customs safely."
       },
       {
-        question: "How is the product packaged and labeled?",
-        answer: "Each vial is individually sealed with pharmaceutical-grade closures, labeled with batch number, purity data, and storage instructions."
+        question: "Where to find safe SARMs source for metabolic research?",
+        answer: "All our compounds undergo rigorous quality control testing with >99% purity. Each vial includes Janoshik certificates, batch numbers, and complete documentation for research applications."
       }
     ]
   },
