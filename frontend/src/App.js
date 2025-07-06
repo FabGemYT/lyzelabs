@@ -26,6 +26,7 @@ function App() {
           <Route path="/blog/:postId" element={<BlogPostPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/shipping" element={<ShippingPage />} />
+          <Route path="/track" element={<TrackOrderPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
