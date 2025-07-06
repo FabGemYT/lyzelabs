@@ -283,7 +283,7 @@ const HomePage = () => {
                 Shop Now
               </Link>
               <motion.a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/918879243924?text=Hi,%20I%20need%20help%20with%20a%20research%20compound%20order%20from%20Lyze%20Labs."
                 whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(34, 197, 94, 0.5)" }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-green-500 inline-block text-center"
