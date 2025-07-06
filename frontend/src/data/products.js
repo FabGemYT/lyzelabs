@@ -219,34 +219,34 @@ export const products = [
     customerReviews: [
       {
         id: 1,
-        author: "Dr. R. Narayan",
-        location: "AIIMS Delhi",
+        author: "Dr. Carlos R. 🇪🇸",
+        location: "Madrid, Spain",
         rating: 5,
-        text: "Revolutionary compound for metabolic research. Excellent quality and comprehensive documentation.",
+        text: "Revolutionary compound for metabolic research. Arrived in Madrid in 7 days, excellent quality and comprehensive documentation.",
         date: "1 week ago"
       },
       {
         id: 2,
-        author: "Research Director V. Nair",
-        location: "Kerala Biotech",
+        author: "Dr. Kenta S. 🇯🇵",
+        location: "Osaka, Japan",
         rating: 5,
-        text: "Outstanding dual agonist with consistent results. Perfect for our advanced metabolic studies.",
+        text: "Outstanding dual agonist with consistent results. Perfect for our advanced metabolic studies. Fast delivery to Japan.",
         date: "2 weeks ago"
       },
       {
         id: 3,
-        author: "Dr. T. Rao",
-        location: "Vizag Research Lab",
+        author: "Dr. Nicole A. 🇳🇱",
+        location: "Amsterdam, Netherlands",
         rating: 5,
-        text: "High-quality compound with excellent stability. Customer support is very responsive.",
+        text: "High-quality compound with excellent stability. Customer support is very responsive. EU shipping was perfect.",
         date: "3 weeks ago"
       },
       {
         id: 4,
-        author: "Lab Coordinator J. Prasad",
-        location: "Coimbatore University",
+        author: "Dr. Rajesh M. 🇮🇳",
+        location: "Mumbai, India",
         rating: 4,
-        text: "Professional service and quality product. Documentation is thorough and helpful.",
+        text: "Professional service and quality product. Documentation is thorough and helpful. Fast domestic delivery.",
         date: "1 month ago"
       }
     ],
