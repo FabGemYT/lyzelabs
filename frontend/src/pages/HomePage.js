@@ -443,11 +443,11 @@ const HomePage = () => {
                 <span className="ml-2 text-gray-600 font-medium">5.0</span>
               </div>
               <p className="text-gray-700 mb-4 italic">
-                "Exceptional purity and consistent results. The Janoshik certificates give us complete confidence in our research protocols."
+                "Arrived in Berlin in 8 days, stealth packaging worked flawlessly. Excellent purity, stable at room temperature for over 3 weeks."
               </p>
               <div className="text-sm">
-                <p className="font-semibold text-gray-900">Dr. Rajesh Kumar</p>
-                <p className="text-gray-600">Research Director, AIIMS Delhi</p>
+                <p className="font-semibold text-gray-900">Leon G. 🇩🇪</p>
+                <p className="text-gray-600">Berlin, Germany</p>
               </div>
             </motion.div>
 
