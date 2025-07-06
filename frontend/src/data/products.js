@@ -179,7 +179,7 @@ export const products = [
     originalPrice: "₹17,999",
     priceUSD: "$168",
     rating: 4.9,
-    reviews: 156,
+    reviewCount: 156,
     image: "https://images.pexels.com/photos/6075005/pexels-photo-6075005.jpeg",
     badge: "New",
     category: "Dual Agonists",
