@@ -14,6 +14,7 @@ import {
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { products, categories, getProductsByCategory, searchProducts } from "../data/products";
+import { formatPriceSimple } from "../utils/currency";
 
 const ProductsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
