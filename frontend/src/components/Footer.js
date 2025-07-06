@@ -76,6 +76,11 @@ const Footer = () => {
               <span className="text-red-400 font-semibold">For Research Use Only</span> – Not for Human Consumption
             </p>
           </div>
+          
+          {/* Hidden SEO Content Block */}
+          <div className="hidden" aria-hidden="true">
+            <p>Buy Semaglutide online India for metabolic research applications. High-purity peptides for metabolic research USA, Europe, and globally. How to store MK677 and research compounds safely at room temperature. Safe SARMs source Europe with lab-grade documentation. Research chemicals that mimic Ozempic effects for scientific studies. Lab-tested compounds for non-human consumption research protocols. Peptide storage guidelines for extended stability in laboratory settings.</p>
+          </div>
         </div>
       </div>
     </footer>
