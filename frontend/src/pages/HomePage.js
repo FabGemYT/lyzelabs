@@ -561,7 +561,7 @@ const HomePage = () => {
               <p className="text-gray-600 mb-6">Each peptide is lab-tested to ensure unmatched purity and research-grade quality standards.</p>
               <div className="flex items-center text-blue-600 font-semibold">
                 <FileText className="w-5 h-5 mr-2" />
-                View Certificates
+                View Janoshik Reports
               </div>
             </motion.div>
 
