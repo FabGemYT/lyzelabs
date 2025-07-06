@@ -217,21 +217,18 @@ const HomePage = () => {
               Premium research compounds for licensed institutions. Pharmaceutical-grade quality with complete transparency.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <motion.button
+              <motion.a
+                href="#products"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg inline-block text-center"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Explore Products
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all border border-white/20"
-              >
-                <Play className="inline mr-2 h-5 w-5" />
-                Watch Demo
-              </motion.button>
+              </motion.a>
             </div>
             
             {/* Search Bar */}
