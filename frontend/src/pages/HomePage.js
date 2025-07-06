@@ -186,7 +186,7 @@ const HomePage = () => {
               "offers": {
                 "@type": "Offer",
                 "price": String(product.price),
-                "priceCurrency": "INR"
+                "priceCurrency": "USD"
               }
             }))
           }
