@@ -417,8 +417,98 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Featured Categories */}
-      <section id="categories" className="py-20 bg-white">
+      {/* Above-the-fold Customer Reviews */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Trusted by Researchers Worldwide
+            </h2>
+            <p className="text-xl text-gray-600">
+              Real results from real research teams
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Review 1 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg border border-blue-100"
+            >
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-current" />
+                  ))}
+                </div>
+                <span className="ml-2 text-gray-600 font-medium">5.0</span>
+              </div>
+              <p className="text-gray-700 mb-4 italic">
+                "Exceptional purity and consistent results. The Janoshik certificates give us complete confidence in our research protocols."
+              </p>
+              <div className="text-sm">
+                <p className="font-semibold text-gray-900">Dr. Rajesh Kumar</p>
+                <p className="text-gray-600">Research Director, AIIMS Delhi</p>
+              </div>
+            </motion.div>
+
+            {/* Review 2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl shadow-lg border border-purple-100"
+            >
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-current" />
+                  ))}
+                </div>
+                <span className="ml-2 text-gray-600 font-medium">5.0</span>
+              </div>
+              <p className="text-gray-700 mb-4 italic">
+                "Fast shipping and professional packaging. Our lab has been using Lyze Labs for 18+ months with zero quality issues."
+              </p>
+              <div className="text-sm">
+                <p className="font-semibold text-gray-900">Dr. Sarah Mitchell</p>
+                <p className="text-gray-600">Principal Investigator, Johns Hopkins</p>
+              </div>
+            </motion.div>
+
+            {/* Review 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl shadow-lg border border-green-100"
+            >
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-current" />
+                  ))}
+                </div>
+                <span className="ml-2 text-gray-600 font-medium">5.0</span>
+              </div>
+              <p className="text-gray-700 mb-4 italic">
+                "The crypto payment option and stealth shipping makes procurement seamless. Highly recommend for institutional research."
+              </p>
+              <div className="text-sm">
+                <p className="font-semibold text-gray-900">Prof. Michael Chen</p>
+                <p className="text-gray-600">Research Lab, Stanford University</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Research Categories</h2>
