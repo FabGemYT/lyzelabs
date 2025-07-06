@@ -35,12 +35,20 @@ import PeptideVial3D from "../components/PeptideVial3D";
 import { getFeaturedProducts } from "../data/products";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
   const [email, setEmail] = useState("");
   const [activeFAQ, setActiveFAQ] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
   const products = getFeaturedProducts(12); // Show first 12 products
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      navigate(`/products?search=${encodeURIComponent(searchTerm.trim())}`);
+    }
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
