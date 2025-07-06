@@ -509,45 +509,68 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Featured Categories */}
+      <section id="categories" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Research Categories</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our comprehensive range of research compounds, each category designed for specific research applications.
-            </p>
+            <p className="text-xl text-gray-600">Professional-grade compounds for advanced research</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {categories.map((category, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="group cursor-pointer"
-                onClick={() => {
-                  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
-                  <div className="relative overflow-hidden rounded-lg mb-4">
-                    <img 
-                      src={category.image} 
-                      alt={category.alt}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <span className="text-3xl">{category.icon}</span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{category.name}</h3>
-                  <p className="text-gray-600 mb-3">{category.description}</p>
-                  <div className="text-sm text-blue-600 font-medium">{category.count}</div>
-                </div>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border border-gray-100"
+            >
+              <div className="text-blue-600 mb-4">
+                <Package className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">High Purity Guaranteed</h3>
+              <p className="text-gray-600 mb-6">Each peptide is lab-tested to ensure unmatched purity and research-grade quality standards.</p>
+              <div className="flex items-center text-blue-600 font-semibold">
+                <FileText className="w-5 h-5 mr-2" />
+                View Certificates
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border border-gray-100"
+            >
+              <div className="text-purple-600 mb-4">
+                <Globe className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Shipping</h3>
+              <p className="text-gray-600 mb-6">Optimized for professionals and institutions worldwide with stealth packaging and express delivery.</p>
+              <div className="flex items-center text-purple-600 font-semibold">
+                <Truck className="w-5 h-5 mr-2" />
+                1-3 Days India • 5-12 Days Global
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-8 border border-gray-100"
+            >
+              <div className="text-green-600 mb-4">
+                <Shield className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Research-Grade Only</h3>
+              <p className="text-gray-600 mb-6">Strictly intended for laboratory use with complete documentation and compliance protocols.</p>
+              <div className="flex items-center text-green-600 font-semibold">
+                <Lock className="w-5 h-5 mr-2" />
+                Research Use Only
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
           </div>
         </div>
       </section>
