@@ -269,7 +269,8 @@ const PeptideVial3D = ({ className = '' }) => {
       }
     };
 
-    initThreeJS();
+    // Start initialization with a small delay
+    setTimeout(initThreeJS, 50);
   }, []);
 
   // Fallback for when 3D fails to load or on error
