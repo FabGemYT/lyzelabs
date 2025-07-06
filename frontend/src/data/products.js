@@ -305,34 +305,34 @@ export const products = [
     customerReviews: [
       {
         id: 1,
-        author: "Dr. L. Mehta",
-        location: "Mumbai Research Institute",
+        author: "Dr. Sarah M. 🇺🇸",
+        location: "Chicago, USA",
         rating: 5,
-        text: "Excellent quality and consistent results across multiple studies. Perfect for our growth hormone research.",
+        text: "Received in under 8 days in Chicago. HPLC testing verified excellent stability. Perfect for our growth hormone research protocols.",
         date: "1 week ago"
       },
       {
         id: 2,
-        author: "Research Scientist K. Agarwal",
-        location: "Jaipur Biotech",
+        author: "Lucas F. 🇨🇭",
+        location: "Zurich, Switzerland",
         rating: 5,
-        text: "Outstanding purity and stability. Capsule formulation is very convenient for research protocols.",
+        text: "Outstanding purity and stability. Capsule formulation is very convenient for research protocols. Arrived flawlessly in Switzerland.",
         date: "2 weeks ago"
       },
       {
         id: 3,
-        author: "Dr. B. Chakraborty",
-        location: "Kolkata University",
+        author: "Dr. James W. 🇬🇧",
+        location: "London, UK",
         rating: 4,
-        text: "Good quality compound with reliable results. Documentation is comprehensive and professional.",
+        text: "Good quality compound with reliable results. Documentation is comprehensive and professional. Fast EU delivery.",
         date: "3 weeks ago"
       },
       {
         id: 4,
-        author: "Lab Manager D. Sinha",
-        location: "Patna Research Center",
+        author: "Priya S. 🇮🇳",
+        location: "Bangalore, India",
         rating: 5,
-        text: "Professional service and high-quality research compound. Fast delivery and excellent packaging.",
+        text: "Professional service and high-quality research compound. Fast domestic delivery and excellent packaging.",
         date: "1 month ago"
       }
     ],
