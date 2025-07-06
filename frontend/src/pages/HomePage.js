@@ -500,6 +500,44 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Product Categories */}
+      <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+            <p className="text-xl text-gray-600">Find exactly what you need for your research</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { name: "Peptides", icon: "🧬", count: "15+" },
+              { name: "SARMs", icon: "🔬", count: "8+" },
+              { name: "Oral Tablets", icon: "💊", count: "12+" },
+              { name: "Injectables", icon: "💉", count: "10+" },
+              { name: "Neuropeptides / Nootropics", icon: "🧠", count: "6+" },
+              { name: "Sexual Health", icon: "❤️", count: "5+" },
+              { name: "Hair/Anti-Aging", icon: "✨", count: "4+" },
+              { name: "Fat Loss Compounds", icon: "🔥", count: "3+" }
+            ].map((category) => (
+              <Link
+                key={category.name}
+                to={`/products?category=${encodeURIComponent(category.name)}`}
+                className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 group"
+              >
+                <div className="text-center">
+                  <div className="text-3xl mb-3">{category.icon}</div>
+                  <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">
+                    {category.name}
+                  </h3>
+                  <p className="text-sm text-gray-500">{category.count} products</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Featured Categories */}
       <section id="categories" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
