@@ -167,7 +167,7 @@ const ProductPage = () => {
                       <Star key={i} className={`h-5 w-5 ${i < Math.floor(product.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
                     ))}
                   </div>
-                  <span className="text-gray-600">({product.reviews.length} reviews)</span>
+                  <span className="text-gray-600">({product.customerReviews.length} reviews)</span>
                 </div>
 
                 {/* Price */}
