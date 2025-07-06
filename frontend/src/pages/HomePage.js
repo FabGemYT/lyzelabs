@@ -33,6 +33,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PeptideVial3D from "../components/PeptideVial3D";
 import { getFeaturedProducts } from "../data/products";
+import { formatPriceSimple } from "../utils/currency";
 
 const HomePage = () => {
   const navigate = useNavigate();
