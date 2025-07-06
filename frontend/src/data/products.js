@@ -37,35 +37,43 @@ export const products = [
     customerReviews: [
       {
         id: 1,
-        author: "Dr. S. Rajan",
-        location: "Chennai Research Institute",
+        author: "Emma C. 🇺🇸",
+        location: "California, USA",
         rating: 5,
-        text: "Exceptional purity and consistent results across multiple studies. The lyophilized formulation is perfect for our research protocols.",
-        date: "2 weeks ago"
+        text: "Excellent purity, stable at room temperature for over 3 weeks. Used for in-vitro metabolic modulation testing — 10/10.",
+        date: "1 week ago"
       },
       {
         id: 2,
-        author: "Research Lead M. Patel",
-        location: "Mumbai Metabolic Lab",
+        author: "Alex M. 🇨🇦",
+        location: "Toronto, Canada",
         rating: 5,
-        text: "Outstanding quality control and documentation. COA matches our in-house testing results perfectly.",
-        date: "1 month ago"
+        text: "Quality matches what we get from domestic suppliers at half the cost. Outstanding quality control and documentation.",
+        date: "2 weeks ago"
       },
       {
         id: 3,
-        author: "Dr. K. Sharma",
-        location: "Delhi University",
+        author: "Leon G. 🇩🇪",
+        location: "Berlin, Germany",
         rating: 5,
-        text: "Reliable source for metabolic research. Fast shipping and excellent customer support.",
+        text: "Arrived in Germany in 8 days, excellent stealth packaging. Purity analysis confirms >99.9% as advertised.",
         date: "3 weeks ago"
       },
       {
         id: 4,
-        author: "Lab Director R. Singh",
-        location: "Bangalore Biotech",
+        author: "Priya N. 🇮🇳",
+        location: "Bangalore, India",
         rating: 4,
-        text: "High-quality compound with detailed documentation. Slightly expensive but worth it for research grade.",
-        date: "2 months ago"
+        text: "High-quality compound with detailed documentation. Fast domestic shipping. Worth it for research grade.",
+        date: "1 month ago"
+      },
+      {
+        id: 5,
+        author: "Hiroshi T. 🇯🇵",
+        location: "Tokyo, Japan",
+        rating: 5,
+        text: "Outstanding quality control and documentation. Used for GLP-1 pathway studies with excellent results.",
+        date: "1 month ago"
       }
     ],
     faqs: [
