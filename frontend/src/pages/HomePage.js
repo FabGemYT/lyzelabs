@@ -234,7 +234,7 @@ const HomePage = () => {
                 href="#products"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg inline-block text-center"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg inline-block text-center btn-explore"
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
