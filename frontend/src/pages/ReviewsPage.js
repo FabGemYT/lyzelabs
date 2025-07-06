@@ -202,10 +202,6 @@ const ReviewsPage = () => {
       helpful: 25
     }
   ];
-      productsPurchased: ["Multiple compounds"],
-      helpful: 33
-    }
-  ];
 
   const stats = [
     { label: "Total Reviews", value: "500+", icon: Users },
