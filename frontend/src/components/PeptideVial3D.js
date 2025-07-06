@@ -259,14 +259,8 @@ const PeptideVial3D = ({ className = '' }) => {
           
           renderer.dispose();
         };
-      } catch (error) {
-        console.warn('3D vial failed to load, falling back to gradient background:', error);
-        setHasError(true);
-        setIsLoaded(false);
-      }
-    };
 
-    loadThreeJS();
+        initThreeJS();
   }, []);
 
   // Fallback for when 3D fails to load or on error
