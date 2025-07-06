@@ -295,6 +295,14 @@ const ShippingPage = () => {
                   all sales are final. Returns and exchanges are not permitted once products have been shipped.
                 </p>
                 
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
+                  <p className="font-medium text-yellow-800 mb-2">🚨 Customs Disclaimer:</p>
+                  <p className="text-yellow-700 text-sm">
+                    In rare cases, if a package is detained or seized by customs, a refund will not be issued. 
+                    However, <strong>99%+ of shipments globally pass through safely due to our proven stealth methods.</strong>
+                  </p>
+                </div>
+                
                 <div>
                   <p className="font-medium mb-2">We ensure quality through:</p>
                   <ul className="space-y-1 ml-4">
