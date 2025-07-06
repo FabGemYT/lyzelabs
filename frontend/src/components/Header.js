@@ -52,6 +52,7 @@ const Header = ({ cartCount = 0 }) => {
               <Link to="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">Research Blog</Link>
               <Link to="/reviews" className="text-gray-700 hover:text-blue-600 transition-colors">Reviews</Link>
               <Link to="/shipping" className="text-gray-700 hover:text-blue-600 transition-colors">Shipping</Link>
+              <Link to="/track" className="text-gray-700 hover:text-blue-600 transition-colors">Track Order</Link>
             </nav>
           </div>
         )}
