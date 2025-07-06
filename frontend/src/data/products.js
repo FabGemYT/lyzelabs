@@ -265,7 +265,7 @@ export const products = [
     originalPrice: "₹4,299",
     priceUSD: "$42",
     rating: 4.7,
-    reviews: 203,
+    reviewCount: 203,
     image: "https://images.unsplash.com/photo-1606206886378-e49a19ad0933",
     badge: "Popular",
     category: "Growth Hormone Secretagogues",
