@@ -2628,6 +2628,253 @@ export const products = [
         answer: "Sildenafil inhibits PDE5 and enhances nitric oxide signaling, making it valuable for studying vascular regulation mechanisms. For research use only, not for human consumption."
       }
     ]
+  },
+  // SARMs Category
+  {
+    id: "rad-140",
+    name: "RAD-140 (Testolone)",
+    category: "SARMs",
+    description: "Selective androgen receptor modulator for advanced research into androgen receptor interactions and tissue-selective effects in controlled laboratory environments.",
+    extendedDescription: "RAD-140 (Testolone) is a highly selective androgen receptor modulator designed for research applications. This compound enables researchers to investigate tissue-selective androgen receptor activation mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Research Grade",
+    purity: "99.9",
+    certificate: "/certificates/rad140-janoshik.pdf",
+    rating: 4.9,
+    reviewCount: 167,
+    price: 105,
+    originalPrice: 130,
+    variants: [
+      { dose: "10mg x 100 tablets", price: 105, originalPrice: 130 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.9%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Selective androgen receptor modulator",
+      "Tissue-selective androgen effects",
+      "Androgen receptor research",
+      "Muscle tissue selectivity studies",
+      "SARM mechanism investigation"
+    ],
+    useCases: [
+      "Androgen receptor research",
+      "Tissue selectivity studies",
+      "SARM mechanism investigation",
+      "Muscle tissue research",
+      "Androgen pathway studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Michael B. 🇺🇸",
+        location: "Seattle, USA",
+        rating: 5,
+        text: "Excellent SARM for androgen receptor research. Arrived in Seattle in 6 days, outstanding purity verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Klaus H. 🇩🇪",
+        location: "Hamburg, Germany",
+        rating: 5,
+        text: "Outstanding compound for tissue selectivity studies. Quality control is exceptional, perfect for our SARM research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie L. 🇫🇷",
+        location: "Marseille, France",
+        rating: 4,
+        text: "High-quality RAD-140 with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Anil M. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our androgen research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What makes RAD-140 different from other SARMs?",
+        answer: "RAD-140 shows high selectivity for androgen receptors in muscle tissue while having minimal effects on other tissues, making it valuable for tissue-selective research. For research use only."
+      },
+      {
+        question: "How should RAD-140 be stored for research purposes?",
+        answer: "Stable at room temperature (22–25°C) for extended periods if kept dry, sealed, and away from light. Detailed storage instructions included with each shipment."
+      }
+    ]
+  },
+  {
+    id: "lgd-4033",
+    name: "LGD-4033 (Ligandrol)",
+    category: "SARMs",
+    description: "Highly selective androgen receptor modulator for muscle tissue research. Enables comprehensive studies of anabolic pathways and tissue selectivity mechanisms.",
+    extendedDescription: "LGD-4033 (Ligandrol) is a potent and selective androgen receptor modulator designed for research applications focusing on muscle tissue. This compound enables researchers to investigate anabolic pathways and tissue-selective effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
+    badge: "Selective",
+    purity: "99.8",
+    certificate: "/certificates/lgd4033-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 145,
+    price: 90,
+    originalPrice: 115,
+    variants: [
+      { dose: "10mg x 100 tablets", price: 90, originalPrice: 115 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Highly selective androgen receptor modulator",
+      "Muscle tissue research applications",
+      "Anabolic pathway studies",
+      "Tissue selectivity investigation",
+      "SARM mechanism research"
+    ],
+    useCases: [
+      "Muscle tissue research",
+      "Anabolic pathway studies",
+      "Tissue selectivity research",
+      "Androgen receptor investigations",
+      "SARM comparative studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Jennifer L. 🇺🇸",
+        location: "Denver, USA",
+        rating: 5,
+        text: "Excellent selective SARM for muscle research. Arrived in Denver in 7 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Antonio G. 🇪🇸",
+        location: "Madrid, Spain",
+        rating: 5,
+        text: "Outstanding compound for anabolic studies. Quality control is exceptional, perfect for our tissue research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Emma J. 🇬🇧",
+        location: "Bristol, UK",
+        rating: 4,
+        text: "High-quality LGD-4033 with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Rohit K. 🇮🇳",
+        location: "Kolkata, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our SARM research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is LGD-4033 used for in research applications?",
+        answer: "LGD-4033 is used for studying selective androgen receptor activation in muscle tissue, anabolic pathways, and tissue selectivity mechanisms. For research use only."
+      },
+      {
+        question: "How does LGD-4033 compare to other SARMs?",
+        answer: "LGD-4033 shows high selectivity for muscle tissue with potent anabolic effects, making it valuable for comparative SARM research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "ostarine",
+    name: "Ostarine (MK-2866)",
+    category: "SARMs",
+    description: "First-generation selective androgen receptor modulator for foundational SARM research. Enables studies of androgen receptor selectivity and tissue-specific effects.",
+    extendedDescription: "Ostarine (MK-2866) is a well-characterized selective androgen receptor modulator that serves as a foundation for SARM research. This compound enables researchers to investigate basic androgen receptor selectivity and tissue-specific effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+    badge: "Foundation",
+    purity: "99.7",
+    certificate: "/certificates/ostarine-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 189,
+    price: 95,
+    originalPrice: 120,
+    variants: [
+      { dose: "25mg x 100 tablets", price: 95, originalPrice: 120 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.7%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "First-generation SARM",
+      "Foundational SARM research",
+      "Androgen receptor selectivity studies",
+      "Tissue-specific effect investigation",
+      "SARM mechanism baseline studies"
+    ],
+    useCases: [
+      "Foundational SARM research",
+      "Androgen receptor studies",
+      "Tissue selectivity research",
+      "SARM mechanism investigation",
+      "Comparative SARM studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Robert S. 🇺🇸",
+        location: "Atlanta, USA",
+        rating: 5,
+        text: "Excellent foundational SARM for research. Arrived in Atlanta in 6 days, outstanding purity verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Marie C. 🇫🇷",
+        location: "Nice, France",
+        rating: 4,
+        text: "Good quality compound for basic SARM studies. Quality control is reliable, suitable for our foundational research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Paul M. 🇬🇧",
+        location: "Birmingham, UK",
+        rating: 5,
+        text: "High-quality Ostarine with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Sanjay L. 🇮🇳",
+        location: "Ahmedabad, India",
+        rating: 4,
+        text: "Professional service and quality compound. Fast domestic delivery, good for our SARM research protocols.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "Why is Ostarine considered a foundational SARM?",
+        answer: "Ostarine was one of the first SARMs developed and is well-characterized, making it an excellent starting point for SARM research and comparative studies. For research use only."
+      },
+      {
+        question: "What makes Ostarine suitable for tissue selectivity research?",
+        answer: "Ostarine demonstrates clear tissue-selective effects with minimal side effects, making it ideal for studying SARM mechanisms and selectivity. For research use only, not for human consumption."
+      }
+    ]
   }
 ];
 
