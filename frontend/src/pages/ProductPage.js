@@ -215,10 +215,10 @@ const ProductPage = () => {
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-200 mb-6">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <span className="text-4xl font-bold text-gray-900">${currentPrice}</span>
+                      <span className="text-4xl font-bold text-gray-900">{formatPriceSimple(currentPrice)}</span>
                       <span className="text-lg text-gray-500 ml-2">USD</span>
                       {currentOriginalPrice && (
-                        <span className="text-lg text-gray-400 line-through ml-3">${currentOriginalPrice}</span>
+                        <span className="text-lg text-gray-400 line-through ml-3">{formatPriceSimple(currentOriginalPrice)}</span>
                       )}
                     </div>
                     <div className="text-right">
