@@ -401,9 +401,14 @@ const ProductPage = () => {
         transition={{ delay: 1 }}
         className="fixed bottom-6 right-6 z-50"
       >
-        <button className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all">
+        <a 
+          href="https://wa.me/918879243924?text=Hi,%20I%20need%20help%20with%20a%20research%20compound%20order%20from%20Lyze%20Labs."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all hover:shadow-xl hover:scale-110 block"
+        >
           <MessageCircle className="h-6 w-6" />
-        </button>
+        </a>
       </motion.div>
     </div>
   );
