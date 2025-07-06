@@ -299,7 +299,7 @@ export const products = [
       concentration: "25mg per capsule",
       purity: ">98%",
       formulation: "Capsules",
-      storage: "Room temperature, dry conditions",
+      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
       quantity: "30 capsules per bottle"
     },
     customerReviews: [
