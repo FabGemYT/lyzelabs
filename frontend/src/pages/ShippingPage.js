@@ -22,30 +22,30 @@ const ShippingPage = () => {
     {
       zone: "India - Metro Cities",
       cities: ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata", "Hyderabad"],
-      time: "1-3 business days",
-      cost: "₹500 (Free over ₹10,000)",
-      features: ["Express delivery", "Temperature controlled", "Tracking included"]
+      time: "1-2 business days",
+      cost: "Free shipping",
+      features: ["Express delivery", "Stealth packaging", "Tracking included"]
     },
     {
       zone: "India - Other Cities",
       cities: ["Pune", "Ahmedabad", "Jaipur", "Lucknow", "Kochi", "Chandigarh"],
-      time: "3-5 business days",
-      cost: "₹750 (Free over ₹10,000)",
-      features: ["Standard delivery", "Temperature controlled", "Tracking included"]
+      time: "2-3 business days",
+      cost: "₹199",
+      features: ["Standard delivery", "Stealth packaging", "Tracking included"]
     },
     {
-      zone: "Asia Pacific",
-      cities: ["Singapore", "UAE", "Hong Kong", "Malaysia", "Thailand", "Australia"],
-      time: "5-8 business days",
-      cost: "$45 USD",
-      features: ["International express", "Customs handling", "Full tracking"]
+      zone: "Asia (Outside India)",
+      cities: ["Singapore", "UAE", "Hong Kong", "Malaysia", "Thailand", "Japan"],
+      time: "5-7 business days",
+      cost: "$10-15 USD",
+      features: ["International express", "Stealth customs handling", "Full tracking"]
     },
     {
       zone: "Europe & Americas",
-      cities: ["UK", "Germany", "France", "USA", "Canada", "Netherlands"],
+      cities: ["UK", "Germany", "France", "USA", "Canada", "Brazil", "Poland"],
       time: "7-12 business days",
-      cost: "$65 USD",
-      features: ["International express", "Customs handling", "Full tracking"]
+      cost: "Flat $30 max",
+      features: ["International express", "Proven stealth methods", "Full tracking"]
     }
   ];
 
