@@ -391,34 +391,34 @@ export const products = [
     customerReviews: [
       {
         id: 1,
-        author: "Dr. P. Bansal",
-        location: "Chandigarh Research Lab",
+        author: "Dr. Michael B. 🇦🇺",
+        location: "Melbourne, Australia",
         rating: 5,
-        text: "Outstanding SARM for muscle tissue research. Excellent purity and consistent results.",
+        text: "Outstanding SARM for muscle tissue research. Arrived in Melbourne in 9 days, excellent purity and consistent results.",
         date: "1 week ago"
       },
       {
         id: 2,
-        author: "Research Lead A. Verma",
-        location: "Lucknow Biotech",
+        author: "Sophie L. 🇫🇷",
+        location: "Paris, France",
         rating: 5,
-        text: "High-quality compound with detailed documentation. Perfect for our androgen receptor studies.",
+        text: "High-quality compound with detailed documentation. Perfect for our androgen receptor studies. Fast EU shipping.",
         date: "2 weeks ago"
       },
       {
         id: 3,
-        author: "Dr. S. Iyer",
-        location: "Kochi University",
+        author: "Dr. Emily K. 🇨🇦",
+        location: "Vancouver, Canada",
         rating: 4,
-        text: "Good quality SARM with reliable results. Customer support is very professional.",
+        text: "Good quality SARM with reliable results. Customer support is very professional. Received in Vancouver in 8 days.",
         date: "3 weeks ago"
       },
       {
         id: 4,
-        author: "Lab Coordinator M. Das",
-        location: "Bhubaneswar Research Center",
+        author: "Ankit R. 🇮🇳",
+        location: "Delhi, India",
         rating: 5,
-        text: "Excellent service and quality product. Liquid formulation is convenient for research protocols.",
+        text: "Excellent service and quality product. Liquid formulation is convenient for research protocols. Fast domestic delivery.",
         date: "1 month ago"
       }
     ],
