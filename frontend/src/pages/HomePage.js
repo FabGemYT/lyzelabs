@@ -124,7 +124,7 @@ const HomePage = () => {
     },
     {
       question: "How do I verify the authenticity of my research compounds?",
-      answer: "Every Lyze Labs product comes with a unique batch number and QR code. You can verify authenticity on our website and download the corresponding Certificate of Analysis (COA) with third-party lab results."
+      answer: "Every Lyze Labs product comes with a unique batch number and QR code. You can verify authenticity on our website and download the corresponding Janoshik third-party lab test results for purity verification."
     },
     {
       question: "What is your shipping policy for international orders?",
