@@ -471,7 +471,7 @@ const HomePage = () => {
                   
                   <Link 
                     to={`/products/${product.id}`}
-                    className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors text-center"
+                    className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors text-center btn-add-cart"
                   >
                     View Details
                   </Link>
