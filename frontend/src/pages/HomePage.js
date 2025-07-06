@@ -789,7 +789,7 @@ const HomePage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Transparency Through Testing</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Every batch is tested by independent laboratories. Download complete analysis reports for full transparency.
+              Every batch is tested by Janoshik Labs for independent verification. Download complete purity analysis reports for full transparency.
             </p>
           </div>
           
