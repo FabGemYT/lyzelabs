@@ -702,6 +702,28 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Hidden SEO Content */}
+      <div className="sr-only" aria-hidden="true">
+        <h2>What People Search Before They Buy Peptides or Research Compounds</h2>
+        <p>
+          Researchers frequently search "where to buy retatrutide online" and "best place to order DNP safely" when seeking 
+          high-quality research compounds. Many also look for "buy research SARMs with crypto" for secure transactions. 
+          Common queries include "is semaglutide legal in India?" and "lab-tested peptides for research use only" to ensure 
+          compliance and quality. Scientists also search for "clenbuterol delivery India" and similar location-specific terms. 
+          At Lyze Labs, we provide all these research compounds with pharmaceutical-grade purity, stealth shipping, and complete 
+          legal compliance for licensed research institutions. Our customers frequently search for reliable suppliers offering 
+          MK-677, RAD-140, BPC-157, TB-500, and other peptides with cryptocurrency payment options and worldwide delivery.
+        </p>
+      </div>
+
+      {/* City-Specific SEO */}
+      <div className="sr-only" aria-hidden="true">
+        <p>
+          Buy peptides in Mumbai, Delhi, Bangalore, Hyderabad, Pune, Ahmedabad. Research chemicals delivery in Jaipur, 
+          Surat, Kochi, Chandigarh, Kolkata. Premium research compounds available across India with fast delivery.
+        </p>
+      </div>
+
       <Footer />
 
       {/* Mobile Sticky CTA */}
