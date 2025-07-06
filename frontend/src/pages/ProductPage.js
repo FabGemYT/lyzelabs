@@ -29,6 +29,11 @@ const ProductPage = () => {
 
   const product = getProductById(productId);
 
+  // Calculate current variant pricing
+  const currentVariant = product && product.variants ? product.variants[selectedVariant] : null;
+  const currentPrice = currentVariant ? currentVariant.price : (product ? product.price : 0);
+  const currentOriginalPrice = currentVariant ? currentVariant.originalPrice : (product ? product.originalPrice : null);
+
   useEffect(() => {
     // Initialize selected variant
     if (product && product.variants && product.variants.length > 0) {
