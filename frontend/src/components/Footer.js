@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link to="/" className="text-2xl font-bold mb-4 inline-block">
               <span className="text-blue-400">Lyze</span>Labs
@@ -22,17 +22,6 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5" />
               </button>
             </div>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold mb-4">Products</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><Link to="/products/retatrutide" className="hover:text-white transition-colors">Retatrutide RC</Link></li>
-              <li><Link to="/products/semaglutide" className="hover:text-white transition-colors">Semaglutide RC</Link></li>
-              <li><Link to="/products/tirzepatide" className="hover:text-white transition-colors">Tirzepatide RC</Link></li>
-              <li><Link to="/products/mk-677" className="hover:text-white transition-colors">MK-677 RC</Link></li>
-              <li><Link to="/products/rad-140" className="hover:text-white transition-colors">RAD-140 RC</Link></li>
-            </ul>
           </div>
           
           <div>
