@@ -17,7 +17,17 @@ import {
   Globe,
   Award,
   Zap,
-  Lock
+  Lock,
+  Bitcoin,
+  CreditCard,
+  Languages,
+  MapPin,
+  Clock,
+  Package,
+  CheckCircle,
+  TrendingUp,
+  BarChart3,
+  Target
 } from "lucide-react";
 import "./App.css";
 
@@ -27,6 +37,7 @@ const LyzeLabs = () => {
   const [email, setEmail] = useState("");
   const [activeFAQ, setActiveFAQ] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -45,7 +56,13 @@ const LyzeLabs = () => {
       rating: 4.9,
       reviews: 127,
       image: "https://images.unsplash.com/photo-1626420925443-c6421f87daa9",
-      badge: "Bestseller"
+      badge: "Bestseller",
+      seoIntro: "Retatrutide RC is a high-purity research peptide designed for metabolic modulation studies in licensed laboratory settings.",
+      faqs: [
+        { q: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?", a: "Yes, we offer fast delivery across all major Indian cities including Mumbai, Delhi, and Bangalore with 3-5 business days delivery." },
+        { q: "What's the average delivery time?", a: "Domestic delivery typically takes 3-5 business days, while international shipping takes 7-12 business days." },
+        { q: "How is the product packaged and labeled?", a: "Products are packaged in pharmaceutical-grade vials with proper labeling including batch numbers, purity data, and storage instructions." }
+      ]
     },
     {
       id: 2,
@@ -56,7 +73,13 @@ const LyzeLabs = () => {
       rating: 4.8,
       reviews: 89,
       image: "https://images.unsplash.com/photo-1595500382155-e7cd8180c301",
-      badge: "New"
+      badge: "New",
+      seoIntro: "Semaglutide RC is a pharmaceutical-grade GLP-1 receptor agonist for advanced metabolic research applications.",
+      faqs: [
+        { q: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?", a: "Yes, available with express delivery options across all major Indian metropolitan areas." },
+        { q: "What's the average delivery time?", a: "Standard delivery is 3-5 business days for domestic orders, expedited options available." },
+        { q: "How is the product packaged and labeled?", a: "Sealed in sterile vials with comprehensive labeling including concentration, storage requirements, and batch verification." }
+      ]
     },
     {
       id: 3,
@@ -67,7 +90,13 @@ const LyzeLabs = () => {
       rating: 4.7,
       reviews: 156,
       image: "https://images.pexels.com/photos/6075005/pexels-photo-6075005.jpeg",
-      badge: "Popular"
+      badge: "Popular",
+      seoIntro: "MK-677 RC is a selective growth hormone secretagogue designed for cellular research and growth factor studies.",
+      faqs: [
+        { q: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?", a: "Yes, we provide reliable delivery services to all major Indian cities with tracking information." },
+        { q: "What's the average delivery time?", a: "Typically 2-4 business days for major cities, 5-7 days for remote locations." },
+        { q: "How is the product packaged and labeled?", a: "Capsules are packaged in pharmaceutical-grade bottles with tamper-evident seals and detailed labeling." }
+      ]
     },
     {
       id: 4,
@@ -78,7 +107,13 @@ const LyzeLabs = () => {
       rating: 4.6,
       reviews: 73,
       image: "https://images.unsplash.com/photo-1606206886378-e49a19ad0933",
-      badge: "Limited"
+      badge: "Limited",
+      seoIntro: "DNP Research Formula is a high-purity metabolic compound for cellular energy and thermogenesis research studies.",
+      faqs: [
+        { q: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?", a: "Yes, available with special handling protocols for safe delivery across India." },
+        { q: "What's the average delivery time?", a: "3-5 business days with specialized packaging for compound stability during transit." },
+        { q: "How is the product packaged and labeled?", a: "Securely packaged with proper hazard labeling and storage instructions for laboratory use." }
+      ]
     },
     {
       id: 5,
@@ -89,7 +124,13 @@ const LyzeLabs = () => {
       rating: 4.8,
       reviews: 94,
       image: "https://images.pexels.com/photos/443413/pexels-photo-443413.jpeg",
-      badge: "Featured"
+      badge: "Featured",
+      seoIntro: "RAD-140 RC is a selective androgen receptor modulator (SARM) for advanced muscle tissue research applications.",
+      faqs: [
+        { q: "Is this compound available for delivery in Mumbai/Delhi/Bangalore?", a: "Yes, fast delivery available to all major Indian research centers and institutions." },
+        { q: "What's the average delivery time?", a: "Standard delivery is 3-5 business days, with express options for urgent research needs." },
+        { q: "How is the product packaged and labeled?", a: "Liquid solutions are provided in amber glass vials with precise concentration labeling and batch certificates." }
+      ]
     }
   ];
 
@@ -99,28 +140,32 @@ const LyzeLabs = () => {
       description: "Advanced peptide research solutions",
       icon: "🧬",
       count: "12 Products",
-      image: "https://images.unsplash.com/photo-1581093577421-f561a654a353"
+      image: "https://images.unsplash.com/photo-1581093577421-f561a654a353",
+      alt: "pharmaceutical-grade peptides India laboratory research"
     },
     {
       name: "Cellular Research Agents",
       description: "Cutting-edge cellular modulators",
       icon: "🔬",
       count: "8 Products",
-      image: "https://images.pexels.com/photos/8728559/pexels-photo-8728559.jpeg"
+      image: "https://images.pexels.com/photos/8728559/pexels-photo-8728559.jpeg",
+      alt: "cellular research compounds high-purity laboratory"
     },
     {
       name: "Performance Research Modulators",
       description: "Selective research compounds",
       icon: "⚡",
       count: "15 Products",
-      image: "https://images.unsplash.com/photo-1614023928026-39cb5515ee73"
+      image: "https://images.unsplash.com/photo-1614023928026-39cb5515ee73",
+      alt: "research SARMs for lab use performance modulators"
     },
     {
       name: "Metabolic Regulators",
       description: "Hormonal research solutions",
       icon: "🎯",
       count: "6 Products",
-      image: "https://images.unsplash.com/photo-1626420925443-c6421f87daa9"
+      image: "https://images.unsplash.com/photo-1626420925443-c6421f87daa9",
+      alt: "metabolic research compounds hormonal regulators India"
     }
   ];
 
@@ -189,6 +234,24 @@ const LyzeLabs = () => {
       excerpt: "Understanding the regulatory framework and compliance requirements for research chemical procurement in India.",
       date: "Jan 5, 2025",
       readTime: "6 min read"
+    },
+    {
+      title: "Top 5 Peptides for Metabolic Research in 2025",
+      excerpt: "A comprehensive guide to the most promising peptides driving breakthrough metabolic research this year.",
+      date: "Dec 28, 2024",
+      readTime: "8 min read"
+    },
+    {
+      title: "MK-677 vs RAD-140: What's Best for Muscle Studies?",
+      excerpt: "Comparative analysis of two popular research compounds for muscle tissue and growth factor studies.",
+      date: "Dec 22, 2024",
+      readTime: "6 min read"
+    },
+    {
+      title: "Why India is Becoming a Hub for Research Peptides",
+      excerpt: "Exploring India's growing role in global peptide research and pharmaceutical development.",
+      date: "Dec 18, 2024",
+      readTime: "7 min read"
     }
   ];
 
@@ -203,6 +266,33 @@ const LyzeLabs = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Lyze Labs",
+          "url": "https://lyzelabs.com",
+          "logo": "https://lyzelabs.com/logo.png",
+          "description": "Premium research compounds for licensed institutions. High-purity peptides, SARMs, and metabolic modulators shipped worldwide.",
+          "areaServed": ["India", "Global"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Research Compounds",
+            "itemListElement": products.map(product => ({
+              "@type": "Product",
+              "name": product.name,
+              "description": product.seoIntro,
+              "offers": {
+                "@type": "Offer",
+                "price": product.price.replace('₹', ''),
+                "priceCurrency": "INR"
+              }
+            }))
+          }
+        })}
+      </script>
+
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-md border-b border-gray-200 sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -289,6 +379,48 @@ const LyzeLabs = () => {
         </div>
       </section>
 
+      {/* Why Lyze Labs Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Lyze Labs?</h2>
+            <div className="max-w-4xl mx-auto space-y-4 text-lg text-gray-700">
+              <p>
+                <span className="font-semibold text-blue-600">Buy peptides in India</span> from the most trusted source for research institutions. 
+                We specialize in <span className="font-semibold">research compounds for sale online</span> with unmatched purity and reliability.
+              </p>
+              <p>
+                Get <span className="font-semibold text-blue-600">high-purity compounds like Retatrutide, DNP, Semaglutide shipped discreetly across India & worldwide</span> 
+                with comprehensive lab reports and pharmaceutical-grade quality assurance.
+              </p>
+              <p>
+                From <span className="font-semibold">metabolic research peptides</span> to <span className="font-semibold">selective research modulators</span>, 
+                we provide the highest quality compounds for licensed research applications.
+              </p>
+            </div>
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="flex items-center justify-center space-x-3">
+                <CheckCircle className="h-8 w-8 text-green-500" />
+                <span className="text-lg font-semibold text-gray-900">99%+ Purity Guaranteed</span>
+              </div>
+              <div className="flex items-center justify-center space-x-3">
+                <TrendingUp className="h-8 w-8 text-blue-500" />
+                <span className="text-lg font-semibold text-gray-900">Fastest Growing in India</span>
+              </div>
+              <div className="flex items-center justify-center space-x-3">
+                <Target className="h-8 w-8 text-purple-500" />
+                <span className="text-lg font-semibold text-gray-900">Research-Grade Quality</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Trust Badges */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -312,7 +444,7 @@ const LyzeLabs = () => {
               className="text-center"
             >
               <div className="bg-white rounded-lg p-6 shadow-sm">
-                <Lock className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                <Bitcoin className="h-8 w-8 text-blue-600 mx-auto mb-2" />
                 <h3 className="font-semibold text-gray-900 mb-1">Crypto Accepted</h3>
                 <p className="text-sm text-gray-600">Secure payment options</p>
               </div>
@@ -369,7 +501,7 @@ const LyzeLabs = () => {
                   <div className="relative overflow-hidden rounded-lg mb-4">
                     <img 
                       src={category.image} 
-                      alt={category.name}
+                      alt={category.alt}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -411,7 +543,7 @@ const LyzeLabs = () => {
                   <div className="relative mb-4">
                     <img 
                       src={product.image} 
-                      alt={product.name}
+                      alt={`${product.name} - pharmaceutical-grade research compounds India`}
                       className="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-2 right-2">
@@ -422,6 +554,7 @@ const LyzeLabs = () => {
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">{product.name}</h3>
                   <p className="text-sm text-gray-600 mb-2">{product.variant}</p>
+                  <p className="text-xs text-gray-500 mb-3 leading-tight">{product.seoIntro}</p>
                   <div className="flex items-center mb-3">
                     <div className="flex items-center mr-2">
                       {[...Array(5)].map((_, i) => (
@@ -436,8 +569,21 @@ const LyzeLabs = () => {
                       <span className="text-sm text-gray-500 line-through ml-2">{product.originalPrice}</span>
                     </div>
                   </div>
-                  <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
-                    Add to Cart
+                  
+                  {/* Crypto Payment Strip */}
+                  <div className="mb-4 p-2 bg-gradient-to-r from-orange-50 to-blue-50 rounded-lg border border-orange-200">
+                    <div className="flex items-center justify-center space-x-2">
+                      <Bitcoin className="h-4 w-4 text-orange-500" />
+                      <span className="text-xs font-medium text-gray-700">Pay with Crypto</span>
+                      <span className="text-xs text-gray-500">BTC | ETH | USDT</span>
+                    </div>
+                  </div>
+                  
+                  <button 
+                    onClick={() => setSelectedProduct(product)}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors"
+                  >
+                    View Details
                   </button>
                 </div>
               </motion.div>
@@ -483,7 +629,7 @@ const LyzeLabs = () => {
         </div>
       </section>
 
-      {/* Lab Reports */}
+      {/* Lab Reports & Sample Invoice */}
       <section id="lab-reports" className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -494,7 +640,7 @@ const LyzeLabs = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((report, index) => (
+            {[1, 2, 3, 4, 5].map((report, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
@@ -529,6 +675,43 @@ const LyzeLabs = () => {
                 </button>
               </motion.div>
             ))}
+            
+            {/* Sample Invoice */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20"
+            >
+              <div className="flex items-center mb-4">
+                <CreditCard className="h-8 w-8 text-green-400 mr-3" />
+                <div>
+                  <h3 className="font-semibold">Sample Invoice</h3>
+                  <p className="text-sm text-gray-300">Invoice #LZ-INV-2025001</p>
+                </div>
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Product:</span>
+                  <span>Retatrutide RC 10mg</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Quantity:</span>
+                  <span>1 Vial</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Batch:</span>
+                  <span>LZ-1001</span>
+                </div>
+                <div className="text-xs text-red-400 mt-2">
+                  For Research Use Only - Not for Human Consumption
+                </div>
+              </div>
+              <button className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center">
+                <Download className="h-4 w-4 mr-2" />
+                Download Sample
+              </button>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -543,7 +726,7 @@ const LyzeLabs = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <motion.div
                 key={index}
@@ -670,6 +853,18 @@ const LyzeLabs = () => {
                 <li><a href="#" className="hover:text-white transition-colors">Compliance</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Disclaimer</a></li>
               </ul>
+              
+              {/* Language Selector */}
+              <div className="mt-6">
+                <div className="flex items-center space-x-2 text-gray-400">
+                  <Languages className="h-4 w-4" />
+                  <select className="bg-gray-800 text-gray-300 rounded px-2 py-1 text-sm">
+                    <option>English</option>
+                    <option>हिंदी (Coming Soon)</option>
+                    <option>বাংলা (Coming Soon)</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -686,17 +881,98 @@ const LyzeLabs = () => {
         </div>
       </footer>
 
+      {/* Mobile Sticky CTA */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40">
+        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold text-lg transition-colors">
+          Explore Products
+        </button>
+      </div>
+
       {/* WhatsApp Float */}
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1 }}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-20 md:bottom-6 right-6 z-50"
       >
         <button className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all">
           <MessageCircle className="h-6 w-6" />
         </button>
       </motion.div>
+
+      {/* Product Details Modal */}
+      <AnimatePresence>
+        {selectedProduct && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="bg-white rounded-xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto"
+            >
+              <div className="flex justify-between items-start mb-6">
+                <h2 className="text-2xl font-bold text-gray-900">{selectedProduct.name}</h2>
+                <button
+                  onClick={() => setSelectedProduct(null)}
+                  className="text-gray-500 hover:text-gray-700"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+              
+              <div className="mb-6">
+                <img 
+                  src={selectedProduct.image} 
+                  alt={selectedProduct.name}
+                  className="w-full h-64 object-cover rounded-lg"
+                />
+              </div>
+              
+              <div className="mb-6">
+                <p className="text-gray-600 mb-4">{selectedProduct.seoIntro}</p>
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="text-3xl font-bold text-gray-900">{selectedProduct.price}</span>
+                  <span className="text-xl text-gray-500 line-through">{selectedProduct.originalPrice}</span>
+                </div>
+                <div className="flex items-center mb-4">
+                  <div className="flex items-center mr-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className={`h-5 w-5 ${i < Math.floor(selectedProduct.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
+                    ))}
+                  </div>
+                  <span className="text-gray-600">({selectedProduct.reviews} reviews)</span>
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Product FAQs</h3>
+                <div className="space-y-3">
+                  {selectedProduct.faqs.map((faq, index) => (
+                    <div key={index} className="border border-gray-200 rounded-lg p-4">
+                      <h4 className="font-medium text-gray-900 mb-2">{faq.q}</h4>
+                      <p className="text-sm text-gray-600">{faq.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="flex space-x-4">
+                <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
+                  Add to Cart
+                </button>
+                <button className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-semibold transition-colors">
+                  Download COA
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Email Popup */}
       <AnimatePresence>
@@ -711,7 +987,7 @@ const LyzeLabs = () => {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-white rounded-xl p-8 max-w-md w-full"
+              className="bg-white rounded-xl p-8 max-w-md w-full relative"
             >
               <button
                 onClick={() => setShowPopup(false)}
