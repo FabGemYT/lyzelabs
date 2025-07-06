@@ -192,6 +192,19 @@ const HomePage = () => {
         })}
       </script>
 
+      {/* SEO Meta Tags */}
+      <meta property="og:title" content="Lyze Labs – Premium Research Compounds India" />
+      <meta property="og:description" content="Shop high-purity peptides, SARMs & research agents. Stealth shipping. Crypto accepted. For research use only." />
+      <meta property="og:image" content="https://images.unsplash.com/photo-1626420925443-c6421f87daa9" />
+      <meta property="og:url" content="https://lyzelabs.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Lyze Labs" />
+      
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Lyze Labs – Premium Research Compounds India" />
+      <meta name="twitter:description" content="Shop high-purity peptides, SARMs & research agents. Stealth shipping. Crypto accepted. For research use only." />
+      <meta name="twitter:image" content="https://images.unsplash.com/photo-1626420925443-c6421f87daa9" />
+
       <Header />
 
       {/* Hero Section */}
