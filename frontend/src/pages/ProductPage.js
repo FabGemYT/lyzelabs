@@ -109,7 +109,7 @@ const ProductPage = () => {
       </div>
 
       {/* Product Details */}
-      <section className="py-12">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Product Image */}
@@ -118,7 +118,7 @@ const ProductPage = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="relative overflow-hidden rounded-lg"
+                className="relative overflow-hidden rounded-xl shadow-lg"
               >
                 <img 
                   src={product.image} 
@@ -126,99 +126,142 @@ const ProductPage = () => {
                   className="w-full h-96 object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    {product.badge}
+                  <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {product.purity || '99.9'}% Pure
+                  </span>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    In Stock
                   </span>
                 </div>
               </motion.div>
               
               {/* Trust Badges */}
               <div className="grid grid-cols-3 gap-4">
-                <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <Shield className="h-6 w-6 text-blue-600 mx-auto mb-1" />
-                  <span className="text-xs text-gray-600">Stealth Shipping</span>
+                <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-white rounded-xl border border-blue-100">
+                  <Shield className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-700">Stealth Shipping</span>
                 </div>
-                <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <Award className="h-6 w-6 text-blue-600 mx-auto mb-1" />
-                  <span className="text-xs text-gray-600">Lab Tested</span>
+                <div className="text-center p-4 bg-gradient-to-br from-green-50 to-white rounded-xl border border-green-100">
+                  <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-700">Lab Tested</span>
                 </div>
-                <div className="text-center p-3 bg-gray-50 rounded-lg">
-                  <Truck className="h-6 w-6 text-blue-600 mx-auto mb-1" />
-                  <span className="text-xs text-gray-600">Fast Delivery</span>
+                <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-white rounded-xl border border-purple-100">
+                  <Truck className="h-8 w-8 text-purple-600 mx-auto mb-2" />
+                  <span className="text-sm font-medium text-gray-700">1-3 Days India</span>
                 </div>
               </div>
             </div>
 
-            {/* Product Info */}
+            {/* Product Info - Conversion Focused */}
             <div className="space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
-                <p className="text-lg text-gray-600 mb-4">{product.variant}</p>
-                <p className="text-blue-600 font-medium mb-4">{product.category}</p>
-                
-                {/* Rating */}
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className={`h-5 w-5 ${i < Math.floor(product.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
-                    ))}
+                {/* Product Title & Rating */}
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h1 className="text-4xl font-bold text-gray-900 mb-2">{product.name}</h1>
+                    <p className="text-lg text-gray-600 mb-3">{product.variant}</p>
                   </div>
-                  <span className="text-gray-600">({product.customerReviews.length} reviews)</span>
+                  <div className="flex items-center gap-2 bg-yellow-50 px-3 py-2 rounded-lg">
+                    <div className="flex text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-current" />
+                      ))}
+                    </div>
+                    <span className="text-sm font-medium text-gray-700">(4.9)</span>
+                  </div>
                 </div>
 
-                {/* Price */}
-                <div className="flex items-center space-x-4 mb-6">
-                  <span className="text-3xl font-bold text-gray-900">{product.price}</span>
-                  <span className="text-xl text-gray-500 line-through">{product.originalPrice}</span>
-                  <span className="text-lg text-green-600 font-medium">{product.priceUSD}</span>
-                </div>
-
-                {/* Description */}
-                <div className="mb-6">
-                  <p className="text-gray-700 leading-relaxed">{product.description}</p>
-                </div>
-
-                {/* Extended Description */}
-                <div className="mb-6">
-                  <p className="text-gray-600 leading-relaxed">{product.extendedDescription}</p>
-                </div>
-
-                {/* Crypto Payment */}
-                <div className="mb-6 p-4 bg-gradient-to-r from-orange-50 to-blue-50 rounded-lg border border-orange-200">
-                  <div className="flex items-center space-x-3">
-                    <Bitcoin className="h-6 w-6 text-orange-500" />
+                {/* Price & Shipping */}
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-200 mb-6">
+                  <div className="flex items-center justify-between mb-4">
                     <div>
-                      <p className="font-medium text-gray-900">Preferred Payment: Cryptocurrency</p>
-                      <p className="text-sm text-gray-600">Bitcoin, Ethereum, USDT accepted for secure transactions</p>
+                      <span className="text-4xl font-bold text-gray-900">₹{product.price}</span>
+                      <span className="text-lg text-gray-500 ml-2">per vial</span>
+                      {product.originalPrice && (
+                        <span className="text-lg text-gray-400 line-through ml-3">₹{product.originalPrice}</span>
+                      )}
+                    </div>
+                    <div className="text-right">
+                      <div className="text-lg font-semibold text-green-600">1-3 Days India</div>
+                      <div className="text-sm text-gray-600">5-12 Days International</div>
                     </div>
                   </div>
+                  <div className="text-sm text-blue-600 font-medium">
+                    ✓ Express shipping available • ✓ Crypto payments accepted
+                  </div>
                 </div>
 
-                {/* Quantity & Add to Cart */}
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="flex items-center space-x-2">
-                    <label className="text-sm font-medium text-gray-700">Quantity:</label>
-                    <select 
-                      value={quantity} 
-                      onChange={(e) => setQuantity(Number(e.target.value))}
-                      className="border border-gray-300 rounded-md px-3 py-2"
-                    >
-                      {[1, 2, 3, 4, 5].map(num => (
-                        <option key={num} value={num}>{num}</option>
-                      ))}
-                    </select>
+                {/* Key Benefits */}
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Key Benefits</h3>
+                  <ul className="space-y-2">
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
+                      <span className="text-gray-700">Lab-Tested {product.name} for Metabolic Research</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
+                      <span className="text-gray-700">99.9% Purity with Janoshik Certificate</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
+                      <span className="text-gray-700">Professional Stealth Packaging</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
+                      <span className="text-gray-700">Research Use Only - Complete Documentation</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Add to Cart Section */}
+                <div className="bg-white border-2 border-blue-100 rounded-xl p-6 mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center space-x-4">
+                      <label className="text-lg font-semibold text-gray-900">Quantity:</label>
+                      <select 
+                        value={quantity} 
+                        onChange={(e) => setQuantity(Number(e.target.value))}
+                        className="border-2 border-gray-300 rounded-lg px-4 py-2 text-lg font-medium focus:border-blue-500 focus:outline-none"
+                      >
+                        {[1, 2, 3, 4, 5, 10].map(num => (
+                          <option key={num} value={num}>{num} vial{num > 1 ? 's' : ''}</option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-2xl font-bold text-gray-900">
+                        ₹{(parseInt(product.price) * quantity).toLocaleString()}
+                      </div>
+                      <div className="text-sm text-gray-600">Total Price</div>
+                    </div>
                   </div>
-                  <button
-                    onClick={handleAddToCart}
-                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center"
-                  >
-                    <ShoppingCart className="h-5 w-5 mr-2" />
-                    Add to Cart
-                  </button>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <motion.button
+                      onClick={handleAddToCart}
+                      whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(59, 130, 246, 0.5)" }}
+                      whileTap={{ scale: 0.98 }}
+                      className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-blue-500 flex items-center justify-center"
+                    >
+                      <ShoppingCart className="h-6 w-6 mr-3" />
+                      Add to Cart
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.02, boxShadow: "0 0 25px rgba(168, 85, 247, 0.5)" }}
+                      whileTap={{ scale: 0.98 }}
+                      className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-purple-500 flex items-center justify-center"
+                    >
+                      <Bitcoin className="h-6 w-6 mr-3" />
+                      Buy with Crypto
+                    </motion.button>
+                  </div>
                 </div>
 
                 {/* Success Message */}
@@ -226,18 +269,36 @@ const ProductPage = () => {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="flex items-center space-x-2 text-green-600 bg-green-50 p-3 rounded-lg mb-6"
+                    className="flex items-center space-x-3 text-green-700 bg-green-50 p-4 rounded-xl mb-6 border border-green-200"
                   >
-                    <CheckCircle className="h-5 w-5" />
-                    <span>Added to cart successfully!</span>
+                    <CheckCircle className="h-6 w-6" />
+                    <span className="font-semibold">Added to cart successfully!</span>
                   </motion.div>
                 )}
 
-                {/* COA Download */}
-                <button className="w-full bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center">
-                  <Download className="h-5 w-5 mr-2" />
-                  Download Certificate of Analysis
-                </button>
+                {/* Janoshik Certificate */}
+                <motion.button 
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white px-6 py-4 rounded-lg font-bold text-lg transition-all shadow-lg border border-green-500 flex items-center justify-center"
+                >
+                  <Download className="h-6 w-6 mr-3" />
+                  Download Janoshik Certificate
+                </motion.button>
+
+                {/* Disclaimer */}
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
+                  <div className="flex items-start gap-3">
+                    <Info className="h-5 w-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-medium text-yellow-800 mb-1">Research Use Only</p>
+                      <p className="text-sm text-yellow-700">
+                        This product is strictly intended for laboratory and scientific research purposes only. 
+                        Not for human or animal consumption.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </div>
