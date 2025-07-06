@@ -95,7 +95,7 @@ const ProductsPage = () => {
   };
 
   const formatPrice = (price) => {
-    return `$${price}`;
+    return formatPriceSimple(price);
   };
 
   return (
