@@ -271,7 +271,7 @@ const ProductPage = () => {
                     </div>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-gray-900">
-                        ${(currentPrice * quantity).toFixed(2)}
+                        {formatPriceSimple(currentPrice * quantity)}
                       </div>
                       <div className="text-sm text-gray-600">Total Price</div>
                     </div>
