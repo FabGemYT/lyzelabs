@@ -24,9 +24,17 @@ const ProductPage = () => {
   const { productId } = useParams();
   const [activeFAQ, setActiveFAQ] = useState(null);
   const [quantity, setQuantity] = useState(1);
+  const [selectedVariant, setSelectedVariant] = useState(0);
   const [showCart, setShowCart] = useState(false);
 
   const product = getProductById(productId);
+
+  useEffect(() => {
+    // Initialize selected variant
+    if (product && product.variants && product.variants.length > 0) {
+      setSelectedVariant(0);
+    }
+  }, [product]);
 
   useEffect(() => {
     if (showCart) {
