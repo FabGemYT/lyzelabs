@@ -93,7 +93,7 @@ export const products = [
     originalPrice: "₹11,999",
     priceUSD: "$108",
     rating: 4.8,
-    reviews: 89,
+    reviewCount: 89,
     image: "https://images.unsplash.com/photo-1595500382155-e7cd8180c301",
     badge: "Popular",
     category: "GLP-1 Agonists",
