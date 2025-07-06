@@ -467,11 +467,11 @@ const HomePage = () => {
                 <span className="ml-2 text-gray-600 font-medium">5.0</span>
               </div>
               <p className="text-gray-700 mb-4 italic">
-                "Fast shipping and professional packaging. Our lab has been using Lyze Labs for 18+ months with zero quality issues."
+                "Used for in-vitro metabolic modulation testing — 10/10. Quality matches domestic suppliers at half the cost."
               </p>
               <div className="text-sm">
-                <p className="font-semibold text-gray-900">Dr. Sarah Mitchell</p>
-                <p className="text-gray-600">Principal Investigator, Johns Hopkins</p>
+                <p className="font-semibold text-gray-900">Emma C. 🇺🇸</p>
+                <p className="text-gray-600">California, USA</p>
               </div>
             </motion.div>
 
