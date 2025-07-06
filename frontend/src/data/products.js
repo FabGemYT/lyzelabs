@@ -385,7 +385,7 @@ export const products = [
       concentration: "15mg/mL",
       purity: ">99%",
       formulation: "Liquid solution",
-      storage: "Room temperature, protect from light",
+      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
       volume: "30mL per bottle"
     },
     customerReviews: [
