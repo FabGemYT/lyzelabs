@@ -876,7 +876,7 @@ const HomePage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Research Insights</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Stay updated with the latest research developments, compound analysis, and industry insights.
+              Stay updated with the latest research developments, compound analysis, and breakthrough scientific insights from our laboratory partners.
             </p>
           </div>
           
