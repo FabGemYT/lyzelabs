@@ -205,7 +205,7 @@ export const products = [
       concentration: "5mg/mL",
       purity: ">99%",
       formulation: "Sterile solution",
-      storage: "2-8°C refrigerated storage",
+      storage: "Stable at room temperature (22–25°C) if kept sealed and out of direct light. Refrigeration not required.",
       volume: "1mL per vial"
     },
     customerReviews: [
