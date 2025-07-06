@@ -741,7 +741,12 @@ const HomePage = () => {
 
       {/* Mobile Sticky CTA */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40">
-        <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold text-lg transition-colors">
+        <button 
+          onClick={() => {
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold text-lg transition-colors btn-explore"
+        >
           Explore Products
         </button>
       </div>
