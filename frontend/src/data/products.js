@@ -2875,6 +2875,1002 @@ export const products = [
         answer: "Ostarine demonstrates clear tissue-selective effects with minimal side effects, making it ideal for studying SARM mechanisms and selectivity. For research use only, not for human consumption."
       }
     ]
+  },
+  {
+    id: "ment",
+    name: "MENT (Trestolone Acetate)",
+    category: "Injectables",
+    description: "Highly potent synthetic anabolic compound for advanced muscle research. Enables studies of enhanced androgen receptor activation and protein synthesis mechanisms.",
+    extendedDescription: "MENT (Trestolone Acetate) is a powerful synthetic anabolic steroid designed for advanced muscle research applications. This compound enables researchers to investigate enhanced androgen receptor activation, protein synthesis pathways, and muscle growth mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Potent",
+    purity: "99.8",
+    certificate: "/certificates/ment-janoshik.pdf",
+    rating: 4.9,
+    reviewCount: 143,
+    price: 220,
+    originalPrice: 280,
+    variants: [
+      { dose: "50mg/ml x 10ml", price: 220, originalPrice: 280 },
+      { dose: "100mg/ml x 10ml", price: 340, originalPrice: 425 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Highly potent anabolic compound",
+      "Enhanced androgen receptor activation",
+      "Protein synthesis pathway research",
+      "Muscle growth mechanism studies",
+      "Advanced anabolic research applications"
+    ],
+    useCases: [
+      "Advanced anabolic research",
+      "Androgen receptor studies",
+      "Protein synthesis research",
+      "Muscle growth investigations",
+      "Comparative anabolic studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Marcus T. 🇺🇸",
+        location: "Phoenix, USA",
+        rating: 5,
+        text: "Exceptional potency for research applications. Arrived in Phoenix in 7 days, excellent quality control standards.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Klaus M. 🇩🇪",
+        location: "Hamburg, Germany",
+        rating: 5,
+        text: "Outstanding compound for anabolic research. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie L. 🇫🇷",
+        location: "Lyon, France",
+        rating: 4,
+        text: "High-quality MENT with consistent results. Perfect for our androgen receptor research protocols.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Vikram R. 🇮🇳",
+        location: "Chennai, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for advanced research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is MENT used for in research applications?",
+        answer: "MENT is used for studying enhanced androgen receptor activation, protein synthesis pathways, and advanced anabolic mechanisms. For research use only."
+      },
+      {
+        question: "How does MENT compare to other anabolic compounds?",
+        answer: "MENT shows exceptional potency and unique receptor selectivity, making it valuable for advanced anabolic research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "dhb",
+    name: "DHB (Dihydroboldenone)",
+    category: "Injectables",
+    description: "Selective anabolic compound for lean muscle research. Enables studies of tissue-specific androgen effects and enhanced protein synthesis without estrogenic conversion.",
+    extendedDescription: "DHB (Dihydroboldenone) is a selective anabolic steroid designed for lean muscle research applications. This compound enables researchers to investigate tissue-specific androgen effects, enhanced protein synthesis, and muscle development mechanisms without estrogenic conversion in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b",
+    badge: "Selective",
+    purity: "99.7",
+    certificate: "/certificates/dhb-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 127,
+    price: 195,
+    originalPrice: 245,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 195, originalPrice: 245 },
+      { dose: "200mg/ml x 10ml", price: 295, originalPrice: 370 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.7%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Selective anabolic compound",
+      "Lean muscle tissue research",
+      "No estrogenic conversion",
+      "Enhanced protein synthesis studies",
+      "Tissue-specific androgen effects"
+    ],
+    useCases: [
+      "Lean muscle research",
+      "Selective androgen studies",
+      "Protein synthesis investigation",
+      "Tissue selectivity research",
+      "Comparative anabolic studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. James W. 🇺🇸",
+        location: "Seattle, USA",
+        rating: 5,
+        text: "Excellent selective compound for lean muscle research. Arrived in Seattle in 6 days, outstanding purity verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Elena P. 🇪🇸",
+        location: "Barcelona, Spain",
+        rating: 5,
+        text: "High-quality DHB with consistent results. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Michael K. 🇬🇧",
+        location: "Manchester, UK",
+        rating: 4,
+        text: "Good quality compound for selective androgen research. Quality control is reliable, suitable for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Priya S. 🇮🇳",
+        location: "Hyderabad, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for lean muscle research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is DHB used for in research applications?",
+        answer: "DHB is used for studying selective androgen receptor activation, lean muscle tissue development, and protein synthesis without estrogenic effects. For research use only."
+      },
+      {
+        question: "How does DHB compare to other anabolic compounds?",
+        answer: "DHB offers selective anabolic effects without estrogenic conversion, making it valuable for lean muscle research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "primobolan",
+    name: "Primobolan (Methenolone Enanthate)",
+    category: "Injectables",
+    description: "Mild anabolic compound for tissue preservation research. Enables studies of lean muscle maintenance and selective androgen receptor modulation without harsh side effects.",
+    extendedDescription: "Primobolan (Methenolone Enanthate) is a mild anabolic steroid designed for tissue preservation research applications. This compound enables researchers to investigate lean muscle maintenance, selective androgen receptor modulation, and tissue preservation mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    badge: "Mild",
+    purity: "99.6",
+    certificate: "/certificates/primobolan-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 158,
+    price: 185,
+    originalPrice: 235,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 185, originalPrice: 235 },
+      { dose: "200mg/ml x 10ml", price: 285, originalPrice: 360 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.6%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Mild anabolic compound",
+      "Tissue preservation research",
+      "Selective androgen modulation",
+      "Lean muscle maintenance studies",
+      "Minimal side effect profile"
+    ],
+    useCases: [
+      "Tissue preservation research",
+      "Lean muscle maintenance studies",
+      "Selective androgen research",
+      "Mild anabolic investigations",
+      "Comparative safety studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Rachel M. 🇺🇸",
+        location: "Portland, USA",
+        rating: 5,
+        text: "Excellent mild compound for tissue research. Arrived in Portland in 8 days, consistent quality standards.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Giovanni R. 🇮🇹",
+        location: "Rome, Italy",
+        rating: 4,
+        text: "High-quality Primobolan with reliable results. Professional packaging, efficient EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Catherine D. 🇫🇷",
+        location: "Marseille, France",
+        rating: 5,
+        text: "Outstanding compound for tissue preservation research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Arjun M. 🇮🇳",
+        location: "Pune, India",
+        rating: 4,
+        text: "Professional service and quality compound. Fast domestic delivery, suitable for our research protocols.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Primobolan used for in research applications?",
+        answer: "Primobolan is used for studying tissue preservation, lean muscle maintenance, and selective androgen receptor modulation. For research use only."
+      },
+      {
+        question: "How does Primobolan compare to other anabolic compounds?",
+        answer: "Primobolan offers mild anabolic effects with minimal side effects, making it valuable for tissue preservation research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "nandrolone",
+    name: "Nandrolone (Deca Durabolin)",
+    category: "Injectables",
+    description: "Long-acting anabolic compound for joint and tissue research. Enables studies of collagen synthesis, joint health mechanisms, and therapeutic anabolic applications.",
+    extendedDescription: "Nandrolone (Deca Durabolin) is a long-acting anabolic steroid designed for joint and tissue research applications. This compound enables researchers to investigate collagen synthesis, joint health mechanisms, and therapeutic anabolic applications in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65",
+    badge: "Therapeutic",
+    purity: "99.5",
+    certificate: "/certificates/nandrolone-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 172,
+    price: 165,
+    originalPrice: 210,
+    variants: [
+      { dose: "250mg/ml x 10ml", price: 165, originalPrice: 210 },
+      { dose: "300mg/ml x 10ml", price: 195, originalPrice: 245 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.5%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Long-acting anabolic compound",
+      "Joint and tissue research",
+      "Collagen synthesis studies",
+      "Therapeutic anabolic applications",
+      "Joint health mechanism research"
+    ],
+    useCases: [
+      "Joint health research",
+      "Collagen synthesis studies",
+      "Therapeutic anabolic research",
+      "Tissue healing investigations",
+      "Long-term anabolic studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. William H. 🇺🇸",
+        location: "Houston, USA",
+        rating: 5,
+        text: "Excellent compound for joint research. Arrived in Houston in 7 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Hans J. 🇩🇪",
+        location: "Munich, Germany",
+        rating: 5,
+        text: "Outstanding Nandrolone for therapeutic research. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Laura B. 🇬🇧",
+        location: "Edinburgh, UK",
+        rating: 4,
+        text: "High-quality compound with consistent results. Quality control is excellent, perfect for our joint studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Sanjay L. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for therapeutic research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Nandrolone used for in research applications?",
+        answer: "Nandrolone is used for studying joint health, collagen synthesis, and therapeutic anabolic mechanisms. For research use only."
+      },
+      {
+        question: "How does Nandrolone compare to other anabolic compounds?",
+        answer: "Nandrolone offers unique therapeutic benefits for joint and tissue research with favorable safety profile. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "anavar-oral",
+    name: "Anavar (Oxandrolone)",
+    category: "Oral Tablets",
+    description: "Mild oral anabolic for lean tissue research. Enables studies of tissue preservation, strength enhancement mechanisms, and therapeutic anabolic applications with minimal side effects.",
+    extendedDescription: "Anavar (Oxandrolone) is a mild oral anabolic steroid designed for lean tissue research applications. This compound enables researchers to investigate tissue preservation, strength enhancement mechanisms, and therapeutic anabolic applications with minimal side effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae",
+    badge: "Mild",
+    purity: "99.4",
+    certificate: "/certificates/anavar-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 145,
+    price: 145,
+    originalPrice: 185,
+    variants: [
+      { dose: "10mg x 100 tablets", price: 145, originalPrice: 185 },
+      { dose: "20mg x 100 tablets", price: 185, originalPrice: 235 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.4%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Mild oral anabolic compound",
+      "Lean tissue preservation",
+      "Strength enhancement studies",
+      "Minimal side effect profile",
+      "Therapeutic anabolic applications"
+    ],
+    useCases: [
+      "Lean tissue research",
+      "Strength enhancement studies",
+      "Therapeutic anabolic research",
+      "Mild anabolic investigations",
+      "Comparative safety studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Amanda K. 🇺🇸",
+        location: "San Diego, USA",
+        rating: 5,
+        text: "Excellent mild compound for tissue research. Arrived in San Diego in 6 days, outstanding quality control.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Pedro M. 🇪🇸",
+        location: "Valencia, Spain",
+        rating: 4,
+        text: "High-quality Anavar with consistent results. Professional packaging, efficient EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sarah T. 🇬🇧",
+        location: "Birmingham, UK",
+        rating: 5,
+        text: "Outstanding compound for lean tissue research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Kavita P. 🇮🇳",
+        location: "Delhi, India",
+        rating: 4,
+        text: "Professional service and quality compound. Fast domestic delivery, suitable for our research protocols.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Anavar used for in research applications?",
+        answer: "Anavar is used for studying lean tissue preservation, strength enhancement mechanisms, and therapeutic anabolic applications. For research use only."
+      },
+      {
+        question: "How does Anavar compare to other oral anabolic compounds?",
+        answer: "Anavar offers mild anabolic effects with minimal side effects, making it valuable for lean tissue research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "5-amino-1mq",
+    name: "5-Amino-1MQ",
+    category: "Oral Tablets",
+    description: "NNMT inhibitor for metabolic research. Enables studies of cellular metabolism, energy utilization, and metabolic pathway regulation for advanced research applications.",
+    extendedDescription: "5-Amino-1MQ is a selective NNMT inhibitor designed for metabolic research applications. This compound enables researchers to investigate cellular metabolism, energy utilization, and metabolic pathway regulation in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+    badge: "Metabolic",
+    purity: "99.3",
+    certificate: "/certificates/5-amino-1mq-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 118,
+    price: 165,
+    originalPrice: 210,
+    variants: [
+      { dose: "50mg x 60 tablets", price: 165, originalPrice: 210 },
+      { dose: "100mg x 60 tablets", price: 225, originalPrice: 285 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 60 tablets per bottle",
+      purity: ">99.3%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "60 tablets per bottle"
+    },
+    benefits: [
+      "Selective NNMT inhibitor",
+      "Metabolic pathway research",
+      "Cellular metabolism studies",
+      "Energy utilization research",
+      "Advanced metabolic applications"
+    ],
+    useCases: [
+      "Metabolic research",
+      "Cellular metabolism studies",
+      "Energy utilization research",
+      "NNMT pathway investigation",
+      "Comparative metabolic studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Robert F. 🇺🇸",
+        location: "Boston, USA",
+        rating: 5,
+        text: "Excellent metabolic compound for research. Arrived in Boston in 7 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Maria G. 🇪🇸",
+        location: "Seville, Spain",
+        rating: 4,
+        text: "High-quality 5-Amino-1MQ with consistent results. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. David L. 🇬🇧",
+        location: "Leeds, UK",
+        rating: 5,
+        text: "Outstanding compound for metabolic research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Neha J. 🇮🇳",
+        location: "Bangalore, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for metabolic research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is 5-Amino-1MQ used for in research applications?",
+        answer: "5-Amino-1MQ is used for studying NNMT inhibition, cellular metabolism, and metabolic pathway regulation. For research use only."
+      },
+      {
+        question: "How does 5-Amino-1MQ work in metabolic research?",
+        answer: "5-Amino-1MQ acts as a selective NNMT inhibitor, enabling research into cellular energy utilization and metabolic pathways. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "slu-pp-332",
+    name: "SLU-PP-332",
+    category: "Oral Tablets",
+    description: "ERRα agonist for metabolic research. Enables studies of mitochondrial function, energy metabolism, and cellular respiration mechanisms for advanced research applications.",
+    extendedDescription: "SLU-PP-332 is a selective ERRα agonist designed for metabolic research applications. This compound enables researchers to investigate mitochondrial function, energy metabolism, and cellular respiration mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Mitochondrial",
+    purity: "99.2",
+    certificate: "/certificates/slu-pp-332-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 104,
+    price: 185,
+    originalPrice: 235,
+    variants: [
+      { dose: "25mg x 60 tablets", price: 185, originalPrice: 235 },
+      { dose: "50mg x 60 tablets", price: 265, originalPrice: 335 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 60 tablets per bottle",
+      purity: ">99.2%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "60 tablets per bottle"
+    },
+    benefits: [
+      "Selective ERRα agonist",
+      "Mitochondrial function research",
+      "Energy metabolism studies",
+      "Cellular respiration research",
+      "Advanced metabolic applications"
+    ],
+    useCases: [
+      "Mitochondrial research",
+      "Energy metabolism studies",
+      "Cellular respiration research",
+      "ERRα pathway investigation",
+      "Comparative metabolic studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Jennifer C. 🇺🇸",
+        location: "Miami, USA",
+        rating: 5,
+        text: "Excellent mitochondrial compound for research. Arrived in Miami in 6 days, outstanding quality verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. François L. 🇫🇷",
+        location: "Toulouse, France",
+        rating: 4,
+        text: "High-quality SLU-PP-332 with consistent results. Professional packaging, efficient EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Andrew M. 🇬🇧",
+        location: "Newcastle, UK",
+        rating: 5,
+        text: "Outstanding compound for mitochondrial research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Rajesh K. 🇮🇳",
+        location: "Ahmedabad, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for metabolic research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is SLU-PP-332 used for in research applications?",
+        answer: "SLU-PP-332 is used for studying ERRα activation, mitochondrial function, and energy metabolism mechanisms. For research use only."
+      },
+      {
+        question: "How does SLU-PP-332 work in metabolic research?",
+        answer: "SLU-PP-332 acts as a selective ERRα agonist, enabling research into mitochondrial function and cellular energy metabolism. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "yk-11",
+    name: "YK-11",
+    category: "SARMs",
+    description: "Myostatin inhibitor and SARM for muscle research. Enables studies of muscle growth limitation mechanisms and enhanced protein synthesis pathways.",
+    extendedDescription: "YK-11 is a unique myostatin inhibitor and SARM designed for muscle research applications. This compound enables researchers to investigate muscle growth limitation mechanisms, enhanced protein synthesis pathways, and myostatin regulation in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b",
+    badge: "Unique",
+    purity: "99.1",
+    certificate: "/certificates/yk-11-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 132,
+    price: 155,
+    originalPrice: 195,
+    variants: [
+      { dose: "10mg x 60 tablets", price: 155, originalPrice: 195 },
+      { dose: "20mg x 60 tablets", price: 215, originalPrice: 270 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 60 tablets per bottle",
+      purity: ">99.1%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "60 tablets per bottle"
+    },
+    benefits: [
+      "Myostatin inhibitor and SARM",
+      "Muscle growth limitation research",
+      "Enhanced protein synthesis studies",
+      "Myostatin regulation research",
+      "Unique dual-action mechanism"
+    ],
+    useCases: [
+      "Myostatin inhibition research",
+      "Muscle growth studies",
+      "Protein synthesis research",
+      "SARM mechanism investigation",
+      "Comparative muscle research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Kevin S. 🇺🇸",
+        location: "Las Vegas, USA",
+        rating: 5,
+        text: "Excellent unique compound for muscle research. Arrived in Las Vegas in 7 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Olga K. 🇵🇱",
+        location: "Warsaw, Poland",
+        rating: 4,
+        text: "High-quality YK-11 with consistent results. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Thomas H. 🇬🇧",
+        location: "Glasgow, UK",
+        rating: 5,
+        text: "Outstanding compound for myostatin research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Amit S. 🇮🇳",
+        location: "Jaipur, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for muscle research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is YK-11 used for in research applications?",
+        answer: "YK-11 is used for studying myostatin inhibition, muscle growth limitation mechanisms, and enhanced protein synthesis. For research use only."
+      },
+      {
+        question: "How does YK-11 compare to other SARMs?",
+        answer: "YK-11 offers unique dual-action as both a SARM and myostatin inhibitor, making it valuable for muscle research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "cardarine",
+    name: "Cardarine (GW-501516)",
+    category: "SARMs",
+    description: "PPARδ agonist for endurance research. Enables studies of fat oxidation, metabolic efficiency, and endurance enhancement mechanisms for research applications.",
+    extendedDescription: "Cardarine (GW-501516) is a selective PPARδ agonist designed for endurance research applications. This compound enables researchers to investigate fat oxidation, metabolic efficiency, and endurance enhancement mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65",
+    badge: "Endurance",
+    purity: "99.0",
+    certificate: "/certificates/cardarine-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 167,
+    price: 135,
+    originalPrice: 170,
+    variants: [
+      { dose: "10mg x 60 tablets", price: 135, originalPrice: 170 },
+      { dose: "20mg x 60 tablets", price: 185, originalPrice: 235 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 60 tablets per bottle",
+      purity: ">99.0%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "60 tablets per bottle"
+    },
+    benefits: [
+      "Selective PPARδ agonist",
+      "Fat oxidation research",
+      "Metabolic efficiency studies",
+      "Endurance enhancement research",
+      "Metabolic pathway investigation"
+    ],
+    useCases: [
+      "Endurance research",
+      "Fat oxidation studies",
+      "Metabolic efficiency research",
+      "PPARδ pathway investigation",
+      "Comparative endurance studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Michelle R. 🇺🇸",
+        location: "Denver, USA",
+        rating: 5,
+        text: "Excellent endurance compound for research. Arrived in Denver in 6 days, outstanding quality control.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Lars N. 🇸🇪",
+        location: "Stockholm, Sweden",
+        rating: 4,
+        text: "High-quality Cardarine with consistent results. Professional packaging, efficient EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Emma W. 🇬🇧",
+        location: "Cardiff, UK",
+        rating: 5,
+        text: "Outstanding compound for endurance research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Ravi T. 🇮🇳",
+        location: "Kochi, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for endurance research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Cardarine used for in research applications?",
+        answer: "Cardarine is used for studying PPARδ activation, fat oxidation, and metabolic efficiency mechanisms. For research use only."
+      },
+      {
+        question: "How does Cardarine work in endurance research?",
+        answer: "Cardarine acts as a selective PPARδ agonist, enabling research into fat oxidation and metabolic efficiency. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "clenbuterol",
+    name: "Clenbuterol",
+    category: "Fat Loss Compounds",
+    description: "Beta-2 agonist for fat loss research. Enables studies of thermogenesis, metabolic rate enhancement, and fat oxidation mechanisms for research applications.",
+    extendedDescription: "Clenbuterol is a selective beta-2 agonist designed for fat loss research applications. This compound enables researchers to investigate thermogenesis, metabolic rate enhancement, and fat oxidation mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    badge: "Thermogenic",
+    purity: "99.4",
+    certificate: "/certificates/clenbuterol-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 154,
+    price: 95,
+    originalPrice: 120,
+    variants: [
+      { dose: "40mcg x 100 tablets", price: 95, originalPrice: 120 },
+      { dose: "80mcg x 100 tablets", price: 145, originalPrice: 185 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.4%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Selective beta-2 agonist",
+      "Thermogenesis research",
+      "Metabolic rate enhancement studies",
+      "Fat oxidation research",
+      "Sympathomimetic mechanism investigation"
+    ],
+    useCases: [
+      "Fat loss research",
+      "Thermogenesis studies",
+      "Metabolic rate research",
+      "Beta-2 receptor investigation",
+      "Comparative fat loss studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Christopher L. 🇺🇸",
+        location: "Tampa, USA",
+        rating: 5,
+        text: "Excellent thermogenic compound for research. Arrived in Tampa in 7 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Isabella M. 🇮🇹",
+        location: "Naples, Italy",
+        rating: 4,
+        text: "High-quality Clenbuterol with consistent results. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie K. 🇬🇧",
+        location: "Liverpool, UK",
+        rating: 5,
+        text: "Outstanding compound for fat loss research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Manoj G. 🇮🇳",
+        location: "Indore, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for thermogenesis research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Clenbuterol used for in research applications?",
+        answer: "Clenbuterol is used for studying beta-2 receptor activation, thermogenesis, and metabolic rate enhancement. For research use only."
+      },
+      {
+        question: "How does Clenbuterol work in fat loss research?",
+        answer: "Clenbuterol acts as a selective beta-2 agonist, enabling research into thermogenesis and fat oxidation mechanisms. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "noopept",
+    name: "Noopept",
+    category: "Neuropeptides / Nootropics",
+    description: "Neuropeptide for cognitive research. Enables studies of memory enhancement, neural plasticity, and cognitive function mechanisms for research applications.",
+    extendedDescription: "Noopept is a synthetic neuropeptide designed for cognitive research applications. This compound enables researchers to investigate memory enhancement, neural plasticity, and cognitive function mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+    badge: "Cognitive",
+    purity: "99.3",
+    certificate: "/certificates/noopept-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 129,
+    price: 85,
+    originalPrice: 110,
+    variants: [
+      { dose: "10mg x 100 tablets", price: 85, originalPrice: 110 },
+      { dose: "20mg x 100 tablets", price: 125, originalPrice: 160 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.3%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Synthetic neuropeptide",
+      "Memory enhancement research",
+      "Neural plasticity studies",
+      "Cognitive function research",
+      "Neuroprotection investigation"
+    ],
+    useCases: [
+      "Cognitive research",
+      "Memory enhancement studies",
+      "Neural plasticity research",
+      "Neuropeptide investigation",
+      "Comparative cognitive studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Patricia N. 🇺🇸",
+        location: "Austin, USA",
+        rating: 5,
+        text: "Excellent cognitive compound for research. Arrived in Austin in 6 days, outstanding quality verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Dmitri V. 🇷🇺",
+        location: "Moscow, Russia",
+        rating: 4,
+        text: "High-quality Noopept with consistent results. Professional packaging, efficient delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Charlotte B. 🇬🇧",
+        location: "Oxford, UK",
+        rating: 5,
+        text: "Outstanding compound for cognitive research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Suresh R. 🇮🇳",
+        location: "Coimbatore, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for cognitive research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Noopept used for in research applications?",
+        answer: "Noopept is used for studying memory enhancement, neural plasticity, and cognitive function mechanisms. For research use only."
+      },
+      {
+        question: "How does Noopept work in cognitive research?",
+        answer: "Noopept acts as a synthetic neuropeptide, enabling research into memory enhancement and neural plasticity mechanisms. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "modafinil",
+    name: "Modafinil",
+    category: "Neuropeptides / Nootropics",
+    description: "Wakefulness-promoting agent for cognitive research. Enables studies of alertness, cognitive enhancement, and neurotransmitter mechanisms for research applications.",
+    extendedDescription: "Modafinil is a wakefulness-promoting agent designed for cognitive research applications. This compound enables researchers to investigate alertness, cognitive enhancement, and neurotransmitter mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae",
+    badge: "Wakefulness",
+    purity: "99.5",
+    certificate: "/certificates/modafinil-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 141,
+    price: 115,
+    originalPrice: 145,
+    variants: [
+      { dose: "100mg x 60 tablets", price: 115, originalPrice: 145 },
+      { dose: "200mg x 60 tablets", price: 165, originalPrice: 210 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 60 tablets per bottle",
+      purity: ">99.5%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "60 tablets per bottle"
+    },
+    benefits: [
+      "Wakefulness-promoting agent",
+      "Alertness research",
+      "Cognitive enhancement studies",
+      "Neurotransmitter research",
+      "Sleep-wake cycle investigation"
+    ],
+    useCases: [
+      "Cognitive research",
+      "Alertness studies",
+      "Neurotransmitter research",
+      "Sleep-wake cycle studies",
+      "Comparative cognitive studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Nathan J. 🇺🇸",
+        location: "Nashville, USA",
+        rating: 5,
+        text: "Excellent wakefulness compound for research. Arrived in Nashville in 7 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Camille R. 🇫🇷",
+        location: "Bordeaux, France",
+        rating: 4,
+        text: "High-quality Modafinil with consistent results. Professional packaging, reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. James P. 🇬🇧",
+        location: "Bristol, UK",
+        rating: 5,
+        text: "Outstanding compound for cognitive research. Quality control is excellent, perfect for our studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Lata M. 🇮🇳",
+        location: "Nagpur, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for cognitive research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Modafinil used for in research applications?",
+        answer: "Modafinil is used for studying wakefulness promotion, alertness, and cognitive enhancement mechanisms. For research use only."
+      },
+      {
+        question: "How does Modafinil work in cognitive research?",
+        answer: "Modafinil acts as a wakefulness-promoting agent, enabling research into alertness and neurotransmitter mechanisms. For research use only, not for human consumption."
+      }
+    ]
   }
 ];
 
