@@ -370,6 +370,9 @@ const HomePage = () => {
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
                 className="group cursor-pointer"
+                onClick={() => {
+                  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
                   <div className="relative overflow-hidden rounded-lg mb-4">
