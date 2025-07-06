@@ -351,7 +351,7 @@ export const products = [
     originalPrice: "₹5,499",
     priceUSD: "$50",
     rating: 4.8,
-    reviews: 178,
+    reviewCount: 178,
     image: "https://images.pexels.com/photos/443413/pexels-photo-443413.jpeg",
     badge: "Featured",
     category: "Selective Androgen Receptor Modulators",
