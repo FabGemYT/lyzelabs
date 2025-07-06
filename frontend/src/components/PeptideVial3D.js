@@ -277,6 +277,7 @@ const PeptideVial3D = ({ className = '' }) => {
   if (hasError || !isLoaded) {
     return (
       <div 
+        ref={mountRef}
         className={`absolute inset-0 overflow-hidden ${className}`}
         style={{
           background: 'linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, rgba(59, 130, 246, 0.1) 50%, rgba(139, 92, 246, 0.1) 100%)',
