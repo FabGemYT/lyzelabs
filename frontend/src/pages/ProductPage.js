@@ -265,7 +265,7 @@ const ProductPage = () => {
                         className="border-2 border-gray-300 rounded-lg px-4 py-2 text-lg font-medium focus:border-blue-500 focus:outline-none"
                       >
                         {[1, 2, 3, 4, 5, 10].map(num => (
-                          <option key={num} value={num}>{num} vial{num > 1 ? 's' : ''}</option>
+                          <option key={num} value={num}>{num}x box{num > 1 ? 'es' : ''}</option>
                         ))}
                       </select>
                     </div>
