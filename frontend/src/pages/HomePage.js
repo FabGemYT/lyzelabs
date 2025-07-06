@@ -240,6 +240,11 @@ const HomePage = () => {
                   placeholder="Search research compounds..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter' && searchTerm.trim()) {
+                      document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   className="w-full pl-12 pr-4 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
