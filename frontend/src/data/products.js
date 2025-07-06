@@ -12,6 +12,8 @@ export const products = [
     certificate: "/certificates/semaglutide-janoshik.pdf",
     rating: 4.9,
     reviewCount: 156,
+    price: 60,
+    originalPrice: 75,
     variants: [
       { dose: "5mg", price: 60, originalPrice: 75 },
       { dose: "10mg", price: 80, originalPrice: 95 },
@@ -22,7 +24,7 @@ export const products = [
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
       purity: ">99.9%",
-      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
       reconstitution: "Bacteriostatic water (not included)",
       volume: "Standard research dosing per vial"
     },
@@ -91,6 +93,8 @@ export const products = [
     certificate: "/certificates/tirzepatide-janoshik.pdf",
     rating: 4.8,
     reviewCount: 134,
+    price: 60,
+    originalPrice: 75,
     variants: [
       { dose: "5mg", price: 60, originalPrice: 75 },
       { dose: "10mg", price: 85, originalPrice: 105 },
@@ -106,7 +110,7 @@ export const products = [
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
       purity: ">99.8%",
-      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
       reconstitution: "Bacteriostatic water (not included)",
       volume: "Standard research dosing per vial"
     },
@@ -152,14 +156,6 @@ export const products = [
       {
         question: "What storage conditions are required for Tirzepatide research compound?",
         answer: "Stable at room temperature (22–25°C) for extended periods if kept dry, sealed, and away from light. Detailed storage instructions included with each shipment."
-      },
-      {
-        question: "How is Tirzepatide shipped internationally for research purposes?",
-        answer: "We use proven stealth packaging methods with discreet labeling. 99%+ of shipments globally pass through safely with temperature monitoring throughout transit."
-      },
-      {
-        question: "What documentation supports research applications?",
-        answer: "Each order includes Certificate of Analysis, purity testing results, batch records, and handling guidelines for research institutions."
       }
     ]
   },
@@ -175,6 +171,8 @@ export const products = [
     certificate: "/certificates/retatrutide-janoshik.pdf",
     rating: 4.9,
     reviewCount: 127,
+    price: 90,
+    originalPrice: 110,
     variants: [
       { dose: "5mg", price: 90, originalPrice: 110 },
       { dose: "10mg", price: 155, originalPrice: 185 },
@@ -191,7 +189,7 @@ export const products = [
     specifications: {
       formulation: "Lyophilized powder, 10 vials per box",
       purity: ">99.9%",
-      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
       reconstitution: "Bacteriostatic water (not included)",
       volume: "Standard research dosing per vial"
     },
@@ -237,17 +235,343 @@ export const products = [
       {
         question: "How should Retatrutide be stored for research applications?",
         answer: "Stable at room temperature (22–25°C) for extended periods if kept dry, sealed, and away from light. Cold-chain shipping not required unless specified."
-      },
-      {
-        question: "What shipping methods ensure safe delivery globally?",
-        answer: "We use proven stealth packaging with discreet labeling and tamper-proof shipping. 99%+ success rate globally with full tracking support."
-      },
-      {
-        question: "Is Retatrutide suitable for dose-response studies?",
-        answer: "Yes, available in multiple dose variants from 5mg to 60mg to support comprehensive dose-response research protocols."
       }
     ]
   },
+  {
+    id: "cagrilintide",
+    name: "Cagrilintide",
+    category: "Peptides",
+    description: "Advanced amylin receptor agonist for comprehensive metabolic research. Ideal for studying gastric emptying regulation and appetite control mechanisms.",
+    extendedDescription: "Cagrilintide RC is a potent long-acting amylin receptor agonist designed for advanced metabolic research applications. This compound enables researchers to investigate amylin pathway interactions with incretin hormones in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1594987708096-ca2377763edd",
+    badge: "Advanced",
+    purity: "99.7",
+    certificate: "/certificates/cagrilintide-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 89,
+    price: 95,
+    originalPrice: 115,
+    variants: [
+      { dose: "5mg", price: 95, originalPrice: 115 },
+      { dose: "10mg", price: 175, originalPrice: 210 }
+    ],
+    specifications: {
+      formulation: "Lyophilized powder, 10 vials per box",
+      purity: ">99.7%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      reconstitution: "Bacteriostatic water (not included)",
+      volume: "Standard research dosing per vial"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Nicole A. 🇳🇱",
+        location: "Amsterdam, Netherlands",
+        rating: 5,
+        text: "Excellent amylin agonist for metabolic research. Arrived in Amsterdam in 6 days, comprehensive documentation included.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Carlos R. 🇪🇸",
+        location: "Madrid, Spain",
+        rating: 5,
+        text: "High-quality compound with consistent results. Perfect for our gastric emptying studies.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Emily K. 🇨🇦",
+        location: "Vancouver, Canada",
+        rating: 4,
+        text: "Professional service and quality product. Received in Vancouver in 9 days.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Arjun V. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 5,
+        text: "Excellent compound for amylin pathway research. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Cagrilintide used for in research applications?",
+        answer: "Cagrilintide is an amylin receptor agonist used for studying gastric emptying, appetite regulation, and metabolic pathway interactions. For research use only."
+      }
+    ]
+  },
+  {
+    id: "tesamorelin",
+    name: "Tesamorelin",
+    category: "Peptides",
+    description: "Growth hormone-releasing hormone analog for advanced research applications. Designed for studying growth hormone regulation and metabolic effects.",
+    extendedDescription: "Tesamorelin RC is a synthetic growth hormone-releasing hormone (GHRH) analog designed for comprehensive research into growth hormone regulation mechanisms and metabolic effects in controlled laboratory environments. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1589409514187-c21d14df0d04",
+    badge: "Research Grade",
+    purity: "99.5",
+    certificate: "/certificates/tesamorelin-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 76,
+    price: 135,
+    originalPrice: 160,
+    variants: [
+      { dose: "10mg", price: 135, originalPrice: 160 }
+    ],
+    specifications: {
+      formulation: "Lyophilized powder, 10 vials per box",
+      purity: ">99.5%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      reconstitution: "Bacteriostatic water (not included)",
+      volume: "10mg per vial"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Yuki T. 🇯🇵",
+        location: "Osaka, Japan",
+        rating: 5,
+        text: "Excellent GHRH analog for growth hormone research. Arrived in Japan in 8 days with perfect packaging.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Lucas F. 🇨🇭",
+        location: "Zurich, Switzerland",
+        rating: 4,
+        text: "High-quality tesamorelin with consistent results. EU shipping was efficient.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sarah M. 🇺🇸",
+        location: "Boston, USA",
+        rating: 5,
+        text: "Professional grade compound perfect for our endocrine research protocols.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Priya S. 🇮🇳",
+        location: "Delhi, India",
+        rating: 4,
+        text: "Quality compound with excellent documentation. Fast domestic shipping.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Tesamorelin used for in research studies?",
+        answer: "Tesamorelin is a GHRH analog used for studying growth hormone regulation, metabolic effects, and endocrine pathway research. For research use only."
+      }
+    ]
+  },
+  {
+    id: "sermorelin",
+    name: "Sermorelin",
+    category: "Peptides",
+    description: "Growth hormone-releasing peptide for endocrine research applications. Enables investigation of natural growth hormone release mechanisms.",
+    extendedDescription: "Sermorelin RC is a bioactive peptide fragment that stimulates the natural release of growth hormone from the pituitary gland. This compound is ideal for researchers studying endocrine pathways and growth hormone regulation in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Research Grade",
+    purity: "99.3",
+    certificate: "/certificates/sermorelin-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 64,
+    price: 115,
+    originalPrice: 140,
+    variants: [
+      { dose: "10mg", price: 115, originalPrice: 140 }
+    ],
+    specifications: {
+      formulation: "Lyophilized powder, 10 vials per box",
+      purity: ">99.3%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      reconstitution: "Bacteriostatic water (not included)",
+      volume: "10mg per vial"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Michael B. 🇦🇺",
+        location: "Sydney, Australia",
+        rating: 5,
+        text: "Excellent peptide for growth hormone research. Arrived in Australia in 9 days, perfect quality.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Sophie L. 🇫🇷",
+        location: "Paris, France",
+        rating: 4,
+        text: "High-quality sermorelin with consistent results. EU delivery was fast and secure.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. David K. 🇨🇦",
+        location: "Toronto, Canada",
+        rating: 5,
+        text: "Professional grade compound with excellent documentation. Perfect for endocrine studies.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Anita P. 🇮🇳",
+        location: "Chennai, India",
+        rating: 4,
+        text: "Quality peptide with detailed COA. Fast domestic shipping and professional packaging.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "How does Sermorelin differ from synthetic growth hormone?",
+        answer: "Sermorelin stimulates natural growth hormone release from the pituitary gland, making it ideal for studying natural GH regulation mechanisms. For research use only."
+      }
+    ]
+  },
+  {
+    id: "bpc-157",
+    name: "BPC-157",
+    category: "Peptides",
+    description: "Body protecting compound for tissue repair and healing research. Extensively studied pentadecapeptide for regenerative research applications.",
+    extendedDescription: "BPC-157 is a synthetic peptide derived from body protection compound found in gastric juice. This stable pentadecapeptide is widely researched for its tissue repair and healing properties in controlled laboratory environments. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1550572017-edd951aa8f41",
+    badge: "Popular",
+    purity: "99.8",
+    certificate: "/certificates/bpc157-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 203,
+    price: 35,
+    originalPrice: 45,
+    variants: [
+      { dose: "5mg", price: 35, originalPrice: 45 },
+      { dose: "10mg", price: 60, originalPrice: 75 },
+      { dose: "20mg", price: 115, originalPrice: 140 }
+    ],
+    specifications: {
+      formulation: "Lyophilized powder, 10 vials per box",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      reconstitution: "Bacteriostatic water (not included)",
+      volume: "Standard research dosing per vial"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. James W. 🇬🇧",
+        location: "London, UK",
+        rating: 5,
+        text: "Excellent peptide for tissue repair research. Arrived in UK in 5 days, outstanding purity and documentation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Lisa M. 🇺🇸",
+        location: "New York, USA",
+        rating: 5,
+        text: "High-quality BPC-157 with consistent results. Perfect for our regenerative medicine research protocols.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Hans K. 🇩🇪",
+        location: "Berlin, Germany",
+        rating: 4,
+        text: "Professional grade compound with excellent stability. EU shipping was fast and secure.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Meera S. 🇮🇳",
+        location: "Bangalore, India",
+        rating: 5,
+        text: "Quality peptide with detailed documentation. Fast domestic delivery and professional service.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is BPC-157 used for in research applications?",
+        answer: "BPC-157 is a pentadecapeptide studied for tissue repair, healing mechanisms, and regenerative research applications. For research use only, not for human consumption."
+      },
+      {
+        question: "How should BPC-157 be stored for optimal stability?",
+        answer: "Stable at room temperature (22–25°C) when kept sealed and dry. The lyophilized form provides excellent stability for extended research protocols."
+      }
+    ]
+  },
+  {
+    id: "tb-500",
+    name: "TB-500",
+    category: "Peptides",
+    description: "Synthetic version of Thymosin Beta-4 for tissue repair and healing research. Widely studied for regenerative and wound healing applications.",
+    extendedDescription: "TB-500 is a synthetic version of the naturally occurring peptide Thymosin Beta-4. This compound is extensively researched for its role in tissue repair, wound healing, and cellular regeneration mechanisms in controlled laboratory environments. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1594987708096-ca2377763edd",
+    badge: "Research Grade",
+    purity: "99.6",
+    certificate: "/certificates/tb500-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 145,
+    price: 70,
+    originalPrice: 85,
+    variants: [
+      { dose: "5mg", price: 70, originalPrice: 85 },
+      { dose: "10mg", price: 135, originalPrice: 160 }
+    ],
+    specifications: {
+      formulation: "Lyophilized powder, 10 vials per box",
+      purity: ">99.6%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      reconstitution: "Bacteriostatic water (not included)",
+      volume: "Standard research dosing per vial"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Nicole A. 🇳🇱",
+        location: "Amsterdam, Netherlands",
+        rating: 5,
+        text: "Excellent TB-500 for wound healing research. Arrived in Netherlands in 6 days with perfect documentation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Robert C. 🇺🇸",
+        location: "Chicago, USA",
+        rating: 4,
+        text: "High-quality thymosin beta-4 analog with consistent results. Perfect for our tissue repair studies.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Kenji M. 🇯🇵",
+        location: "Tokyo, Japan",
+        rating: 5,
+        text: "Professional grade peptide with excellent stability. Shipping to Japan was fast and secure.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Kavita R. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 4,
+        text: "Quality compound with detailed COA. Fast domestic delivery and professional packaging.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is TB-500 used for in research studies?",
+        answer: "TB-500 is a synthetic Thymosin Beta-4 peptide used for studying tissue repair, wound healing, and cellular regeneration mechanisms. For research use only."
+      }
+    ]
+  },
+  // ORAL TABLETS CATEGORY
   {
     id: "mk-677",
     name: "MK-677 (Ibutamoren)",
@@ -260,13 +584,15 @@ export const products = [
     certificate: "/certificates/mk677-janoshik.pdf",
     rating: 4.8,
     reviewCount: 203,
+    price: 35,
+    originalPrice: 45,
     variants: [
       { dose: "10mg (100 tablets)", price: 35, originalPrice: 45 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
       purity: ">99.8%",
-      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
       volume: "100 tablets per bottle"
     },
     customerReviews: [
@@ -317,7 +643,7 @@ export const products = [
   {
     id: "rad-140",
     name: "RAD-140 (Testolone)",
-    category: "Oral Tablets",
+    category: "SARMs",
     description: "Selective androgen receptor modulator for advanced research into androgen receptor interactions and tissue-selective effects in controlled laboratory environments.",
     extendedDescription: "RAD-140 (Testolone) is a highly selective androgen receptor modulator designed for research applications. This compound enables researchers to investigate tissue-selective androgen receptor activation mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
@@ -326,13 +652,15 @@ export const products = [
     certificate: "/certificates/rad140-janoshik.pdf",
     rating: 4.7,
     reviewCount: 178,
+    price: 45,
+    originalPrice: 55,
     variants: [
       { dose: "10mg (100 tablets)", price: 45, originalPrice: 55 }
     ],
     specifications: {
       formulation: "Oral tablets, 100 tablets per bottle",
       purity: ">99.5%",
-      storage: "Stable at room temperature (22–25°C) if kept sealed, dry, and away from direct sunlight. Refrigeration is not required unless stated otherwise.",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
       volume: "100 tablets per bottle"
     },
     customerReviews: [
@@ -373,10 +701,262 @@ export const products = [
       {
         question: "What makes RAD-140 suitable for SARM research?",
         answer: "RAD-140 is a highly selective androgen receptor modulator with excellent tissue selectivity, making it ideal for studying selective androgen effects. For research use only."
+      }
+    ]
+  },
+  {
+    id: "lgd-4033",
+    name: "LGD-4033 (Ligandrol)",
+    category: "SARMs",
+    description: "Selective androgen receptor modulator for muscle and bone research applications. Highly selective compound for tissue-specific studies.",
+    extendedDescription: "LGD-4033, also known as Ligandrol, is a selective androgen receptor modulator designed for research into muscle and bone tissue development. This compound demonstrates high selectivity for androgen receptors in muscle and bone tissue. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1595500382155-e7cd8180c301",
+    badge: "Research Grade",
+    purity: "99.3",
+    certificate: "/certificates/lgd4033-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 134,
+    price: 30,
+    originalPrice: 38,
+    variants: [
+      { dose: "10mg (100 tablets)", price: 30, originalPrice: 38 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.3%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Carlos R. 🇪🇸",
+        location: "Madrid, Spain",
+        rating: 5,
+        text: "Excellent SARM for bone density research. Arrived in Madrid in 7 days with comprehensive documentation.",
+        date: "1 week ago"
       },
       {
-        question: "How should RAD-140 tablets be stored for research applications?",
-        answer: "Stable at room temperature (22–25°C) for extended periods if kept sealed and away from light. Tablet formulation maintains stability throughout research protocols."
+        id: 2,
+        author: "Dr. Lisa K. 🇺🇸",
+        location: "Boston, USA",
+        rating: 4,
+        text: "High-quality ligandrol with consistent results. Perfect for our muscle tissue research protocols.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Yuki S. 🇯🇵",
+        location: "Kyoto, Japan",
+        rating: 5,
+        text: "Professional grade compound with excellent selectivity. Shipping to Japan was fast and secure.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Ravi K. 🇮🇳",
+        location: "Pune, India",
+        rating: 4,
+        text: "Quality SARM with detailed COA. Fast domestic delivery and professional packaging.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is LGD-4033 used for in research studies?",
+        answer: "LGD-4033 is a selective androgen receptor modulator used for studying muscle and bone tissue development and androgen receptor selectivity. For research use only."
+      }
+    ]
+  },
+  {
+    id: "ostarine",
+    name: "Ostarine (MK-2866)",
+    category: "SARMs",
+    description: "First-generation selective androgen receptor modulator for muscle preservation research. Well-studied compound for tissue-selective androgen effects.",
+    extendedDescription: "Ostarine (MK-2866) is a well-researched selective androgen receptor modulator that has been extensively studied for its tissue-selective effects. This compound is ideal for research into muscle preservation and androgen receptor selectivity mechanisms. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1626420925443-c6421f87daa9",
+    badge: "Well-Studied",
+    purity: "99.2",
+    certificate: "/certificates/ostarine-janoshik.pdf",
+    rating: 4.5,
+    reviewCount: 189,
+    price: 35,
+    originalPrice: 45,
+    variants: [
+      { dose: "25mg (100 tablets)", price: 35, originalPrice: 45 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.2%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Nicole F. 🇳🇱",
+        location: "Utrecht, Netherlands",
+        rating: 5,
+        text: "Excellent first-generation SARM for comparative studies. Arrived in Netherlands in 6 days with perfect quality.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Mark T. 🇬🇧",
+        location: "Edinburgh, UK",
+        rating: 4,
+        text: "Well-characterized compound with consistent results. Perfect for our tissue selectivity research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Elena V. 🇨🇦",
+        location: "Montreal, Canada",
+        rating: 5,
+        text: "High-quality ostarine with excellent documentation. Shipping to Canada was fast and secure.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Suresh P. 🇮🇳",
+        location: "Hyderabad, India",
+        rating: 4,
+        text: "Quality SARM with detailed analytical data. Fast domestic delivery and professional service.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What makes Ostarine suitable for SARM research?",
+        answer: "Ostarine is a well-studied first-generation SARM with extensive research data, making it ideal for comparative studies and tissue selectivity research. For research use only."
+      }
+    ]
+  },
+  {
+    id: "tadalafil",
+    name: "Tadalafil",
+    category: "Sexual Health",
+    description: "PDE5 inhibitor for cardiovascular and vascular research applications. Extensively studied compound for endothelial function research.",
+    extendedDescription: "Tadalafil is a selective phosphodiesterase type 5 (PDE5) inhibitor widely researched for its cardiovascular and vascular effects. This compound is ideal for studying endothelial function, vascular reactivity, and cyclic GMP pathways in controlled laboratory environments. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843",
+    badge: "Research Grade",
+    purity: "99.8",
+    certificate: "/certificates/tadalafil-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 145,
+    price: 15,
+    originalPrice: 20,
+    variants: [
+      { dose: "20mg (100 tablets)", price: 15, originalPrice: 20 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Andreas K. 🇩🇪",
+        location: "Munich, Germany",
+        rating: 5,
+        text: "Excellent PDE5 inhibitor for cardiovascular research. Arrived in Germany in 6 days with perfect documentation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Patricia L. 🇺🇸",
+        location: "Seattle, USA",
+        rating: 4,
+        text: "High-quality tadalafil with consistent results. Perfect for our endothelial function studies.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Takeshi N. 🇯🇵",
+        location: "Sendai, Japan",
+        rating: 5,
+        text: "Professional grade compound with excellent purity. Shipping to Japan was fast and secure.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Amit S. 🇮🇳",
+        location: "Bangalore, India",
+        rating: 4,
+        text: "Quality compound with detailed analytical data. Fast domestic delivery and professional packaging.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Tadalafil used for in research applications?",
+        answer: "Tadalafil is a PDE5 inhibitor used for studying cardiovascular function, endothelial reactivity, and cyclic GMP signaling pathways. For research use only."
+      }
+    ]
+  },
+  {
+    id: "finasteride",
+    name: "Finasteride",
+    category: "Hair/Anti-Aging",
+    description: "5-alpha reductase inhibitor for hormonal research applications. Widely studied compound for androgen metabolism research.",
+    extendedDescription: "Finasteride is a selective 5-alpha reductase type II inhibitor extensively researched for its effects on androgen metabolism. This compound is ideal for studying DHT synthesis inhibition and hormonal pathway research in controlled laboratory environments. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1605543852748-4ad3e0ec67c6",
+    badge: "Research Grade",
+    purity: "99.5",
+    certificate: "/certificates/finasteride-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 123,
+    price: 20,
+    originalPrice: 25,
+    variants: [
+      { dose: "5mg (100 tablets)", price: 20, originalPrice: 25 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.5%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. François M. 🇫🇷",
+        location: "Lyon, France",
+        rating: 5,
+        text: "Excellent 5-alpha reductase inhibitor for hormonal research. Arrived in France in 5 days with comprehensive COA.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Rachel S. 🇬🇧",
+        location: "Cambridge, UK",
+        rating: 4,
+        text: "High-quality finasteride with consistent results. Perfect for our androgen metabolism studies.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Marco R. 🇮🇹",
+        location: "Milan, Italy",
+        rating: 5,
+        text: "Professional grade compound with excellent stability. EU shipping was fast and secure.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Deepak M. 🇮🇳",
+        location: "Delhi, India",
+        rating: 4,
+        text: "Quality compound with detailed documentation. Fast domestic delivery and professional service.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Finasteride used for in research studies?",
+        answer: "Finasteride is a 5-alpha reductase inhibitor used for studying androgen metabolism, DHT synthesis inhibition, and hormonal pathway research. For research use only."
       }
     ]
   }
@@ -384,6 +964,7 @@ export const products = [
 
 // Product categories for filtering
 export const categories = [
+  "All",
   "Peptides",
   "Injectables", 
   "Oral Tablets",
@@ -391,7 +972,8 @@ export const categories = [
   "SARMs",
   "Neuropeptides / Nootropics",
   "Sexual Health",
-  "Skin & Rejuvenation"
+  "Hair/Anti-Aging",
+  "Fat Loss Compounds"
 ];
 
 // Helper function to get products by category
@@ -403,4 +985,24 @@ export const getProductsByCategory = (category) => {
 // Helper function to get product by ID
 export const getProductById = (id) => {
   return products.find(product => product.id === id);
+};
+
+// Helper function to get featured products (for homepage)
+export const getFeaturedProducts = (limit = 12) => {
+  return products.slice(0, limit);
+};
+
+// Helper function to get products by badge
+export const getProductsByBadge = (badge) => {
+  return products.filter(product => product.badge === badge);
+};
+
+// Helper function to search products
+export const searchProducts = (query) => {
+  const lowerQuery = query.toLowerCase();
+  return products.filter(product => 
+    product.name.toLowerCase().includes(lowerQuery) ||
+    product.description.toLowerCase().includes(lowerQuery) ||
+    product.category.toLowerCase().includes(lowerQuery)
+  );
 };
