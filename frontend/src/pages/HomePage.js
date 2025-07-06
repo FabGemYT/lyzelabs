@@ -688,13 +688,12 @@ const HomePage = () => {
           </div>
 
           <div className="text-center mt-12">
-            <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(59, 130, 246, 0.5)" }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-blue-500"
+            <Link
+              to="/products"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-blue-500 inline-block"
             >
               View All Products
-            </motion.button>
+            </Link>
           </div>
         </div>
       </section>
