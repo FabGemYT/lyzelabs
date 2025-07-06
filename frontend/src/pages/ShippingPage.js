@@ -345,15 +345,25 @@ const ShippingPage = () => {
                 </div>
                 
                 <div>
-                  <h4 className="font-medium text-gray-900 mb-2">Need Help?</h4>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center space-x-2">
-                      <Mail className="h-4 w-4 text-gray-500" />
-                      <span className="text-gray-600">shipping@lyzelabs.com</span>
+                  <h4 className="font-medium text-gray-900 mb-2">Shipping Queries & Support</h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
+                      <Mail className="h-5 w-5 text-blue-600" />
+                      <div>
+                        <p className="font-medium text-gray-900">📧 Email:</p>
+                        <a href="mailto:ceo@lyzelabs.net" className="text-blue-600 hover:text-blue-800">
+                          ceo@lyzelabs.net
+                        </a>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <Phone className="h-4 w-4 text-gray-500" />
-                      <span className="text-gray-600">+91-9999999999 (WhatsApp)</span>
+                    <div className="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
+                      <Phone className="h-5 w-5 text-green-600" />
+                      <div>
+                        <p className="font-medium text-gray-900">📞 WhatsApp / Phone:</p>
+                        <a href="https://wa.me/918879243924" className="text-green-600 hover:text-green-800">
+                          +91 8879243924
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
