@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState, Suspense } from 'react';
+import * as THREE from 'three';
 
 // Import Three.js properly for React
 const PeptideVial3D = ({ className = '' }) => {
@@ -12,10 +13,10 @@ const PeptideVial3D = ({ className = '' }) => {
     const mobile = window.innerWidth < 768;
     setIsMobile(mobile);
 
-    // Dynamic import of Three.js
-    const loadThreeJS = async () => {
+    // Initialize Three.js
+    const initThreeJS = () => {
       try {
-        const THREE = await import('three');
+        console.log('Initializing Three.js...');
         
         // Only proceed if we have a mount point
         if (!mountRef.current) return;
