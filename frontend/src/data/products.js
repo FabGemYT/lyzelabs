@@ -290,7 +290,7 @@ export const products = [
       storage: "Room temperature, dry conditions",
       quantity: "30 capsules per bottle"
     },
-    reviews: [
+    customerReviews: [
       {
         id: 1,
         author: "Dr. L. Mehta",
