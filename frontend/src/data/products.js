@@ -3871,6 +3871,1074 @@ export const products = [
         answer: "Modafinil acts as a wakefulness-promoting agent, enabling research into alertness and neurotransmitter mechanisms. For research use only, not for human consumption."
       }
     ]
+  },
+  {
+    id: "test-suspension",
+    name: "Test Suspension / Base",
+    category: "Injectables",
+    description: "Water-based testosterone suspension for advanced research applications. Enables rapid-acting hormone studies with immediate bioavailability.",
+    extendedDescription: "Test Suspension / Base is a water-based testosterone compound designed for research applications requiring immediate hormone availability. This formulation enables researchers to investigate rapid-acting testosterone effects and short-term hormonal responses in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Rapid-Acting",
+    purity: "99.5",
+    certificate: "/certificates/test-suspension-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 95,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Water-based injectable suspension",
+      purity: ">99.5%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Water-based testosterone suspension",
+      "Rapid-acting hormone research",
+      "Immediate bioavailability studies",
+      "Short-term hormonal response research",
+      "Advanced testosterone research applications"
+    ],
+    useCases: [
+      "Rapid hormone response research",
+      "Short-term testosterone studies",
+      "Immediate bioavailability research",
+      "Comparative hormone research",
+      "Advanced endocrine studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Marcus R. 🇺🇸",
+        location: "Dallas, USA",
+        rating: 5,
+        text: "Excellent water-based suspension for rapid hormone research. Fast acting and high quality preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Elena V. 🇪🇸",
+        location: "Madrid, Spain",
+        rating: 4,
+        text: "High-quality testosterone suspension. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. James K. 🇬🇧",
+        location: "London, UK",
+        rating: 5,
+        text: "Outstanding rapid-acting compound for hormone research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Ravi P. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Test Suspension used for in research applications?",
+        answer: "Test Suspension is used for studying rapid-acting testosterone effects and immediate hormone responses. For research use only."
+      },
+      {
+        question: "How does Test Suspension differ from other testosterone compounds?",
+        answer: "Test Suspension is water-based providing immediate bioavailability, making it valuable for rapid hormone research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "sustanon-supertest",
+    name: "Sustanon / Supertest",
+    category: "Injectables",
+    description: "Multi-ester testosterone blend for extended-release hormone research. Enables studies of sustained testosterone delivery and complex ester interactions.",
+    extendedDescription: "Sustanon / Supertest is a sophisticated testosterone blend combining multiple esters designed for extended-release hormone research. This formulation enables researchers to investigate sustained testosterone delivery, ester interaction dynamics, and long-term hormonal effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b",
+    badge: "Multi-Ester",
+    purity: "99.4",
+    certificate: "/certificates/sustanon-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 112,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "250mg/ml x 10ml", price: 70, originalPrice: 90 },
+      { dose: "450mg/ml x 10ml", price: 75, originalPrice: 95 }
+    ],
+    specifications: {
+      formulation: "Multi-ester oil-based injectable blend",
+      purity: ">99.4%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Multi-ester testosterone blend",
+      "Extended-release hormone research",
+      "Sustained testosterone delivery studies",
+      "Ester interaction research",
+      "Long-term hormonal effect studies"
+    ],
+    useCases: [
+      "Extended-release hormone research",
+      "Multi-ester interaction studies",
+      "Sustained delivery research",
+      "Long-term hormone studies",
+      "Comparative ester research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Paul T. 🇺🇸",
+        location: "Chicago, USA",
+        rating: 5,
+        text: "Excellent multi-ester blend for extended hormone research. High-quality preparation with comprehensive documentation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Hans M. 🇩🇪",
+        location: "Berlin, Germany",
+        rating: 4,
+        text: "High-quality testosterone blend. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie L. 🇫🇷",
+        location: "Paris, France",
+        rating: 5,
+        text: "Outstanding blend for sustained hormone research. Quality control is exceptional.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Amit K. 🇮🇳",
+        location: "Delhi, India",
+        rating: 4,
+        text: "Professional service and excellent blend quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Sustanon/Supertest used for in research applications?",
+        answer: "Sustanon/Supertest is used for studying extended-release testosterone effects and multi-ester interactions. For research use only."
+      },
+      {
+        question: "How does this blend compare to single-ester testosterone?",
+        answer: "This multi-ester blend provides sustained release characteristics, making it valuable for long-term hormone research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "trenbolone-enanthate",
+    name: "Trenbolone Enanthate",
+    category: "Injectables",
+    description: "Long-acting trenbolone ester for extended anabolic research. Enables studies of sustained anabolic effects and long-term tissue responses.",
+    extendedDescription: "Trenbolone Enanthate is a long-acting trenbolone ester designed for extended anabolic research applications. This compound enables researchers to investigate sustained anabolic effects, long-term tissue responses, and extended-release anabolic mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65",
+    badge: "Long-Acting",
+    purity: "99.6",
+    certificate: "/certificates/tren-enanthate-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 89,
+    price: 90,
+    originalPrice: 115,
+    variants: [
+      { dose: "200mg/ml x 10ml", price: 90, originalPrice: 115 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.6%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Long-acting trenbolone ester",
+      "Extended anabolic research",
+      "Sustained anabolic effect studies",
+      "Long-term tissue response research",
+      "Advanced anabolic mechanism investigation"
+    ],
+    useCases: [
+      "Extended anabolic research",
+      "Long-term tissue studies",
+      "Sustained effect research",
+      "Comparative ester studies",
+      "Advanced anabolic investigations"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Robert H. 🇺🇸",
+        location: "Miami, USA",
+        rating: 5,
+        text: "Excellent long-acting trenbolone for extended research. High purity and professional preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Marco R. 🇮🇹",
+        location: "Milan, Italy",
+        rating: 4,
+        text: "High-quality trenbolone enanthate. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sarah W. 🇬🇧",
+        location: "Manchester, UK",
+        rating: 5,
+        text: "Outstanding compound for extended anabolic research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Suresh M. 🇮🇳",
+        location: "Bangalore, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Trenbolone Enanthate used for in research applications?",
+        answer: "Trenbolone Enanthate is used for studying extended anabolic effects and long-term tissue responses. For research use only."
+      },
+      {
+        question: "How does Trenbolone Enanthate compare to Trenbolone Acetate?",
+        answer: "Trenbolone Enanthate provides longer-acting effects compared to acetate ester, making it valuable for extended research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "trenbolone-hexahydrobenzylcarbonate",
+    name: "Trenbolone Hexahydrobenzylcarbonate",
+    category: "Injectables",
+    description: "Ultra-long acting trenbolone ester for extended research applications. Enables studies of very long-term anabolic effects and sustained tissue responses.",
+    extendedDescription: "Trenbolone Hexahydrobenzylcarbonate is an ultra-long acting trenbolone ester designed for extended research applications. This compound enables researchers to investigate very long-term anabolic effects, sustained tissue responses, and ultra-extended anabolic mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    badge: "Ultra Long-Acting",
+    purity: "99.7",
+    certificate: "/certificates/tren-hex-janoshik.pdf",
+    rating: 4.9,
+    reviewCount: 76,
+    price: 100,
+    originalPrice: 125,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 100, originalPrice: 125 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.7%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Ultra-long acting trenbolone ester",
+      "Extended research applications",
+      "Very long-term anabolic studies",
+      "Sustained tissue response research",
+      "Ultra-extended mechanism investigation"
+    ],
+    useCases: [
+      "Ultra-long term anabolic research",
+      "Extended tissue studies",
+      "Sustained effect research",
+      "Long-term ester studies",
+      "Advanced duration research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Michael L. 🇺🇸",
+        location: "Los Angeles, USA",
+        rating: 5,
+        text: "Excellent ultra-long acting trenbolone for extended research. Exceptional purity and professional preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Pierre M. 🇫🇷",
+        location: "Lyon, France",
+        rating: 5,
+        text: "Outstanding trenbolone hex. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Emma T. 🇬🇧",
+        location: "Edinburgh, UK",
+        rating: 4,
+        text: "High-quality compound for ultra-long research applications. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Vikram S. 🇮🇳",
+        location: "Chennai, India",
+        rating: 5,
+        text: "Professional service and exceptional compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Trenbolone Hexahydrobenzylcarbonate used for in research?",
+        answer: "Trenbolone Hex is used for studying ultra-long term anabolic effects and very extended tissue responses. For research use only."
+      },
+      {
+        question: "How long-acting is this ester compared to other trenbolone forms?",
+        answer: "Trenbolone Hex provides the longest-acting effects among trenbolone esters, ideal for ultra-extended research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "tri-tren-225",
+    name: "Tri-Tren 225",
+    category: "Injectables",
+    description: "Triple trenbolone ester blend for comprehensive anabolic research. Combines acetate, enanthate, and hexahydrobenzylcarbonate for multi-phase studies.",
+    extendedDescription: "Tri-Tren 225 is a sophisticated triple trenbolone ester blend designed for comprehensive anabolic research. This formulation combines acetate, enanthate, and hexahydrobenzylcarbonate esters to enable researchers to investigate multi-phase anabolic effects and complex ester interaction dynamics in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+    badge: "Triple Blend",
+    purity: "99.5",
+    certificate: "/certificates/tri-tren-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 104,
+    price: 100,
+    originalPrice: 125,
+    variants: [
+      { dose: "225mg/ml x 10ml", price: 100, originalPrice: 125 }
+    ],
+    specifications: {
+      formulation: "Triple-ester oil-based injectable blend",
+      purity: ">99.5%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Triple trenbolone ester blend",
+      "Multi-phase anabolic research",
+      "Complex ester interaction studies",
+      "Comprehensive anabolic investigation",
+      "Advanced blend research applications"
+    ],
+    useCases: [
+      "Multi-phase anabolic research",
+      "Ester interaction studies",
+      "Comprehensive anabolic investigation",
+      "Comparative blend research",
+      "Advanced trenbolone studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. David K. 🇺🇸",
+        location: "Denver, USA",
+        rating: 5,
+        text: "Excellent triple blend for comprehensive anabolic research. Professional preparation with detailed documentation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Lars N. 🇸🇪",
+        location: "Stockholm, Sweden",
+        rating: 4,
+        text: "High-quality tri-tren blend. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Catherine R. 🇫🇷",
+        location: "Marseille, France",
+        rating: 5,
+        text: "Outstanding blend for multi-phase research applications. Quality control is exceptional.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Rajesh T. 🇮🇳",
+        location: "Hyderabad, India",
+        rating: 4,
+        text: "Professional service and excellent blend quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Tri-Tren 225 used for in research applications?",
+        answer: "Tri-Tren 225 is used for studying multi-phase anabolic effects and complex ester interactions in comprehensive research. For research use only."
+      },
+      {
+        question: "What esters are included in this blend?",
+        answer: "This blend combines trenbolone acetate, enanthate, and hexahydrobenzylcarbonate esters for comprehensive research applications. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "npp",
+    name: "NPP (Nandrolone Phenylpropionate)",
+    category: "Injectables",
+    description: "Fast-acting nandrolone ester for short-term anabolic research. Enables studies of rapid nandrolone effects and quick-onset anabolic mechanisms.",
+    extendedDescription: "NPP (Nandrolone Phenylpropionate) is a fast-acting nandrolone ester designed for short-term anabolic research applications. This compound enables researchers to investigate rapid nandrolone effects, quick-onset anabolic mechanisms, and short-duration therapeutic applications in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae",
+    badge: "Fast-Acting",
+    purity: "99.6",
+    certificate: "/certificates/npp-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 93,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 75, originalPrice: 95 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable solution",
+      purity: ">99.6%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Fast-acting nandrolone ester",
+      "Short-term anabolic research",
+      "Rapid nandrolone effect studies",
+      "Quick-onset mechanism investigation",
+      "Short-duration therapeutic research"
+    ],
+    useCases: [
+      "Short-term anabolic research",
+      "Rapid effect studies",
+      "Quick-onset research",
+      "Comparative ester studies",
+      "Fast-acting investigations"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Andrew M. 🇺🇸",
+        location: "Seattle, USA",
+        rating: 5,
+        text: "Excellent fast-acting nandrolone for short-term research. High purity and professional preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Giovanni P. 🇮🇹",
+        location: "Rome, Italy",
+        rating: 4,
+        text: "High-quality NPP. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie K. 🇬🇧",
+        location: "Liverpool, UK",
+        rating: 5,
+        text: "Outstanding compound for rapid-acting research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Manoj G. 🇮🇳",
+        location: "Pune, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is NPP used for in research applications?",
+        answer: "NPP is used for studying fast-acting nandrolone effects and rapid-onset anabolic mechanisms. For research use only."
+      },
+      {
+        question: "How does NPP compare to Deca Durabolin?",
+        answer: "NPP provides faster-acting effects compared to deca, making it valuable for short-term research applications. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "winstrol-oil",
+    name: "Winstrol (Oil/Suspension)",
+    category: "Injectables",
+    description: "Injectable stanozolol for advanced anabolic research. Available in oil-based and suspension formulations for comprehensive stanozolol studies.",
+    extendedDescription: "Winstrol (Oil/Suspension) is an injectable stanozolol compound designed for advanced anabolic research applications. Available in both oil-based and suspension formulations, this compound enables researchers to investigate stanozolol mechanisms, anabolic selectivity, and comparative formulation effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b",
+    badge: "Dual Formulation",
+    purity: "99.4",
+    certificate: "/certificates/winstrol-oil-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 118,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "50mg/ml x 10ml", price: 70, originalPrice: 90 },
+      { dose: "100mg/ml x 10ml", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Oil-based and suspension injectable formulations",
+      purity: ">99.4%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Injectable stanozolol compound",
+      "Dual formulation options",
+      "Anabolic selectivity research",
+      "Comparative formulation studies",
+      "Advanced stanozolol research"
+    ],
+    useCases: [
+      "Stanozolol mechanism research",
+      "Anabolic selectivity studies",
+      "Formulation comparison research",
+      "Injectable anabolic studies",
+      "Comparative research applications"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Kevin S. 🇺🇸",
+        location: "Phoenix, USA",
+        rating: 5,
+        text: "Excellent injectable stanozolol for research. Professional dual-formulation preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Elena M. 🇪🇸",
+        location: "Barcelona, Spain",
+        rating: 4,
+        text: "High-quality Winstrol injectable. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. James P. 🇬🇧",
+        location: "Bristol, UK",
+        rating: 5,
+        text: "Outstanding compound for stanozolol research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Lata M. 🇮🇳",
+        location: "Kolkata, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is injectable Winstrol used for in research?",
+        answer: "Injectable Winstrol is used for studying stanozolol mechanisms and anabolic selectivity in research applications. For research use only."
+      },
+      {
+        question: "What's the difference between oil and suspension formulations?",
+        answer: "Oil-based provides slower release while suspension offers faster action, enabling comparative formulation research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "dianabol-anadrol-oil",
+    name: "Dianabol / Anadrol (Oil)",
+    category: "Injectables",
+    description: "Injectable oral steroid compounds for advanced research. Oil-based formulations of methandienone and oxymetholone for injectable anabolic studies.",
+    extendedDescription: "Dianabol / Anadrol (Oil) represents injectable formulations of classic oral anabolic compounds designed for advanced research applications. These oil-based preparations of methandienone and oxymetholone enable researchers to investigate injectable versus oral bioavailability and comparative anabolic mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65",
+    badge: "Injectable Orals",
+    purity: "99.3",
+    certificate: "/certificates/dbol-adrol-oil-janoshik.pdf",
+    rating: 4.5,
+    reviewCount: 87,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "50mg/ml x 10ml", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Oil-based injectable formulations",
+      purity: ">99.3%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Injectable oral steroid formulations",
+      "Comparative bioavailability research",
+      "Injectable versus oral studies",
+      "Advanced anabolic mechanism research",
+      "Formulation comparison studies"
+    ],
+    useCases: [
+      "Bioavailability comparison research",
+      "Injectable formulation studies",
+      "Oral versus injectable research",
+      "Comparative anabolic studies",
+      "Advanced formulation research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Christopher L. 🇺🇸",
+        location: "Tampa, USA",
+        rating: 5,
+        text: "Excellent injectable formulations for comparative research. Professional preparation and documentation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Isabella R. 🇮🇹",
+        location: "Naples, Italy",
+        rating: 4,
+        text: "High-quality injectable oral compounds. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie M. 🇫🇷",
+        location: "Nice, France",
+        rating: 5,
+        text: "Outstanding compounds for formulation research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Rohit K. 🇮🇳",
+        location: "Ahmedabad, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What are injectable oral steroids used for in research?",
+        answer: "Injectable oral formulations are used for studying bioavailability differences and comparative formulation effects. For research use only."
+      },
+      {
+        question: "How do injectable versions differ from oral tablets?",
+        answer: "Injectable formulations bypass first-pass metabolism, enabling comparative bioavailability research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "s4-andarine",
+    name: "S4 (Andarine)",
+    category: "Oral Tablets",
+    description: "Selective androgen receptor modulator for advanced SARM research. Enables studies of partial agonist activity and selective androgen effects.",
+    extendedDescription: "S4 (Andarine) is a selective androgen receptor modulator designed for advanced SARM research applications. This compound acts as a partial agonist, enabling researchers to investigate selective androgen effects, tissue-specific responses, and SARM mechanism variations in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Partial Agonist",
+    purity: "99.2",
+    certificate: "/certificates/s4-janoshik.pdf",
+    rating: 4.6,
+    reviewCount: 132,
+    price: 90,
+    originalPrice: 115,
+    variants: [
+      { dose: "25mg x 100 tablets", price: 90, originalPrice: 115 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.2%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Selective androgen receptor modulator",
+      "Partial agonist activity research",
+      "Selective androgen effect studies",
+      "Tissue-specific response investigation",
+      "Advanced SARM mechanism research"
+    ],
+    useCases: [
+      "Partial agonist research",
+      "Selective androgen studies",
+      "Tissue selectivity research",
+      "SARM mechanism investigation",
+      "Comparative SARM studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Patricia N. 🇺🇸",
+        location: "Austin, USA",
+        rating: 5,
+        text: "Excellent SARM for partial agonist research. High purity and professional preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Klaus H. 🇩🇪",
+        location: "Hamburg, Germany",
+        rating: 4,
+        text: "High-quality S4 (Andarine). Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Charlotte B. 🇬🇧",
+        location: "Oxford, UK",
+        rating: 5,
+        text: "Outstanding SARM for selective research applications. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Suresh R. 🇮🇳",
+        location: "Chennai, India",
+        rating: 4,
+        text: "Professional service and excellent SARM quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is S4 (Andarine) used for in research applications?",
+        answer: "S4 is used for studying partial agonist activity and selective androgen receptor modulation. For research use only."
+      },
+      {
+        question: "How does S4 compare to other SARMs?",
+        answer: "S4 acts as a partial agonist with unique selectivity profile, making it valuable for comparative SARM research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "yohimbine",
+    name: "Yohimbine",
+    category: "Oral Tablets",
+    description: "Alpha-2 adrenergic antagonist for research applications. Enables studies of adrenergic receptor mechanisms and fat oxidation pathways.",
+    extendedDescription: "Yohimbine is an alpha-2 adrenergic antagonist designed for research applications investigating adrenergic receptor mechanisms. This compound enables researchers to study fat oxidation pathways, adrenergic system interactions, and metabolic regulation mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    badge: "Adrenergic",
+    purity: "99.4",
+    certificate: "/certificates/yohimbine-janoshik.pdf",
+    rating: 4.5,
+    reviewCount: 98,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "5mg x 100 tablets", price: 75, originalPrice: 95 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.4%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Alpha-2 adrenergic antagonist",
+      "Adrenergic receptor research",
+      "Fat oxidation pathway studies",
+      "Metabolic regulation research",
+      "Adrenergic system investigation"
+    ],
+    useCases: [
+      "Adrenergic receptor research",
+      "Fat oxidation studies",
+      "Metabolic regulation research",
+      "Receptor antagonist studies",
+      "Comparative adrenergic research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Nathan J. 🇺🇸",
+        location: "Nashville, USA",
+        rating: 5,
+        text: "Excellent adrenergic antagonist for research. High purity and consistent results.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Camille R. 🇫🇷",
+        location: "Bordeaux, France",
+        rating: 4,
+        text: "High-quality Yohimbine. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. James P. 🇬🇧",
+        location: "Bristol, UK",
+        rating: 5,
+        text: "Outstanding compound for adrenergic research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Lata M. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Yohimbine used for in research applications?",
+        answer: "Yohimbine is used for studying alpha-2 adrenergic receptor antagonism and fat oxidation mechanisms. For research use only."
+      },
+      {
+        question: "How does Yohimbine work in metabolic research?",
+        answer: "Yohimbine blocks alpha-2 adrenergic receptors, enabling research into fat oxidation and metabolic pathways. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "cabergoline",
+    name: "Cabergoline",
+    category: "Oral Tablets",
+    description: "Dopamine agonist for prolactin research applications. Enables studies of dopamine receptor mechanisms and prolactin regulation pathways.",
+    extendedDescription: "Cabergoline is a potent dopamine agonist designed for prolactin research applications. This compound enables researchers to investigate dopamine receptor mechanisms, prolactin regulation pathways, and dopaminergic system interactions in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae",
+    badge: "Dopamine Agonist",
+    purity: "99.6",
+    certificate: "/certificates/cabergoline-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 156,
+    price: 125,
+    originalPrice: 160,
+    variants: [
+      { dose: "0.25mg x 100 tablets", price: 125, originalPrice: 160 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.6%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Potent dopamine agonist",
+      "Prolactin regulation research",
+      "Dopamine receptor studies",
+      "Dopaminergic system investigation",
+      "Endocrine pathway research"
+    ],
+    useCases: [
+      "Prolactin research",
+      "Dopamine receptor studies",
+      "Endocrine regulation research",
+      "Dopaminergic system investigation",
+      "Comparative receptor studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Michelle R. 🇺🇸",
+        location: "Denver, USA",
+        rating: 5,
+        text: "Excellent dopamine agonist for prolactin research. High potency and professional preparation.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Lars N. 🇸🇪",
+        location: "Stockholm, Sweden",
+        rating: 4,
+        text: "High-quality Cabergoline. Professional packaging and efficient EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Emma W. 🇬🇧",
+        location: "Cardiff, UK",
+        rating: 5,
+        text: "Outstanding compound for dopamine research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Ravi T. 🇮🇳",
+        location: "Bangalore, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Cabergoline used for in research applications?",
+        answer: "Cabergoline is used for studying dopamine receptor agonism and prolactin regulation mechanisms. For research use only."
+      },
+      {
+        question: "How does Cabergoline work in endocrine research?",
+        answer: "Cabergoline acts as a dopamine agonist, enabling research into prolactin suppression and dopaminergic pathways. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "minoxidil",
+    name: "Minoxidil",
+    category: "Oral Tablets",
+    description: "Vasodilator compound for cardiovascular and hair growth research. Enables studies of blood vessel dilation and follicle stimulation mechanisms.",
+    extendedDescription: "Minoxidil is a vasodilator compound designed for cardiovascular and hair growth research applications. This compound enables researchers to investigate blood vessel dilation mechanisms, follicle stimulation pathways, and vasodilatory effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1550572017-edd951aa8f41",
+    badge: "Vasodilator",
+    purity: "99.3",
+    certificate: "/certificates/minoxidil-janoshik.pdf",
+    rating: 4.4,
+    reviewCount: 108,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "5mg x 100 tablets", price: 75, originalPrice: 95 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.3%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Vasodilator compound",
+      "Cardiovascular research applications",
+      "Hair growth mechanism studies",
+      "Blood vessel dilation research",
+      "Follicle stimulation investigation"
+    ],
+    useCases: [
+      "Cardiovascular research",
+      "Hair growth studies",
+      "Vasodilation research",
+      "Follicle stimulation studies",
+      "Comparative vasodilator research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Jennifer C. 🇺🇸",
+        location: "Miami, USA",
+        rating: 5,
+        text: "Excellent vasodilator for cardiovascular research. High purity and consistent results.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. François L. 🇫🇷",
+        location: "Toulouse, France",
+        rating: 4,
+        text: "High-quality Minoxidil. Professional packaging and efficient EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Andrew M. 🇬🇧",
+        location: "Newcastle, UK",
+        rating: 5,
+        text: "Outstanding compound for vasodilation research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Rajesh K. 🇮🇳",
+        location: "Delhi, India",
+        rating: 4,
+        text: "Professional service and excellent compound quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Minoxidil used for in research applications?",
+        answer: "Minoxidil is used for studying vasodilation mechanisms and hair growth pathway research. For research use only."
+      },
+      {
+        question: "How does Minoxidil work in cardiovascular research?",
+        answer: "Minoxidil acts as a vasodilator, enabling research into blood vessel dilation and cardiovascular mechanisms. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "bpc-157-tablets",
+    name: "BPC-157 (tabs)",
+    category: "Oral Tablets",
+    description: "Oral tablet formulation of BPC-157 for convenient dosing research. Enables studies of oral bioavailability and digestive system effects.",
+    extendedDescription: "BPC-157 (tabs) is an oral tablet formulation of the renowned pentadecapeptide designed for convenient dosing research applications. This formulation enables researchers to investigate oral bioavailability, digestive system effects, and comparative administration routes in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+    badge: "Oral Formulation",
+    purity: "99.1",
+    certificate: "/certificates/bpc-157-tabs-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 124,
+    price: 130,
+    originalPrice: 165,
+    variants: [
+      { dose: "500mcg x 100 tablets", price: 130, originalPrice: 165 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.1%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Oral BPC-157 formulation",
+      "Convenient dosing for research",
+      "Oral bioavailability studies",
+      "Digestive system research",
+      "Comparative administration research"
+    ],
+    useCases: [
+      "Oral bioavailability research",
+      "Digestive system studies",
+      "Comparative administration research",
+      "Convenient dosing studies",
+      "Oral formulation research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Robert F. 🇺🇸",
+        location: "Boston, USA",
+        rating: 5,
+        text: "Excellent oral BPC-157 formulation for research. Convenient dosing and high purity.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Maria G. 🇪🇸",
+        location: "Seville, Spain",
+        rating: 4,
+        text: "High-quality BPC-157 tablets. Professional packaging and reliable EU delivery.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. David L. 🇬🇧",
+        location: "Leeds, UK",
+        rating: 5,
+        text: "Outstanding oral formulation for convenient research. Quality control is excellent.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Neha J. 🇮🇳",
+        location: "Pune, India",
+        rating: 4,
+        text: "Professional service and excellent tablet quality. Fast domestic delivery.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is oral BPC-157 used for in research applications?",
+        answer: "Oral BPC-157 is used for studying oral bioavailability and digestive system effects compared to injectable forms. For research use only."
+      },
+      {
+        question: "How does oral BPC-157 compare to injectable forms?",
+        answer: "Oral formulation enables research into bioavailability differences and digestive system interactions. For research use only, not for human consumption."
+      }
+    ]
   }
 ];
 
