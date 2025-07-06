@@ -127,7 +127,7 @@ const HomePage = () => {
     },
     {
       question: "How should I store my research compounds?",
-      answer: "Storage requirements vary by compound. Most peptides should be stored at -20°C in a freezer. Detailed storage instructions are included with each product. Always follow the specific guidelines on the product label."
+      answer: "Most compounds are stable at room temperature (22–25°C) for extended periods if kept dry, sealed, and away from light. Cold-chain shipping is not required unless explicitly mentioned on the product page. Detailed storage instructions are included with each product. Always follow the specific guidelines on the product label."
     }
   ];
 
