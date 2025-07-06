@@ -128,9 +128,9 @@ const TrackOrderPage = () => {
           >
             <div className="text-center mb-8">
               <Package className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Universal Tracking</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">Order Tracking</h2>
               <p className="text-gray-600">
-                Track packages from DHL, FedEx, UPS, India Post, Aramex, and more
+                Track your Lyze Labs research compounds with any courier worldwide
               </p>
             </div>
 
