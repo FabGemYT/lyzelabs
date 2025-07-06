@@ -400,7 +400,7 @@ const PrivacyPage = () => {
                 <p><strong>Privacy Officer:</strong> privacy@lyzelabs.com</p>
                 <p><strong>Data Protection Officer:</strong> dpo@lyzelabs.com</p>
                 <p><strong>General Inquiries:</strong> support@lyzelabs.com</p>
-                <p><strong>WhatsApp:</strong> +91-9999999999</p>
+                <p><strong>WhatsApp:</strong> +91-8879243924</p>
               </div>
               
               <div className="mt-4 p-3 bg-green-100 rounded">
