@@ -6,7 +6,7 @@ import sys
 from datetime import datetime
 
 # Get the backend URL from the frontend/.env file
-BACKEND_URL = "https://2d199040-3c85-41ad-acba-85e2c83e42e9.preview.emergentagent.com/api"
+BACKEND_URL = "https://103ba82c-6fa2-4386-86d8-19373588f786.preview.emergentagent.com/api"
 
 def test_root_endpoint():
     """Test the root endpoint"""
