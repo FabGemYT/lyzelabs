@@ -19,7 +19,12 @@ const PeptideVial3D = ({ className = '' }) => {
         console.log('Initializing Three.js...');
         
         // Only proceed if we have a mount point
-        if (!mountRef.current) return;
+        if (!mountRef.current) {
+          console.log('No mount point available');
+          return;
+        }
+
+        console.log('Creating Three.js scene...');
 
         // Scene setup
         const scene = new THREE.Scene();
