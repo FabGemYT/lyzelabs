@@ -173,7 +173,26 @@ const ProductPage = () => {
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
                     <h1 className="text-4xl font-bold text-gray-900 mb-2">{product.name}</h1>
-                    <p className="text-lg text-gray-600 mb-3">{product.variant}</p>
+                    <p className="text-lg text-gray-600 mb-3">{product.category}</p>
+                    {/* Variant Selector */}
+                    {product.variants && product.variants.length > 1 && (
+                      <div className="mb-4">
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Select Dose:
+                        </label>
+                        <select 
+                          value={selectedVariant} 
+                          onChange={(e) => setSelectedVariant(Number(e.target.value))}
+                          className="border-2 border-gray-300 rounded-lg px-4 py-2 text-lg font-medium focus:border-blue-500 focus:outline-none"
+                        >
+                          {product.variants.map((variant, index) => (
+                            <option key={index} value={index}>
+                              {variant.dose} - ${variant.price}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    )}
                   </div>
                   <div className="flex items-center gap-2 bg-yellow-50 px-3 py-2 rounded-lg">
                     <div className="flex text-yellow-400">
@@ -181,7 +200,7 @@ const ProductPage = () => {
                         <Star key={i} className="h-4 w-4 fill-current" />
                       ))}
                     </div>
-                    <span className="text-sm font-medium text-gray-700">(4.9)</span>
+                    <span className="text-sm font-medium text-gray-700">({product.rating})</span>
                   </div>
                 </div>
 
