@@ -280,14 +280,6 @@ const HomePage = () => {
                 Shop Now
               </motion.a>
               <motion.a
-                href="#checkout"
-                whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(168, 85, 247, 0.5)" }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-purple-500 inline-block text-center"
-              >
-                Buy with Crypto
-              </motion.a>
-              <motion.a
                 href="https://wa.me/919876543210"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(34, 197, 94, 0.5)" }}
                 whileTap={{ scale: 0.95 }}
