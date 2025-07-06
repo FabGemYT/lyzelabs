@@ -104,7 +104,7 @@ export const products = [
     image: "https://images.unsplash.com/photo-1606206886378-e49a19ad0933",
     badge: "Advanced",
     purity: "99.8",
-    certificate: "/certificates/tirzepatide-janoshik.pdf",
+    certificate: "/lab-reports/tirzepatide-batch-verification.pdf",
     rating: 4.8,
     reviewCount: 134,
     price: 125,
