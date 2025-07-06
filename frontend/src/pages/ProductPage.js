@@ -78,9 +78,9 @@ const ProductPage = () => {
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": product.rating,
-            "reviewCount": product.reviews.length
+            "reviewCount": product.customerReviews.length
           },
-          "review": product.reviews.map(review => ({
+          "review": product.customerReviews.map(review => ({
             "@type": "Review",
             "author": {
               "@type": "Person",
