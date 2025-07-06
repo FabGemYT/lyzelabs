@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { getProductById } from "../data/products";
+import { products, getProductById } from "../data/products";
 
 const ProductPage = () => {
   const { productId } = useParams();
