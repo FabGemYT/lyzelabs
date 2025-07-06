@@ -230,12 +230,10 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus:
-    - "Backend final testing for launch readiness"
-    - "Frontend end-to-end customer journey testing"
+  current_focus: []
   stuck_tasks: []
-  test_all: true
-  test_priority: "launch_readiness"
+  test_all: false
+  test_priority: "launch_ready"
 
 agent_communication:
   - agent: "main"
