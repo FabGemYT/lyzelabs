@@ -455,12 +455,40 @@ const ProductPage = () => {
 
       <Footer />
 
+      {/* Mobile Sticky Add to Cart */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40 lg:hidden">
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="text-2xl font-bold text-gray-900">₹{(parseInt(product.price) * quantity).toLocaleString()}</div>
+            <div className="text-sm text-gray-600">{quantity} vial{quantity > 1 ? 's' : ''}</div>
+          </div>
+          <div className="flex gap-3">
+            <motion.button
+              onClick={handleAddToCart}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg font-bold text-lg flex items-center gap-2 shadow-lg"
+            >
+              <ShoppingCart className="h-5 w-5" />
+              Add to Cart
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-3 rounded-lg font-bold text-lg flex items-center shadow-lg"
+            >
+              <Bitcoin className="h-5 w-5" />
+            </motion.button>
+          </div>
+        </div>
+      </div>
+
       {/* WhatsApp Float */}
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1 }}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-24 right-6 z-50 lg:bottom-6"
       >
         <a 
           href="https://wa.me/918879243924?text=Hi,%20I%20need%20help%20with%20a%20research%20compound%20order%20from%20Lyze%20Labs."
