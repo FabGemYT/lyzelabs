@@ -576,74 +576,137 @@ const HomePage = () => {
       </section>
 
       {/* Bestsellers */}
-      <section id="products" className="py-20 bg-gray-50">
+      <section id="products" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Bestselling Research Compounds</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Our most trusted research compounds, rigorously tested and verified by leading research institutions.
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Premium Research Compounds
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              Lab-tested for purity. Trusted by research institutions worldwide. Express shipping available.
             </p>
+            <div className="flex flex-wrap justify-center gap-6 mb-8">
+              <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-lg">
+                <CheckCircle className="w-5 h-5 text-blue-600" />
+                <span className="text-blue-800 font-medium">99.9% Purity</span>
+              </div>
+              <div className="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-lg">
+                <Shield className="w-5 h-5 text-green-600" />
+                <span className="text-green-800 font-medium">Janoshik Tested</span>
+              </div>
+              <div className="flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-lg">
+                <Truck className="w-5 h-5 text-purple-600" />
+                <span className="text-purple-800 font-medium">Same-Day Shipping</span>
+              </div>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
               <motion.div
                 key={product.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="group cursor-pointer"
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
+                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group"
               >
-                <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-xl transition-all duration-300">
-                  <div className="relative mb-4">
-                    <img 
-                      src={product.image} 
-                      alt={`${product.name} - pharmaceutical-grade research compounds India`}
-                      className="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-2 right-2">
-                      <span className="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-medium">
-                        {product.badge}
-                      </span>
+                <div className="relative">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      {product.purity}% Pure
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      In Stock
+                    </span>
+                  </div>
+                </div>
+
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-xl font-bold text-gray-900">{product.name}</h3>
+                    <div className="flex items-center gap-1">
+                      <div className="flex text-yellow-400">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-current" />
+                        ))}
+                      </div>
+                      <span className="text-sm text-gray-600 ml-1">(4.9)</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{product.name}</h3>
-                  <p className="text-sm text-gray-600 mb-2">{product.variant}</p>
-                  <p className="text-xs text-gray-500 mb-3 leading-tight">{product.description.slice(0, 100)}...</p>
-                  <div className="flex items-center mb-3">
-                    <div className="flex items-center mr-2">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className={`h-4 w-4 ${i < Math.floor(product.rating) ? 'text-yellow-400 fill-current' : 'text-gray-300'}`} />
-                      ))}
-                    </div>
-                    <span className="text-sm text-gray-600">({product.reviewCount})</span>
-                  </div>
+                  
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    {product.description}
+                  </p>
+
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <span className="text-xl font-bold text-gray-900">{product.price}</span>
-                      <span className="text-sm text-gray-500 line-through ml-2">{product.originalPrice}</span>
+                      <span className="text-2xl font-bold text-gray-900">₹{product.price}</span>
+                      <span className="text-sm text-gray-500 ml-2">per vial</span>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm text-green-600 font-semibold">1-3 Days Shipping</div>
+                      <div className="text-xs text-gray-500">Express Available</div>
                     </div>
                   </div>
-                  
-                  {/* Crypto Payment Strip */}
-                  <div className="mb-4 p-2 bg-gradient-to-r from-orange-50 to-blue-50 rounded-lg border border-orange-200">
-                    <div className="flex items-center justify-center space-x-2">
-                      <Bitcoin className="h-4 w-4 text-orange-500" />
-                      <span className="text-xs font-medium text-gray-700">Pay with Crypto</span>
-                      <span className="text-xs text-gray-500">BTC | ETH | USDT</span>
-                    </div>
+
+                  <div className="flex gap-2 mb-4">
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-4 py-3 rounded-lg font-semibold text-sm transition-all shadow-lg border border-blue-500"
+                    >
+                      Add to Cart
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="px-4 py-3 border border-gray-300 text-gray-700 hover:bg-gray-50 rounded-lg font-semibold text-sm transition-all"
+                    >
+                      Quick View
+                    </motion.button>
                   </div>
-                  
-                  <Link 
-                    to={`/products/${product.id}`}
-                    className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors text-center btn-add-cart"
-                  >
-                    View Details
-                  </Link>
+
+                  <div className="flex items-center justify-between text-sm">
+                    <Link 
+                      to={`/product/${product.id}`}
+                      className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1"
+                    >
+                      View Details
+                      <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
+                    </Link>
+                    {product.certificate && (
+                      <a 
+                        href={product.certificate}
+                        className="text-green-600 hover:text-green-800 font-medium flex items-center gap-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FileText className="w-4 h-4" />
+                        Certificate
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <motion.button
+              whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(59, 130, 246, 0.5)" }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-blue-500"
+            >
+              View All Products
+            </motion.button>
           </div>
         </div>
       </section>
