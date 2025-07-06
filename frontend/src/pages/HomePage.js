@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import PeptideVial3D from "../components/PeptideVial3D";
 import { getAllProducts } from "../data/products";
 
 const HomePage = () => {
