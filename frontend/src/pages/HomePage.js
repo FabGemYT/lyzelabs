@@ -210,39 +210,90 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white overflow-hidden min-h-screen flex items-center">
-        {/* 3D Vial Background */}
-        <PeptideVial3D className="z-0" />
+        {/* 3D Vial Background - More Subtle */}
+        <div className="absolute inset-0 opacity-30">
+          <PeptideVial3D className="z-0" />
+        </div>
         
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 z-20">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 z-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left lg:max-w-2xl"
+            className="text-center lg:text-left lg:max-w-4xl"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Redefining Research.
-              <br />
-              <span className="text-blue-400">Empowering Progress.</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl lg:max-w-2xl mx-auto lg:mx-0">
-              Premium research compounds for licensed institutions. Pharmaceutical-grade quality with complete transparency.
-            </p>
+            {/* Trust Headlines */}
+            <div className="mb-6">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight">
+                Premium Research
+                <br />
+                <span className="text-blue-400">Compounds</span>
+              </h1>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">
+                99.9% Purity • Global Shipping • Research Use Only
+              </div>
+            </div>
+
+            {/* Trust Badge Strip */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm border border-blue-400/30 rounded-lg px-4 py-2 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-sm font-semibold">7,200+ Units Shipped</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-blue-400/30 rounded-lg px-4 py-2 flex items-center gap-2">
+                <Shield className="w-5 h-5 text-blue-400" />
+                <span className="text-sm font-semibold">Lab-Tested</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-blue-400/30 rounded-lg px-4 py-2 flex items-center gap-2">
+                <Truck className="w-5 h-5 text-purple-400" />
+                <span className="text-sm font-semibold">Same-Day Stealth Shipping</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm border border-blue-400/30 rounded-lg px-4 py-2 flex items-center gap-2">
+                <Bitcoin className="w-5 h-5 text-yellow-400" />
+                <span className="text-sm font-semibold">Crypto Accepted</span>
+              </div>
+            </div>
+
+            {/* Trust Tagline */}
+            <div className="mb-8">
+              <p className="text-lg md:text-xl text-blue-200 font-medium">
+                <Award className="w-6 h-6 inline mr-2 text-yellow-400" />
+                Trusted by 100+ Research Teams Worldwide
+              </p>
+            </div>
+
+            {/* Multiple CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <motion.a
                 href="#products"
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(59, 130, 246, 0.5)" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg inline-block text-center btn-explore"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-blue-500 inline-block text-center"
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Explore Products
+                Shop Now
+              </motion.a>
+              <motion.a
+                href="#checkout"
+                whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(168, 85, 247, 0.5)" }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-purple-500 inline-block text-center"
+              >
+                Buy with Crypto
+              </motion.a>
+              <motion.a
+                href="https://wa.me/919876543210"
+                whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(34, 197, 94, 0.5)" }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl border border-green-500 inline-block text-center"
+              >
+                WhatsApp Support
               </motion.a>
             </div>
             
