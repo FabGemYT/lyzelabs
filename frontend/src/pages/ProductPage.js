@@ -185,7 +185,7 @@ const ProductPage = () => {
                     {product.variants && product.variants.length > 1 && (
                       <div className="mb-4">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Select Dose:
+                          Select Variant:
                         </label>
                         <select 
                           value={selectedVariant} 
@@ -194,7 +194,7 @@ const ProductPage = () => {
                         >
                           {product.variants.map((variant, index) => (
                             <option key={index} value={index}>
-                              {variant.dose} - ${variant.price}
+                              {variant.dose} – {formatPriceSimple(variant.price)}
                             </option>
                           ))}
                         </select>
