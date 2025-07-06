@@ -491,8 +491,8 @@ const ProductPage = () => {
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40 lg:hidden">
         <div className="flex items-center justify-between">
           <div>
-            <div className="text-2xl font-bold text-gray-900">₹{(parseInt(product.price) * quantity).toLocaleString()}</div>
-            <div className="text-sm text-gray-600">{quantity} vial{quantity > 1 ? 's' : ''}</div>
+            <div className="text-2xl font-bold text-gray-900">${(currentPrice * quantity).toFixed(2)}</div>
+            <div className="text-sm text-gray-600">{quantity} unit{quantity > 1 ? 's' : ''}</div>
           </div>
           <div className="flex gap-3">
             <motion.button
