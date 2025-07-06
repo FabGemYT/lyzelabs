@@ -558,10 +558,10 @@ const HomePage = () => {
                 <Package className="w-12 h-12" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">High Purity Guaranteed</h3>
-              <p className="text-gray-600 mb-6">Each peptide is lab-tested to ensure unmatched purity and research-grade quality standards.</p>
+              <p className="text-gray-600 mb-6">Each compound undergoes rigorous independent laboratory testing to ensure research-grade purity and uncompromised quality standards.</p>
               <div className="flex items-center text-blue-600 font-semibold">
                 <FileText className="w-5 h-5 mr-2" />
-                View Janoshik Reports
+                View Lab Reports
               </div>
             </motion.div>
 
