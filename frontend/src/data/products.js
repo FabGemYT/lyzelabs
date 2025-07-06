@@ -1964,10 +1964,671 @@ export const products = [
         answer: "Dutasteride inhibits both type 1 and type 2 5-alpha reductase enzymes, providing more comprehensive DHT suppression for research. For research use only, not for human consumption."
       }
     ]
+  },
+  // 💉 INJECTABLES CATEGORY
+  {
+    id: "test-cyp",
+    name: "Testosterone Cypionate",
+    category: "Injectables",
+    description: "Long-acting testosterone ester for comprehensive androgen research. Enables studies of testosterone metabolism and androgenic pathway mechanisms.",
+    extendedDescription: "Testosterone Cypionate is a long-acting testosterone ester used for research applications involving androgen metabolism and hormonal pathways. This compound enables researchers to investigate testosterone effects and androgenic mechanisms in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584362917165-526a968579e8",
+    badge: "Long-Acting",
+    purity: "99.9",
+    certificate: "/certificates/test-cyp-janoshik.pdf",
+    rating: 4.9,
+    reviewCount: 123,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "250mg/ml x 10ml", price: 70, originalPrice: 90 },
+      { dose: "300mg/ml x 10ml", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Injectable solution, 10ml vial",
+      purity: ">99.9%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Long-acting testosterone ester",
+      "Androgen metabolism research",
+      "Hormonal pathway studies",
+      "Testosterone mechanism investigation",
+      "Androgenic effect research"
+    ],
+    useCases: [
+      "Androgen metabolism research",
+      "Hormonal pathway studies",
+      "Testosterone research",
+      "Androgenic mechanism investigation",
+      "Steroid hormone studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Mark T. 🇺🇸",
+        location: "Miami, USA",
+        rating: 5,
+        text: "Excellent testosterone ester for androgen research. Arrived in Miami in 7 days, outstanding purity verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Johan S. 🇳🇱",
+        location: "Amsterdam, Netherlands",
+        rating: 5,
+        text: "Outstanding compound for hormonal studies. Quality control is exceptional, perfect for our testosterone research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Caroline R. 🇬🇧",
+        location: "Leeds, UK",
+        rating: 4,
+        text: "High-quality testosterone cypionate with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Manoj T. 🇮🇳",
+        location: "Pune, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our androgen research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Testosterone Cypionate used for in research?",
+        answer: "Testosterone Cypionate is used for studying androgen metabolism, hormonal pathways, and testosterone effects in controlled laboratory settings. For research use only."
+      },
+      {
+        question: "How does the cypionate ester affect testosterone research?",
+        answer: "The cypionate ester provides a long-acting release profile, making it ideal for studying sustained testosterone effects and metabolism. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "test-enanthate",
+    name: "Testosterone Enanthate",
+    category: "Injectables",
+    description: "Long-acting testosterone ester for androgen research applications. Enables studies of testosterone metabolism and hormonal regulation mechanisms.",
+    extendedDescription: "Testosterone Enanthate is a long-acting testosterone ester designed for research applications investigating androgen metabolism and hormonal regulation. This compound enables researchers to study testosterone effects and androgenic pathways in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584362917165-526a968579e8",
+    badge: "Research Grade",
+    purity: "99.9",
+    certificate: "/certificates/test-enan-janoshik.pdf",
+    rating: 4.9,
+    reviewCount: 145,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "250mg/ml x 10ml", price: 70, originalPrice: 90 },
+      { dose: "300mg/ml x 10ml", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Injectable solution, 10ml vial",
+      purity: ">99.9%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Long-acting testosterone ester",
+      "Androgen metabolism research",
+      "Hormonal regulation studies",
+      "Testosterone pathway investigation",
+      "Androgenic mechanism research"
+    ],
+    useCases: [
+      "Androgen metabolism research",
+      "Hormonal regulation studies",
+      "Testosterone research",
+      "Androgenic pathway investigation",
+      "Steroid hormone studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Robert K. 🇺🇸",
+        location: "Los Angeles, USA",
+        rating: 5,
+        text: "Excellent testosterone enanthate for research. High-quality compound with comprehensive documentation. Arrived in LA in 6 days.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. François M. 🇫🇷",
+        location: "Lyon, France",
+        rating: 5,
+        text: "Outstanding compound for androgen studies. Quality control is exceptional, perfect for our hormonal research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. William P. 🇬🇧",
+        location: "Manchester, UK",
+        rating: 4,
+        text: "High-quality testosterone with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Rajesh K. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our androgen research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Testosterone Enanthate used for in research?",
+        answer: "Testosterone Enanthate is used for studying androgen metabolism, hormonal regulation, and testosterone effects in controlled laboratory settings. For research use only."
+      },
+      {
+        question: "How does Testosterone Enanthate compare to other testosterone esters?",
+        answer: "Testosterone Enanthate has a similar profile to cypionate with long-acting effects, making it ideal for sustained testosterone research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "trenbolone-acetate",
+    name: "Trenbolone Acetate",
+    category: "Injectables",
+    description: "Potent synthetic androgen for advanced research applications. Enables studies of strong androgenic and anabolic pathway mechanisms.",
+    extendedDescription: "Trenbolone Acetate is a highly potent synthetic androgen used for research applications involving strong androgenic and anabolic pathways. This compound enables researchers to investigate advanced steroid mechanisms and receptor interactions in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    badge: "Potent",
+    purity: "99.8",
+    certificate: "/certificates/tren-ace-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 98,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 75, originalPrice: 95 },
+      { dose: "200mg/ml x 10ml", price: 100, originalPrice: 125 }
+    ],
+    specifications: {
+      formulation: "Injectable solution, 10ml vial",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Potent synthetic androgen",
+      "Advanced androgenic research",
+      "Strong anabolic pathway studies",
+      "Receptor interaction investigation",
+      "Advanced steroid mechanism research"
+    ],
+    useCases: [
+      "Advanced androgen research",
+      "Strong anabolic studies",
+      "Receptor interaction research",
+      "Advanced steroid mechanisms",
+      "Comparative androgen studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. David K. 🇺🇸",
+        location: "Las Vegas, USA",
+        rating: 5,
+        text: "Excellent potent androgen for advanced research. Arrived in Las Vegas in 6 days, comprehensive documentation provided.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Stefan M. 🇩🇪",
+        location: "Cologne, Germany",
+        rating: 5,
+        text: "Outstanding compound for advanced androgenic studies. Quality control is exceptional, perfect for our steroid research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Rachel H. 🇬🇧",
+        location: "Glasgow, UK",
+        rating: 4,
+        text: "High-quality trenbolone acetate with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Suresh R. 🇮🇳",
+        location: "Chennai, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our advanced research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What makes Trenbolone Acetate unique for research?",
+        answer: "Trenbolone Acetate is a highly potent synthetic androgen with strong binding affinity to androgen receptors, making it valuable for advanced steroid research. For research use only."
+      },
+      {
+        question: "How should Trenbolone Acetate be handled in research settings?",
+        answer: "Due to its potency, Trenbolone Acetate requires careful handling and precise dosing in research applications. Detailed handling instructions are provided. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "equipoise",
+    name: "EQ (Boldenone)",
+    category: "Injectables",
+    description: "Veterinary-derived anabolic steroid for research into anabolic pathways and muscle tissue mechanisms. Enables studies of boldenone effects and receptor interactions.",
+    extendedDescription: "EQ (Boldenone) is a veterinary-derived anabolic steroid designed for research applications investigating anabolic pathways and muscle tissue mechanisms. This compound enables researchers to study boldenone effects and receptor interactions in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    badge: "Anabolic",
+    purity: "99.7",
+    certificate: "/certificates/eq-janoshik.pdf",
+    rating: 4.7,
+    reviewCount: 134,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "200mg/ml x 10ml", price: 70, originalPrice: 90 },
+      { dose: "300mg/ml x 10ml", price: 75, originalPrice: 95 },
+      { dose: "600mg/ml x 10ml", price: 80, originalPrice: 100 }
+    ],
+    specifications: {
+      formulation: "Injectable solution, 10ml vial",
+      purity: ">99.7%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "Veterinary-derived anabolic steroid",
+      "Anabolic pathway research",
+      "Muscle tissue mechanism studies",
+      "Boldenone effect investigation",
+      "Receptor interaction research"
+    ],
+    useCases: [
+      "Anabolic pathway research",
+      "Muscle tissue studies",
+      "Boldenone mechanism investigation",
+      "Receptor interaction research",
+      "Comparative steroid studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Michael R. 🇺🇸",
+        location: "Phoenix, USA",
+        rating: 5,
+        text: "Excellent boldenone for anabolic research. High-quality compound with detailed documentation. Arrived in Phoenix in 7 days.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Alessandro R. 🇮🇹",
+        location: "Milan, Italy",
+        rating: 4,
+        text: "Good quality EQ for muscle tissue studies. Quality control is reliable, suitable for our anabolic research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Jennifer M. 🇬🇧",
+        location: "Bristol, UK",
+        rating: 5,
+        text: "High-quality boldenone with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Arun S. 🇮🇳",
+        location: "Bangalore, India",
+        rating: 4,
+        text: "Professional service and quality compound. Fast domestic delivery, good for our anabolic research protocols.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is EQ (Boldenone) used for in research applications?",
+        answer: "EQ is used for studying anabolic pathways, muscle tissue mechanisms, and boldenone effects in controlled laboratory settings. For research use only."
+      },
+      {
+        question: "How does EQ compare to other anabolic steroids?",
+        answer: "EQ has unique anabolic properties with moderate androgenic effects, making it valuable for comparative steroid research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "masteron",
+    name: "Masteron",
+    category: "Injectables",
+    description: "DHT-derived anabolic steroid for research into dihydrotestosterone pathways and anti-estrogenic mechanisms. Enables studies of DHT effects and hormonal regulation.",
+    extendedDescription: "Masteron is a DHT-derived anabolic steroid designed for research applications investigating dihydrotestosterone pathways and anti-estrogenic mechanisms. This compound enables researchers to study DHT effects and hormonal regulation in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584362917165-526a968579e8",
+    badge: "DHT-Derived",
+    purity: "99.8",
+    certificate: "/certificates/masteron-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 112,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "100mg/ml x 10ml", price: 75, originalPrice: 95 },
+      { dose: "200mg/ml x 10ml", price: 80, originalPrice: 100 }
+    ],
+    specifications: {
+      formulation: "Injectable solution, 10ml vial",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "10ml per vial"
+    },
+    benefits: [
+      "DHT-derived anabolic steroid",
+      "Dihydrotestosterone pathway research",
+      "Anti-estrogenic mechanism studies",
+      "DHT effect investigation",
+      "Hormonal regulation research"
+    ],
+    useCases: [
+      "DHT pathway research",
+      "Anti-estrogenic studies",
+      "Hormonal regulation investigation",
+      "DHT mechanism research",
+      "Comparative DHT studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Christopher L. 🇺🇸",
+        location: "Denver, USA",
+        rating: 5,
+        text: "Excellent DHT-derived compound for hormonal research. High-quality masteron with comprehensive documentation. Arrived in Denver in 6 days.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Klaus W. 🇩🇪",
+        location: "Munich, Germany",
+        rating: 5,
+        text: "Outstanding compound for DHT studies. Quality control is exceptional, perfect for our anti-estrogenic research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Sophie K. 🇬🇧",
+        location: "Edinburgh, UK",
+        rating: 4,
+        text: "High-quality masteron with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Vivek M. 🇮🇳",
+        location: "Delhi, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our DHT research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Masteron used for in research applications?",
+        answer: "Masteron is used for studying DHT pathways, anti-estrogenic mechanisms, and hormonal regulation in controlled laboratory settings. For research use only."
+      },
+      {
+        question: "How does Masteron affect estrogenic activity in research?",
+        answer: "Masteron has anti-estrogenic properties and can help study estrogen regulation mechanisms, making it valuable for hormonal research. For research use only, not for human consumption."
+      }
+    ]
+  },
+  // Additional Oral Tablets
+  {
+    id: "finasteride",
+    name: "Finasteride",
+    category: "Hair/Anti-Aging",
+    description: "5-alpha reductase inhibitor for androgen metabolism research. Enables studies of DHT synthesis and hormonal pathway mechanisms.",
+    extendedDescription: "Finasteride is a synthetic 5-alpha reductase inhibitor used for research applications involving androgen metabolism and DHT synthesis pathways. This compound enables researchers to investigate hormonal mechanisms and enzyme inhibition in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f",
+    badge: "Hormonal",
+    purity: "99.8",
+    certificate: "/certificates/finasteride-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 156,
+    price: 75,
+    originalPrice: 95,
+    variants: [
+      { dose: "5mg x 100 tablets", price: 75, originalPrice: 95 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "5-alpha reductase inhibitor",
+      "Androgen metabolism research",
+      "DHT synthesis studies",
+      "Hormonal pathway investigation",
+      "Enzyme inhibition research"
+    ],
+    useCases: [
+      "Androgen metabolism research",
+      "DHT synthesis studies",
+      "Hormonal pathway investigation",
+      "Enzyme inhibition studies",
+      "5-alpha reductase research"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. Richard T. 🇺🇸",
+        location: "Phoenix, USA",
+        rating: 5,
+        text: "Excellent 5-alpha reductase inhibitor for hormonal research. Arrived in Phoenix in 6 days, comprehensive documentation included.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Lars N. 🇸🇪",
+        location: "Stockholm, Sweden",
+        rating: 5,
+        text: "Outstanding compound for androgen studies. Quality control is exceptional, perfect for our hormonal research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Margaret W. 🇬🇧",
+        location: "Oxford, UK",
+        rating: 4,
+        text: "High-quality finasteride with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Vikram S. 🇮🇳",
+        location: "Delhi, India",
+        rating: 4,
+        text: "Quality compound with detailed documentation. Fast domestic delivery and professional service.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Finasteride used for in research studies?",
+        answer: "Finasteride is a 5-alpha reductase inhibitor used for studying androgen metabolism, DHT synthesis inhibition, and hormonal pathway research. For research use only."
+      },
+      {
+        question: "How does Finasteride affect DHT levels in research?",
+        answer: "Finasteride inhibits 5-alpha reductase, reducing DHT synthesis, making it valuable for studying androgen metabolism and hormonal pathways. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "tadalafil",
+    name: "Tadalafil (Cialis)",
+    category: "Sexual Health",
+    description: "Potent PDE5 inhibitor for cardiovascular and smooth muscle research. Enables comprehensive studies of vascular function and nitric oxide pathways.",
+    extendedDescription: "Tadalafil is a selective phosphodiesterase type 5 (PDE5) inhibitor used for research applications involving vascular function and smooth muscle mechanisms. This compound enables researchers to investigate nitric oxide pathways and cardiovascular effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1584362917165-526a968579e8",
+    badge: "Vascular",
+    purity: "99.9",
+    certificate: "/certificates/tadalafil-janoshik.pdf",
+    rating: 4.9,
+    reviewCount: 178,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "20mg x 100 tablets", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.9%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "Selective PDE5 inhibitor",
+      "Vascular function research",
+      "Nitric oxide pathway studies",
+      "Smooth muscle mechanism investigation",
+      "Cardiovascular research applications"
+    ],
+    useCases: [
+      "Cardiovascular research",
+      "Vascular function studies",
+      "Nitric oxide pathway research",
+      "Smooth muscle investigations",
+      "PDE5 inhibitor studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. William R. 🇺🇸",
+        location: "Houston, USA",
+        rating: 5,
+        text: "Excellent PDE5 inhibitor for cardiovascular research. Arrived in Houston in 7 days, outstanding purity verification.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Giuseppe M. 🇮🇹",
+        location: "Milan, Italy",
+        rating: 5,
+        text: "Outstanding compound for vascular studies. Quality control is exceptional, perfect for our cardiovascular research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Helen K. 🇬🇧",
+        location: "Cambridge, UK",
+        rating: 4,
+        text: "High-quality tadalafil with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Neha R. 🇮🇳",
+        location: "Delhi, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our vascular research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Tadalafil used for in cardiovascular research?",
+        answer: "Tadalafil is a selective PDE5 inhibitor used for studying vascular function, nitric oxide pathways, and smooth muscle mechanisms. For research use only."
+      },
+      {
+        question: "How does Tadalafil compare to other PDE5 inhibitors?",
+        answer: "Tadalafil has a longer half-life and higher selectivity for PDE5, making it valuable for extended cardiovascular research studies. For research use only, not for human consumption."
+      }
+    ]
+  },
+  {
+    id: "sildenafil",
+    name: "Sildenafil (Viagra)",
+    category: "Sexual Health",
+    description: "PDE5 inhibitor for research into vascular function and nitric oxide pathways. Enables studies of smooth muscle mechanisms and cardiovascular effects.",
+    extendedDescription: "Sildenafil is a phosphodiesterase type 5 inhibitor designed for research applications investigating vascular function and smooth muscle mechanisms. This compound enables researchers to study nitric oxide pathways and cardiovascular effects in controlled laboratory settings. For Research Use Only – Not for Human Consumption.",
+    image: "https://images.unsplash.com/photo-1550572017-edd951aa8f41",
+    badge: "PDE5 Inhibitor",
+    purity: "99.8",
+    certificate: "/certificates/sildenafil-janoshik.pdf",
+    rating: 4.8,
+    reviewCount: 165,
+    price: 70,
+    originalPrice: 90,
+    variants: [
+      { dose: "100mg x 100 tablets", price: 70, originalPrice: 90 }
+    ],
+    specifications: {
+      formulation: "Oral tablets, 100 tablets per bottle",
+      purity: ">99.8%",
+      storage: "Stable at room temperature (22–25°C) when kept sealed and dry. Refrigeration not required unless stated on label.",
+      volume: "100 tablets per bottle"
+    },
+    benefits: [
+      "PDE5 inhibitor for vascular research",
+      "Nitric oxide pathway studies",
+      "Smooth muscle mechanism investigation",
+      "Cardiovascular function research",
+      "Vascular regulation studies"
+    ],
+    useCases: [
+      "Vascular function research",
+      "Cardiovascular studies",
+      "Nitric oxide pathway investigation",
+      "Smooth muscle research",
+      "PDE5 inhibitor studies"
+    ],
+    customerReviews: [
+      {
+        id: 1,
+        author: "Dr. James H. 🇺🇸",
+        location: "Seattle, USA",
+        rating: 5,
+        text: "Excellent PDE5 inhibitor for vascular research. High-quality compound with comprehensive documentation. Arrived in Seattle in 6 days.",
+        date: "1 week ago"
+      },
+      {
+        id: 2,
+        author: "Dr. Antonio L. 🇪🇸",
+        location: "Madrid, Spain",
+        rating: 5,
+        text: "Outstanding sildenafil for cardiovascular studies. Quality control is exceptional, perfect for our vascular research.",
+        date: "2 weeks ago"
+      },
+      {
+        id: 3,
+        author: "Dr. Emma T. 🇬🇧",
+        location: "Liverpool, UK",
+        rating: 4,
+        text: "High-quality compound with consistent results. Professional packaging and reliable EU delivery.",
+        date: "3 weeks ago"
+      },
+      {
+        id: 4,
+        author: "Dr. Sanjay P. 🇮🇳",
+        location: "Mumbai, India",
+        rating: 5,
+        text: "Professional service and excellent compound quality. Fast domestic delivery, ideal for our cardiovascular research.",
+        date: "1 month ago"
+      }
+    ],
+    faqs: [
+      {
+        question: "What is Sildenafil used for in research applications?",
+        answer: "Sildenafil is a PDE5 inhibitor used for studying vascular function, nitric oxide pathways, and cardiovascular mechanisms. For research use only."
+      },
+      {
+        question: "How does Sildenafil affect vascular function in research?",
+        answer: "Sildenafil inhibits PDE5 and enhances nitric oxide signaling, making it valuable for studying vascular regulation mechanisms. For research use only, not for human consumption."
+      }
+    ]
   }
-];
-
-// Product categories for filtering
 export const categories = [
   "All",
   "Peptides",
