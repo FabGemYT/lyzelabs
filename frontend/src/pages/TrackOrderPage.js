@@ -111,7 +111,7 @@ const TrackOrderPage = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Track Your Order</h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Real-time tracking for all shipments worldwide. Enter your tracking number to see the current status of your research compounds.
+              Enter your tracking number below to check the latest shipping status of your Lyze Labs research order.
             </p>
           </motion.div>
         </div>
