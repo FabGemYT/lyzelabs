@@ -196,7 +196,7 @@ export const products = [
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
     badge: "Revolutionary",
     purity: "99.9",
-    certificate: "/certificates/retatrutide-janoshik.pdf",
+    certificate: "/lab-reports/retatrutide-batch-verification.pdf",
     rating: 4.9,
     reviewCount: 87,
     price: 165,
