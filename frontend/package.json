@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/three": "^0.178.0",
     "axios": "^1.8.4",
     "cra-template": "1.2.0",
     "framer-motion": "^12.23.0",
@@ -10,7 +11,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.3",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "three": "^0.178.0"
   },
   "scripts": {
     "start": "craco start",
