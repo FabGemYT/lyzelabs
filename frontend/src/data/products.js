@@ -118,7 +118,7 @@ export const products = [
       storage: "2-8°C refrigerated storage",
       volume: "1mL per vial"
     },
-    reviews: [
+    customerReviews: [
       {
         id: 1,
         author: "Dr. A. Kumar",
