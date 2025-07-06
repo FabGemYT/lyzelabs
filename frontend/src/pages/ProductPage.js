@@ -181,25 +181,29 @@ const ProductPage = () => {
                   <div className="flex-1">
                     <h1 className="text-4xl font-bold text-gray-900 mb-2">{product.name}</h1>
                     <p className="text-lg text-gray-600 mb-3">{product.category}</p>
-                    {/* Variant Selector */}
-                    {product.variants && product.variants.length > 1 && (
-                      <div className="mb-4">
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Select Variant:
-                        </label>
-                        <select 
-                          value={selectedVariant} 
-                          onChange={(e) => setSelectedVariant(Number(e.target.value))}
-                          className="border-2 border-gray-300 rounded-lg px-4 py-2 text-lg font-medium focus:border-blue-500 focus:outline-none"
-                        >
-                          {product.variants.map((variant, index) => (
+                    {/* Variant Selector - Always show for better UX */}
+                    <div className="mb-4">
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Select Variant:
+                      </label>
+                      <select 
+                        value={selectedVariant} 
+                        onChange={(e) => setSelectedVariant(Number(e.target.value))}
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 text-lg font-medium focus:border-blue-500 focus:outline-none bg-white"
+                      >
+                        {product.variants && product.variants.length > 0 ? (
+                          product.variants.map((variant, index) => (
                             <option key={index} value={index}>
                               {variant.dose} – {formatPriceSimple(variant.price)}
                             </option>
-                          ))}
-                        </select>
-                      </div>
-                    )}
+                          ))
+                        ) : (
+                          <option value={0}>
+                            Standard – {formatPriceSimple(product.price)}
+                          </option>
+                        )}
+                      </select>
+                    </div>
                   </div>
                   <div className="flex items-center gap-2 bg-yellow-50 px-3 py-2 rounded-lg">
                     <div className="flex text-yellow-400">
