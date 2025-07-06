@@ -9,7 +9,7 @@ export const products = [
     image: "https://images.unsplash.com/photo-1595500382155-e7cd8180c301",
     badge: "Bestseller",
     purity: "99.9",
-    certificate: "/certificates/semaglutide-janoshik.pdf",
+    certificate: "/lab-reports/semaglutide-batch-verification.pdf",
     rating: 4.9,
     reviewCount: 156,
     price: 125,
