@@ -7,6 +7,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import ShippingPage from "./pages/ShippingPage";
+import TrackOrderPage from "./pages/TrackOrderPage";
 import DisclaimerPage from "./pages/DisclaimerPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
