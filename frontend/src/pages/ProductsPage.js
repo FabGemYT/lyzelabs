@@ -95,7 +95,15 @@ const ProductsPage = () => {
   };
 
   const formatPrice = (price) => {
-    return formatPriceSimple(price);
+    const priceData = formatPriceSimple(price);
+    
+    // If it's just a string (USD region), return as is
+    if (typeof priceData === 'string') {
+      return priceData;
+    }
+    
+    // If it's an object (has local currency), return formatted string for simple display
+    return priceData.formatted;
   };
 
   return (
