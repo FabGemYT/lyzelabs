@@ -164,12 +164,17 @@ class NOWPaymentsClient:
     
     def verify_ipn_signature(self, payload: str, signature: str) -> bool:
         """Verify IPN signature"""
-        expected_signature = hmac.new(
-            self.ipn_secret.encode('utf-8'),
-            payload.encode('utf-8'),
-            hashlib.sha512
-        ).hexdigest()
-        return hmac.compare_digest(expected_signature, signature)
+        try:
+            if not payload or not signature or not self.ipn_secret:
+                return False
+            expected_signature = hmac.new(
+                self.ipn_secret.encode('utf-8'),
+                payload.encode('utf-8'),
+                hashlib.sha512
+            ).hexdigest()
+            return hmac.compare_digest(expected_signature, signature)
+        except Exception:
+            return False
 
 
 # Initialize clients
