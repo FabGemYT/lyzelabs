@@ -167,7 +167,7 @@ const HomePage = ({ cartCount }) => {
   const handleEmailSubmit = (e) => {
     e.preventDefault();
     if (email) {
-      alert("Thank you for joining! Check your email for your 10% discount code.");
+      alert("Thank you for joining! Check your email for your 5% discount code.");
       setEmail("");
       setShowPopup(false);
     }
