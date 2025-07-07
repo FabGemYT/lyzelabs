@@ -541,7 +541,12 @@ const ProductPage = () => {
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40 lg:hidden">
         <div className="flex items-center justify-between">
           <div>
-            <div className="text-2xl font-bold text-gray-900">{formatPriceSimple(currentPrice * quantity)}</div>
+            <div className="text-2xl font-bold text-gray-900">
+              {(() => {
+                const priceData = formatPriceSimple(currentPrice * quantity);
+                return typeof priceData === 'string' ? priceData : priceData.formatted;
+              })()}
+            </div>
             <div className="text-sm text-gray-600">{quantity} box{quantity > 1 ? 'es' : ''}</div>
           </div>
           <div className="flex gap-3">
