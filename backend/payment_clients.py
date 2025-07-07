@@ -12,10 +12,16 @@ from paypalcheckoutsdk.orders import OrdersCreateRequest, OrdersCaptureRequest, 
 
 class PayPalClient:
     def __init__(self):
+        client_id = os.getenv("PAYPAL_CLIENT_ID")
+        client_secret = os.getenv("PAYPAL_SECRET")
+        
+        if not client_id or not client_secret:
+            raise ValueError("PayPal credentials not configured")
+            
         # Use sandbox for testing, switch to LiveEnvironment for production
         environment = SandboxEnvironment(
-            client_id=os.getenv("PAYPAL_CLIENT_ID"),
-            client_secret=os.getenv("PAYPAL_SECRET")
+            client_id=client_id,
+            client_secret=client_secret
         )
         self.client = PayPalHttpClient(environment)
     
