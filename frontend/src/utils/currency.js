@@ -1,63 +1,52 @@
 // Currency conversion utility
 
-// Helper function to detect user's actual location more accurately
-const detectUserLocation = () => {
+// Helper function to detect user's local currency for conversion
+const detectLocalCurrency = () => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const locale = navigator.language || navigator.languages[0] || 'en-US';
   
-  console.log('Debug - Timezone:', timezone);
-  console.log('Debug - Locale:', locale);
-  
-  // More precise India detection
+  // India detection
   if (timezone.includes('Asia/Kolkata') || 
       timezone.includes('Asia/Calcutta') || 
       locale.includes('hi') || 
       locale.includes('en-IN') ||
       timezone.includes('Asia/Mumbai') ||
       timezone.includes('Asia/Delhi')) {
-    return { country: 'IN', currency: 'INR', symbol: '₹', rate: 82 };
+    return { currency: 'INR', symbol: '₹', rate: 82, country: 'IN' };
   }
   
-  // More precise Europe detection
+  // Europe detection (but we'll still show USD first)
   if (timezone.includes('Europe/') && 
       (locale.includes('de') || locale.includes('fr') || locale.includes('es') || locale.includes('it'))) {
-    return { country: 'EU', currency: 'EUR', symbol: '€', rate: 0.85 };
+    return { currency: 'EUR', symbol: '€', rate: 0.85, country: 'EU' };
   }
   
   // UK detection
   if (timezone.includes('Europe/London') || locale.includes('en-GB')) {
-    return { country: 'GB', currency: 'GBP', symbol: '£', rate: 0.75 };
+    return { currency: 'GBP', symbol: '£', rate: 0.75, country: 'GB' };
   }
   
   // UAE detection
   if (timezone.includes('Asia/Dubai') || timezone.includes('Asia/UAE')) {
-    return { country: 'AE', currency: 'AED', symbol: 'د.إ', rate: 3.67 };
+    return { currency: 'AED', symbol: 'د.إ', rate: 3.67, country: 'AE' };
   }
   
   // Australia detection
   if (timezone.includes('Australia/') || locale.includes('en-AU')) {
-    return { country: 'AU', currency: 'AUD', symbol: 'A$', rate: 1.45 };
+    return { currency: 'AUD', symbol: 'A$', rate: 1.45, country: 'AU' };
   }
   
   // Canada detection
   if (timezone.includes('America/') && locale.includes('en-CA')) {
-    return { country: 'CA', currency: 'CAD', symbol: 'C$', rate: 1.25 };
+    return { currency: 'CAD', symbol: 'C$', rate: 1.25, country: 'CA' };
   }
   
-  // Default to USD for US and other regions
-  return { country: 'US', currency: 'USD', symbol: '$', rate: 1 };
+  // Default to USD only (no conversion needed)
+  return { currency: 'USD', symbol: '$', rate: 1, country: 'US' };
 };
 
 export const getCurrencyInfo = () => {
-  const locationInfo = detectUserLocation();
-  console.log('Debug - Detected location:', locationInfo);
-  
-  return {
-    currency: locationInfo.currency,
-    symbol: locationInfo.symbol,
-    rate: locationInfo.rate,
-    country: locationInfo.country
-  };
+  return detectLocalCurrency();
 };
 
 // Helper function to round price to nearest 0 or 5
