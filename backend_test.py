@@ -7,7 +7,7 @@ import statistics
 from datetime import datetime
 
 # Get the backend URL from the frontend/.env file
-BACKEND_URL = "https://103ba82c-6fa2-4386-86d8-19373588f786.preview.emergentagent.com/api"
+BACKEND_URL = "https://71ab3fe3-39f4-41a9-a500-ae2886ab0494.preview.emergentagent.com/api"
 
 def measure_response_time(func, *args, **kwargs):
     """Measure the response time of a function"""
