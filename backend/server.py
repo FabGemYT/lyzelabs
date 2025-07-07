@@ -295,13 +295,16 @@ async def cryptomus_webhook(request: Request):
     try:
         body = await request.body()
         webhook_data = json.loads(body.decode('utf-8'))
-        signature = request.headers.get("sign")
+        signature = request.headers.get("sign", "")
         
-        if not cryptomus_client.verify_webhook_signature(webhook_data, signature):
+        if not signature or not cryptomus_client.verify_webhook_signature(webhook_data, signature):
             raise HTTPException(status_code=400, detail="Invalid signature")
         
         order_id = webhook_data.get("order_id")
         status = webhook_data.get("status")
+        
+        if not order_id:
+            raise HTTPException(status_code=400, detail="Missing order_id")
         
         # Update payment status
         if status == "paid":
