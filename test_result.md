@@ -190,16 +190,19 @@ backend:
         comment: "Tested webhook endpoints (/api/payments/paypal/capture/{order_id}, /api/payments/cryptomus/webhook, /api/payments/nowpayments/webhook) but all returned 404 Not Found. The webhook code exists in server.py but is not currently active. The server is running with a simplified version that only includes the basic endpoints."
 
   - task: "Utility Endpoints"
-    implemented: false
-    working: false
+    implemented: true
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 1
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "testing"
         comment: "Tested utility endpoints (/api/crypto/currencies) but it returned 404 Not Found. The utility endpoint code exists in server.py but is not currently active. The server is running with a simplified version that only includes the basic endpoints."
+      - working: true
+        agent: "testing"
+        comment: "Successfully tested the /api/crypto/currencies endpoint. It returns a list of available cryptocurrencies including btc, eth, usdt, ltc, bch, and others. The endpoint responds with a 200 status code and proper JSON data."
 
 frontend:
   - task: "Fix homepage product routing issue"
