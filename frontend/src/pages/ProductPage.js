@@ -65,8 +65,41 @@ const ProductPage = () => {
   }
 
   const handleAddToCart = () => {
+    // Get current cart from localStorage
+    const currentCart = JSON.parse(localStorage.getItem('cart') || '[]');
+    
+    // Create cart item
+    const cartItem = {
+      id: product.id,
+      name: product.name,
+      variant: product.variants && product.variants[selectedVariant] ? product.variants[selectedVariant].dose : 'Standard',
+      price: currentPrice,
+      quantity: quantity,
+      image: product.image
+    };
+    
+    // Check if item already exists in cart
+    const existingItemIndex = currentCart.findIndex(
+      item => item.id === cartItem.id && item.variant === cartItem.variant
+    );
+    
+    if (existingItemIndex > -1) {
+      // Update quantity if item exists
+      currentCart[existingItemIndex].quantity += cartItem.quantity;
+    } else {
+      // Add new item to cart
+      currentCart.push(cartItem);
+    }
+    
+    // Save updated cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(currentCart));
+    
+    // Show cart animation
     setShowCart(true);
-    // Add to cart logic would go here
+    
+    // Hide cart animation after 2 seconds
+    setTimeout(() => setShowCart(false), 2000);
+    
     console.log(`Added ${quantity} x ${product.name} to cart`);
   };
 
