@@ -1098,7 +1098,7 @@ const HomePage = ({ cartCount }) => {
                   Join the Lyze Labs Research Circle
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  Get exclusive access to new compounds and receive 10% off your first order.
+                  Get exclusive access to new compounds and receive 5% off your first order.
                 </p>
                 <form onSubmit={handleEmailSubmit} className="space-y-4">
                   <input
