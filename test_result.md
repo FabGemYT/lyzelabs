@@ -163,16 +163,19 @@ backend:
         comment: "Tested order management endpoints (/api/orders, /api/orders/{order_id}, /api/payments/{payment_id}/status) but all returned 404 Not Found. The order management code exists in server.py but is not currently active. The server is running with a simplified version that only includes the basic endpoints."
 
   - task: "Admin Dashboard APIs"
-    implemented: false
-    working: false
+    implemented: true
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 1
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "testing"
         comment: "Tested admin dashboard endpoints (/api/admin/stats, /api/admin/orders, /api/admin/orders/{order_id}/status) but all returned 404 Not Found. The admin dashboard code exists in server.py but is not currently active. The server is running with a simplified version that only includes the basic endpoints."
+      - working: true
+        agent: "testing"
+        comment: "Successfully tested the admin dashboard endpoints. The /api/admin/stats endpoint returns correct data with order stats, payment stats, revenue, and recent orders. The /api/admin/orders endpoint also works correctly, showing the total number of orders and order details. Both endpoints respond with 200 status codes and proper JSON data."
 
   - task: "Webhook Endpoints"
     implemented: false
