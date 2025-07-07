@@ -675,11 +675,26 @@ const HomePage = () => {
 
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <span className="text-2xl font-bold text-gray-900">{(() => {
-                        const formatted = formatPriceSimple(product.price);
-                        console.log(`Product ${product.name} - Original price: $${product.price}, Formatted: ${formatted}`);
-                        return formatted;
-                      })()}</span>
+                      <div className="flex flex-col">
+                        {(() => {
+                          const priceData = formatPriceSimple(product.price);
+                          
+                          // If it's just a string (USD region), show normally
+                          if (typeof priceData === 'string') {
+                            return <span className="text-2xl font-bold text-gray-900">{priceData}</span>;
+                          }
+                          
+                          // If it's an object (has local currency), show with nice styling
+                          return (
+                            <div className="flex items-center gap-2">
+                              <span className="text-2xl font-bold text-gray-900">{priceData.usd}</span>
+                              <span className="text-sm text-gray-500 font-normal">
+                                (~{priceData.local})
+                              </span>
+                            </div>
+                          );
+                        })()}
+                      </div>
                       <span className="text-sm text-gray-500 ml-2">per box (10 vials)</span>
                     </div>
                     <div className="text-right">
