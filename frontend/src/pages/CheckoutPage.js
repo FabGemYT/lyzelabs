@@ -24,6 +24,7 @@ const CheckoutPage = () => {
   const [paymentData, setPaymentData] = useState(null);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const [step, setStep] = useState(1);
 
   // Shipping form state
   const [shippingForm, setShippingForm] = useState({
