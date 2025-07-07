@@ -1,5 +1,4 @@
 // Currency conversion utility
-// Currency conversion utility
 
 // Helper function to detect user's actual location more accurately
 const detectUserLocation = () => {
