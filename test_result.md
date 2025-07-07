@@ -330,6 +330,9 @@ frontend:
       - working: false
         agent: "testing"
         comment: "Identified multiple issues with the Add to Cart functionality: 1) Homepage 'Add to Cart' buttons don't update localStorage or cart counter, 2) Product page 'Add to Cart' works correctly and updates localStorage but doesn't update the cart counter in header, 3) Cart page correctly displays items from localStorage. The cart counter in the header is not updating properly despite items being added to localStorage."
+      - working: false
+        agent: "testing"
+        comment: "Root cause identified: The HomePage and ProductPage components are not passing the cartCount prop to the Header component. Only the CartPage component is correctly calculating and passing the cartCount prop. This explains why the cart counter only updates when viewing the cart page. The solution would be to either implement a global state management solution (like React Context) or make each page component read from localStorage and pass the correct cartCount to Header."
 metadata:
   created_by: "main_agent"
   version: "2.0"
