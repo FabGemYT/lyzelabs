@@ -127,6 +127,9 @@ class NOWPaymentsClient:
         self.base_url = "https://api.nowpayments.io/v1"
         # Use sandbox for testing
         # self.base_url = "https://api-sandbox.nowpayments.io/v1"
+        
+        if not self.api_key:
+            print("Warning: NOWPayments API key not configured")
     
     async def get_currencies(self):
         """Get available currencies"""
