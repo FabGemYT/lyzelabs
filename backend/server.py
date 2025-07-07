@@ -71,6 +71,7 @@ async def create_order(order_request: CreateOrderRequest):
         
         # Create order object
         order = Order(
+            _id=order_id,
             order_id=order_id,
             customer_email=order_request.customer_email,
             customer_phone=order_request.customer_phone,
