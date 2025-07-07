@@ -84,34 +84,97 @@ const CheckoutPage = () => {
     return true;
   };
 
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <Header cartCount={cartItems.length} />
+  const createOrder = async () => {
+    if (!validateForm()) return;
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Progress Steps */}
-        <div className="mb-8">
-          <div className="flex items-center justify-center space-x-4">
-            {[1, 2, 3, 4].map((stepNum) => (
-              <div key={stepNum} className="flex items-center">
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
-                  step >= stepNum ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'
-                }`}>
-                  {step > stepNum ? <CheckCircle className="h-5 w-5" /> : stepNum}
-                </div>
-                {stepNum < 4 && (
-                  <div className={`w-16 h-1 mx-2 ${step > stepNum ? 'bg-blue-600' : 'bg-gray-300'}`} />
-                )}
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-center space-x-8 mt-4 text-sm">
-            <span className={step >= 1 ? 'text-blue-600 font-medium' : 'text-gray-500'}>Cart</span>
-            <span className={step >= 2 ? 'text-blue-600 font-medium' : 'text-gray-500'}>Shipping</span>
-            <span className={step >= 3 ? 'text-blue-600 font-medium' : 'text-gray-500'}>Payment</span>
-            <span className={step >= 4 ? 'text-blue-600 font-medium' : 'text-gray-500'}>Review</span>
-          </div>
-        </div>
+    setLoading(true);
+    setError("");
+
+    try {
+      const { total } = calculateTotals();
+      
+      const orderRequest = {
+        customer_email: shippingForm.email,
+        customer_phone: shippingForm.phone,
+        items: cartItems.map(item => ({
+          product_id: item.id,
+          name: item.name,
+          variant: item.variant || "Standard",
+          quantity: item.quantity,
+          unit_price: item.price,
+          total_price: item.price * item.quantity
+        })),
+        shipping_address: shippingForm,
+        payment_method: selectedPaymentMethod,
+        pay_currency: selectedCrypto
+      };
+
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/orders`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(orderRequest),
+      });
+
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.detail || 'Failed to create order');
+      }
+
+      setOrderData(data);
+      setPaymentData(data);
+
+      // Handle different payment methods
+      if (selectedPaymentMethod === 'paypal') {
+        // PayPal will handle the redirect via PayPal buttons
+      } else if (selectedPaymentMethod === 'cryptomus' || selectedPaymentMethod === 'nowpayments') {
+        // Show crypto payment details
+        if (data.payment_url) {
+          // Open payment page in new tab
+          window.open(data.payment_url, '_blank');
+        }
+        // Start polling for payment status
+        startPaymentStatusPolling(data.payment_id);
+      }
+
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const startPaymentStatusPolling = (paymentId) => {
+    const pollInterval = setInterval(async () => {
+      try {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/payments/${paymentId}/status`);
+        const data = await response.json();
+        
+        if (data.payment.status === 'completed') {
+          clearInterval(pollInterval);
+          setSuccess(true);
+          localStorage.removeItem('cart');
+        } else if (data.payment.status === 'failed') {
+          clearInterval(pollInterval);
+          setError('Payment failed. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error polling payment status:', error);
+      }
+    }, 10000); // Poll every 10 seconds
+
+    // Clear interval after 30 minutes
+    setTimeout(() => clearInterval(pollInterval), 30 * 60 * 1000);
+  };
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+    alert('Copied to clipboard!');
+  };
+
+  const { subtotal, shipping, total } = calculateTotals();
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
