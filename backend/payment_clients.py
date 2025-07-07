@@ -124,12 +124,19 @@ class NOWPaymentsClient:
     
     async def get_currencies(self):
         """Get available currencies"""
+        if not self.api_key:
+            return {"currencies": ["btc", "eth", "usdt", "ltc", "bch", "xrp", "ada", "dot"]}
+        
         async with httpx.AsyncClient() as client:
             response = await client.get(
                 f"{self.base_url}/currencies",
                 headers={"x-api-key": self.api_key}
             )
-            return response.json()
+            if response.status_code == 200:
+                return response.json()
+            else:
+                # Fallback to common crypto currencies
+                return {"currencies": ["btc", "eth", "usdt", "ltc", "bch", "xrp", "ada", "dot"]}
     
     async def create_payment(self, order_data: Dict[str, Any]):
         """Create NOWPayments payment"""
