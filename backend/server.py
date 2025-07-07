@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
+import sys
 import logging
 from pathlib import Path
 from pydantic import BaseModel, Field
@@ -11,6 +12,30 @@ from typing import List, Dict, Any, Optional
 import uuid
 from datetime import datetime
 import json
+
+# Add current directory to Python path for imports
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+# Import our payment and notification modules
+try:
+    from payment_clients import paypal_client, cryptomus_client, nowpayments_client
+    from models import (
+        StatusCheck, StatusCheckCreate, Order, Payment, CreateOrderRequest, PaymentResponse, 
+        PaymentMethod, PaymentStatus, OrderStatus, OrderItem, ShippingAddress
+    )
+    from notification_service import notification_service
+    PAYMENT_MODULES_LOADED = True
+except ImportError as e:
+    logging.error(f"Failed to import payment modules: {e}")
+    PAYMENT_MODULES_LOADED = False
+    # Fallback models for basic functionality
+    class StatusCheck(BaseModel):
+        id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+        client_name: str
+        timestamp: datetime = Field(default_factory=datetime.utcnow)
+
+    class StatusCheckCreate(BaseModel):
+        client_name: str
 
 # Define Models
 class StatusCheck(BaseModel):
