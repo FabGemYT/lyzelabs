@@ -194,12 +194,18 @@ const ProductPage = () => {
                         {product.variants && product.variants.length > 0 ? (
                           product.variants.map((variant, index) => (
                             <option key={index} value={index}>
-                              {variant.dose} – {formatPriceSimple(variant.price)}
+                              {variant.dose} – {(() => {
+                                const priceData = formatPriceSimple(variant.price);
+                                return typeof priceData === 'string' ? priceData : priceData.formatted;
+                              })()}
                             </option>
                           ))
                         ) : (
                           <option value={0}>
-                            Standard – {formatPriceSimple(product.price)}
+                            Standard – {(() => {
+                              const priceData = formatPriceSimple(product.price);
+                              return typeof priceData === 'string' ? priceData : priceData.formatted;
+                            })()}
                           </option>
                         )}
                       </select>
