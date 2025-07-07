@@ -39,32 +39,80 @@ export const getCurrencyInfo = () => {
   return { currency, symbol, rate };
 };
 
+// Helper function to round price to nearest 0 or 5
+const roundToNearestFive = (price) => {
+  const rounded = Math.round(price);
+  const lastDigit = rounded % 10;
+  
+  if (lastDigit === 0 || lastDigit === 5) {
+    return rounded;
+  } else if (lastDigit < 3) {
+    return rounded - lastDigit; // Round down to nearest 0
+  } else if (lastDigit < 8) {
+    return rounded - lastDigit + 5; // Round to nearest 5
+  } else {
+    return rounded - lastDigit + 10; // Round up to nearest 10 (0)
+  }
+};
+
 export const formatPrice = (usdPrice, options = {}) => {
   const { currency, symbol, rate } = getCurrencyInfo();
-  const { showOriginal = true } = options;
+  const { showOriginal = true, showBoth = true } = options;
   
-  const convertedPrice = Math.round(usdPrice * rate);
-  const formattedPrice = `${symbol}${convertedPrice}`;
+  // First, round USD price to nearest 0 or 5
+  const roundedUsdPrice = roundToNearestFive(usdPrice);
   
-  if (showOriginal && currency !== 'USD') {
+  // If user is in USD region, just show the rounded USD price
+  if (currency === 'USD') {
     return {
-      converted: formattedPrice,
-      original: `$${usdPrice}`,
+      converted: `$${roundedUsdPrice}`,
+      original: `$${roundedUsdPrice}`,
+      currency: 'USD',
+      rate: 1,
+      usdPrice: roundedUsdPrice
+    };
+  }
+  
+  // Convert the rounded USD price to local currency
+  const convertedPrice = Math.round(roundedUsdPrice * rate);
+  
+  if (showBoth) {
+    return {
+      converted: `${symbol}${convertedPrice}`,
+      original: `$${roundedUsdPrice}`,
       currency,
-      rate: convertedPrice / usdPrice
+      rate,
+      usdPrice: roundedUsdPrice
     };
   }
   
   return {
-    converted: formattedPrice,
-    original: formattedPrice,
+    converted: `${symbol}${convertedPrice}`,
+    original: `${symbol}${convertedPrice}`,
     currency,
-    rate: 1
+    rate,
+    usdPrice: roundedUsdPrice
   };
 };
 
 export const formatPriceSimple = (usdPrice) => {
-  const { symbol, rate } = getCurrencyInfo();
-  const convertedPrice = Math.round(usdPrice * rate);
-  return `${symbol}${convertedPrice}`;
+  const { currency, symbol, rate } = getCurrencyInfo();
+  
+  // First, round USD price to nearest 0 or 5
+  const roundedUsdPrice = roundToNearestFive(usdPrice);
+  
+  // If user is in USD region, just show the rounded USD price
+  if (currency === 'USD') {
+    return `$${roundedUsdPrice}`;
+  }
+  
+  // Convert the rounded USD price to local currency
+  const convertedPrice = Math.round(roundedUsdPrice * rate);
+  
+  // For India and other regions, show both USD and local currency
+  if (currency === 'INR' || currency === 'EUR' || currency === 'GBP' || currency === 'AED') {
+    return `$${roundedUsdPrice} (${symbol}${convertedPrice})`;
+  }
+  
+  return `$${roundedUsdPrice}`;
 };
