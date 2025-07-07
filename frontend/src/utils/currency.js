@@ -118,23 +118,22 @@ export const formatPrice = (usdPrice, options = {}) => {
 };
 
 export const formatPriceSimple = (usdPrice) => {
-  const { currency, symbol, rate } = getCurrencyInfo();
+  const { currency, symbol, rate, country } = getCurrencyInfo();
   
   // First, round USD price to nearest 0 or 5
   const roundedUsdPrice = roundToNearestFive(usdPrice);
   
-  // If user is in USD region, just show the rounded USD price
+  // ALWAYS show USD first as the base currency
+  const usdDisplay = `$${roundedUsdPrice}`;
+  
+  // If user is in USD region, just show USD
   if (currency === 'USD') {
-    return `$${roundedUsdPrice}`;
+    return usdDisplay;
   }
   
   // Convert the rounded USD price to local currency
   const convertedPrice = Math.round(roundedUsdPrice * rate);
   
-  // For India and other regions, show both USD and local currency
-  if (currency === 'INR' || currency === 'EUR' || currency === 'GBP' || currency === 'AED') {
-    return `$${roundedUsdPrice} (${symbol}${convertedPrice})`;
-  }
-  
-  return `$${roundedUsdPrice}`;
+  // Show USD with local currency in parentheses
+  return `${usdDisplay} (${symbol}${convertedPrice})`;
 };
