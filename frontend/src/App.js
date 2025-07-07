@@ -14,6 +14,7 @@ import DisclaimerPage from "./pages/DisclaimerPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import OrderConfirmationPage from "./pages/OrderConfirmationPage";
+import AdminDashboard from "./pages/AdminDashboard";
 import "./App.css";
 
 function App() {
