@@ -130,9 +130,12 @@ const CartPage = () => {
                         </button>
                       </div>
                       <div className="text-right">
-                        <p className="text-sm font-medium text-gray-900">
-                          {formatPriceSimple(item.price * item.quantity)}
-                        </p>
+                        <div className="text-sm font-medium text-gray-900">
+                          {(() => {
+                            const priceData = formatPriceSimple(item.price * item.quantity);
+                            return typeof priceData === 'string' ? priceData : priceData.formatted;
+                          })()}
+                        </div>
                         <button
                           onClick={() => removeItem(item.id, item.variant)}
                           className="text-red-600 hover:text-red-700 mt-2 transition-colors"
