@@ -183,7 +183,12 @@ const CartPage = () => {
                   <div className="border-t border-gray-200 pt-3">
                     <div className="flex justify-between">
                       <span className="text-lg font-semibold text-gray-900">Total</span>
-                      <span className="text-lg font-semibold text-gray-900">{formatPriceSimple(total)}</span>
+                      <span className="text-lg font-semibold text-gray-900">
+                        {(() => {
+                          const priceData = formatPriceSimple(total);
+                          return typeof priceData === 'string' ? priceData : priceData.formatted;
+                        })()}
+                      </span>
                     </div>
                   </div>
                 </div>
