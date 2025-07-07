@@ -356,6 +356,7 @@ test_plan:
     - "Fix Add to Cart functionality"
     - "Fix cart icon functionality"
     - "Product page functionality"
+    - "Fix checkout functionality"
   stuck_tasks: 
     - "Payment Gateway Integrations"
     - "Order Management System"
