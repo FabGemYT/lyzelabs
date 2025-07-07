@@ -161,12 +161,20 @@ const CartPage = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Subtotal</span>
-                    <span className="font-medium text-gray-900">{formatPriceSimple(subtotal)}</span>
+                    <span className="font-medium text-gray-900">
+                      {(() => {
+                        const priceData = formatPriceSimple(subtotal);
+                        return typeof priceData === 'string' ? priceData : priceData.formatted;
+                      })()}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Shipping</span>
                     <span className="font-medium text-gray-900">
-                      {shipping === 0 ? "Free" : formatPriceSimple(shipping)}
+                      {shipping === 0 ? "Free" : (() => {
+                        const priceData = formatPriceSimple(shipping);
+                        return typeof priceData === 'string' ? priceData : priceData.formatted;
+                      })()}
                     </span>
                   </div>
                   {shipping === 0 && (
