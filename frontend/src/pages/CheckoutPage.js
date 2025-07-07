@@ -58,24 +58,31 @@ const CheckoutPage = () => {
     }
   };
 
-  const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  const shipping = subtotal > 10000 ? 0 : 500; // Free shipping over ₹10,000
-  const total = subtotal + shipping;
-
-  const handleNextStep = () => {
-    if (step < 4) {
-      setStep(step + 1);
-    } else {
-      // Complete order
-      navigate("/order-confirmation");
-    }
+  const calculateTotals = () => {
+    const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const shipping = subtotal >= 100 ? 0 : 15;
+    const total = subtotal + shipping;
+    return { subtotal, shipping, total };
   };
 
-  const cryptoOptions = [
-    { id: "bitcoin", name: "Bitcoin (BTC)", icon: "₿", fee: "Network fee ~₹50" },
-    { id: "ethereum", name: "Ethereum (ETH)", icon: "Ξ", fee: "Gas fee ~₹200" },
-    { id: "usdt", name: "Tether (USDT)", icon: "₮", fee: "Network fee ~₹25" }
-  ];
+  const validateForm = () => {
+    const required = ['name', 'email', 'phone', 'address_line_1', 'city', 'state', 'postal_code', 'country'];
+    for (const field of required) {
+      if (!shippingForm[field]) {
+        setError(`Please fill in ${field.replace('_', ' ')}`);
+        return false;
+      }
+    }
+    if (!selectedPaymentMethod) {
+      setError("Please select a payment method");
+      return false;
+    }
+    if ((selectedPaymentMethod === 'cryptomus' || selectedPaymentMethod === 'nowpayments') && !selectedCrypto) {
+      setError("Please select a cryptocurrency");
+      return false;
+    }
+    return true;
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
