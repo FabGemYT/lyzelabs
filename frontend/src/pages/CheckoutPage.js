@@ -450,9 +450,6 @@ const CheckoutPage = () => {
                           <p className="text-sm text-gray-600">Bitcoin, Ethereum, USDT - Secure & Anonymous</p>
                         </div>
                       </div>
-                      <div className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">
-                        5% Discount
-                      </div>
                     </div>
                   </div>
                   
