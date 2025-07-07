@@ -35,7 +35,7 @@ import PeptideVial3D from "../components/PeptideVial3D";
 import { getFeaturedProducts } from "../data/products";
 import { formatPriceSimple } from "../utils/currency";
 
-const HomePage = () => {
+const HomePage = ({ cartCount }) => {
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
   const [email, setEmail] = useState("");
