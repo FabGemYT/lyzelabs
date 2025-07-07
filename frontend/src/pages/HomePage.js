@@ -729,6 +729,9 @@ const HomePage = () => {
                         
                         localStorage.setItem('cart', JSON.stringify(currentCart));
                         
+                        // Trigger cart update event
+                        window.dispatchEvent(new Event('cartUpdated'));
+                        
                         // Show success feedback
                         alert(`Added ${product.name} to cart!`);
                       }}
