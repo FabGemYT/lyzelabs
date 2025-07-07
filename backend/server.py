@@ -92,6 +92,7 @@ async def create_order(order_request: CreateOrderRequest):
         # Create payment
         payment_id = f"PAY{datetime.now().strftime('%Y%m%d')}{str(uuid.uuid4())[:8].upper()}"
         payment = Payment(
+            _id=payment_id,
             payment_id=payment_id,
             order_id=order_id,
             payment_method=order_request.payment_method,
