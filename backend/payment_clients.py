@@ -106,9 +106,12 @@ class CryptomusClient:
     
     def verify_webhook_signature(self, data: Dict[str, Any], signature: str) -> bool:
         """Verify Cryptomus webhook signature"""
-        encoded_data = base64.b64encode(json.dumps(data).encode()).decode()
-        expected_signature = hashlib.md5(f"{encoded_data}{self.api_key}".encode()).hexdigest()
-        return expected_signature == signature
+        try:
+            encoded_data = base64.b64encode(json.dumps(data, separators=(',', ':')).encode()).decode()
+            expected_signature = hashlib.md5(f"{encoded_data}{self.api_key}".encode()).hexdigest()
+            return expected_signature == signature
+        except Exception:
+            return False
 
 
 class NOWPaymentsClient:
