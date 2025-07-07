@@ -77,6 +77,251 @@ async def get_status_checks():
     status_checks = await db.status_checks.find().to_list(1000)
     return [StatusCheck(**status_check) for status_check in status_checks]
 
+
+# ============= PAYMENT AND ORDER ROUTES =============
+
+if PAYMENT_MODULES_LOADED:
+    @api_router.post("/orders", response_model=PaymentResponse)
+    async def create_order(order_request: CreateOrderRequest):
+        """Create a new order and initiate payment"""
+        try:
+            # Generate order ID
+            order_id = f"LZ{datetime.now().strftime('%Y%m%d')}{str(uuid.uuid4())[:8].upper()}"
+            
+            # Calculate totals
+            subtotal = sum(item.total_price for item in order_request.items)
+            shipping_cost = 0.0 if subtotal >= 100 else 15.0  # Free shipping over $100
+            total_amount = subtotal + shipping_cost
+            
+            # Create order object
+            order = Order(
+                order_id=order_id,
+                customer_email=order_request.customer_email,
+                customer_phone=order_request.customer_phone,
+                items=order_request.items,
+                subtotal=subtotal,
+                shipping_cost=shipping_cost,
+                total_amount=total_amount,
+                shipping_address=order_request.shipping_address,
+                payment_method=order_request.payment_method,
+                notes=order_request.notes
+            )
+            
+            # Save order to database
+            order_dict = order.dict(by_alias=True)
+            order_dict["_id"] = order_id
+            await db.orders.insert_one(order_dict)
+            
+            # Create payment
+            payment_id = f"PAY{datetime.now().strftime('%Y%m%d')}{str(uuid.uuid4())[:8].upper()}"
+            payment = Payment(
+                payment_id=payment_id,
+                order_id=order_id,
+                payment_method=order_request.payment_method,
+                amount=total_amount,
+                pay_currency=order_request.pay_currency
+            )
+            
+            # Initialize payment with chosen gateway
+            payment_url = None
+            if order_request.payment_method == PaymentMethod.PAYPAL:
+                paypal_response = await paypal_client.create_order({
+                    "order_id": order_id,
+                    "amount": total_amount,
+                    "currency": "USD",
+                    "items": [
+                        {
+                            "name": item.name,
+                            "quantity": str(item.quantity),
+                            "unit_amount": {
+                                "currency_code": "USD",
+                                "value": f"{item.unit_price:.2f}"
+                            }
+                        } for item in order_request.items
+                    ]
+                })
+                
+                payment.gateway_payment_id = paypal_response.id
+                payment.gateway_response = paypal_response.__dict__
+                payment_url = next((link.href for link in paypal_response.links if link.rel == "approve"), None)
+                
+            elif order_request.payment_method == PaymentMethod.CRYPTOMUS:
+                cryptomus_response = await cryptomus_client.create_invoice({
+                    "order_id": order_id,
+                    "amount": total_amount,
+                    "currency": "USD"
+                })
+                
+                if cryptomus_response.get("state") == 0:  # Success
+                    payment.gateway_payment_id = cryptomus_response["result"]["uuid"]
+                    payment.gateway_response = cryptomus_response
+                    payment_url = cryptomus_response["result"]["url"]
+                else:
+                    raise HTTPException(status_code=400, detail="Failed to create Cryptomus payment")
+                    
+            elif order_request.payment_method == PaymentMethod.NOWPAYMENTS:
+                if not order_request.pay_currency:
+                    raise HTTPException(status_code=400, detail="pay_currency required for crypto payments")
+                    
+                nowpayments_response = await nowpayments_client.create_payment({
+                    "order_id": order_id,
+                    "amount": total_amount,
+                    "pay_currency": order_request.pay_currency.lower(),
+                    "price_currency": "usd",
+                    "customer_email": order_request.customer_email,
+                    "description": f"Lyze Labs Order {order_id}"
+                })
+                
+                payment.gateway_payment_id = nowpayments_response.get("payment_id")
+                payment.gateway_response = nowpayments_response
+                payment.pay_amount = nowpayments_response.get("pay_amount")
+                payment.pay_currency = nowpayments_response.get("pay_currency")
+                payment.pay_address = nowpayments_response.get("pay_address")
+                payment_url = nowpayments_response.get("invoice_url")
+            
+            # Save payment to database
+            payment_dict = payment.dict(by_alias=True)
+            payment_dict["_id"] = payment_id
+            await db.payments.insert_one(payment_dict)
+            
+            # Send new order notification
+            await notification_service.notify_new_order(order_dict)
+            
+            return PaymentResponse(
+                success=True,
+                payment_id=payment_id,
+                order_id=order_id,
+                gateway_payment_id=payment.gateway_payment_id,
+                payment_url=payment_url,
+                amount=total_amount,
+                currency="USD",
+                status=payment.status.value,
+                pay_amount=payment.pay_amount,
+                pay_currency=payment.pay_currency,
+                pay_address=payment.pay_address
+            )
+            
+        except Exception as e:
+            logger.error(f"Error creating order: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+
+
+    @api_router.get("/orders/{order_id}")
+    async def get_order(order_id: str):
+        """Get order details"""
+        try:
+            order = await db.orders.find_one({"_id": order_id})
+            if not order:
+                raise HTTPException(status_code=404, detail="Order not found")
+            
+            payment = await db.payments.find_one({"order_id": order_id})
+            
+            return {
+                "order": order,
+                "payment": payment
+            }
+        except HTTPException:
+            raise
+        except Exception as e:
+            logger.error(f"Error getting order: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+
+
+    @api_router.get("/admin/orders")
+    async def get_all_orders(
+        limit: int = 50, 
+        skip: int = 0, 
+        status: Optional[str] = None,
+        payment_method: Optional[str] = None
+    ):
+        """Get all orders for admin dashboard"""
+        try:
+            filter_query = {}
+            if status:
+                filter_query["order_status"] = status
+            if payment_method:
+                filter_query["payment_method"] = payment_method
+            
+            orders = await db.orders.find(filter_query).sort("created_at", -1).skip(skip).limit(limit).to_list(limit)
+            
+            # Get payment info for each order
+            for order in orders:
+                payment = await db.payments.find_one({"order_id": order["_id"]})
+                order["payment_info"] = payment
+            
+            total_orders = await db.orders.count_documents(filter_query)
+            
+            return {
+                "orders": orders,
+                "total": total_orders,
+                "limit": limit,
+                "skip": skip
+            }
+            
+        except Exception as e:
+            logger.error(f"Error getting orders: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+
+
+    @api_router.get("/admin/stats")
+    async def get_admin_stats():
+        """Get admin dashboard statistics"""
+        try:
+            # Order statistics
+            total_orders = await db.orders.count_documents({})
+            pending_orders = await db.orders.count_documents({"order_status": OrderStatus.PENDING})
+            processing_orders = await db.orders.count_documents({"order_status": OrderStatus.PROCESSING})
+            completed_orders = await db.orders.count_documents({"order_status": OrderStatus.DELIVERED})
+            
+            # Payment statistics
+            total_payments = await db.payments.count_documents({})
+            completed_payments = await db.payments.count_documents({"status": PaymentStatus.COMPLETED})
+            failed_payments = await db.payments.count_documents({"status": PaymentStatus.FAILED})
+            
+            # Revenue calculation
+            completed_orders_cursor = db.orders.find({"payment_status": PaymentStatus.COMPLETED})
+            total_revenue = 0
+            async for order in completed_orders_cursor:
+                total_revenue += order.get("total_amount", 0)
+            
+            # Recent orders
+            recent_orders = await db.orders.find({}).sort("created_at", -1).limit(5).to_list(5)
+            
+            return {
+                "order_stats": {
+                    "total": total_orders,
+                    "pending": pending_orders,
+                    "processing": processing_orders,
+                    "completed": completed_orders
+                },
+                "payment_stats": {
+                    "total": total_payments,
+                    "completed": completed_payments,
+                    "failed": failed_payments,
+                    "success_rate": (completed_payments / total_payments * 100) if total_payments > 0 else 0
+                },
+                "revenue": {
+                    "total": total_revenue,
+                    "currency": "USD"
+                },
+                "recent_orders": recent_orders
+            }
+            
+        except Exception as e:
+            logger.error(f"Error getting admin stats: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+
+
+    @api_router.get("/crypto/currencies")
+    async def get_crypto_currencies():
+        """Get available crypto currencies"""
+        try:
+            currencies = await nowpayments_client.get_currencies()
+            return currencies
+        except Exception as e:
+            logger.error(f"Error getting crypto currencies: {str(e)}")
+            raise HTTPException(status_code=500, detail=str(e))
+
 # Include the router in the main app
 app.include_router(api_router)
 
