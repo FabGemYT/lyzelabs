@@ -338,9 +338,9 @@ metadata:
 
 test_plan:
   current_focus: 
-    - "Payment Gateway Integrations"
-    - "Order Management System"
-    - "Webhook Endpoints"
+    - "Fix Add to Cart functionality"
+    - "Fix cart icon functionality"
+    - "Product page functionality"
   stuck_tasks: 
     - "Payment Gateway Integrations"
     - "Order Management System"
