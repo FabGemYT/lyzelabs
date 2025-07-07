@@ -184,16 +184,19 @@ backend:
         comment: "Successfully tested the admin dashboard endpoints. The /api/admin/stats endpoint returns correct data with order stats, payment stats, revenue, and recent orders. The /api/admin/orders endpoint also works correctly, showing the total number of orders and order details. Both endpoints respond with 200 status codes and proper JSON data."
 
   - task: "Webhook Endpoints"
-    implemented: false
+    implemented: true
     working: false
     file: "/app/backend/server.py"
-    stuck_count: 1
+    stuck_count: 2
     priority: "high"
     needs_retesting: true
     status_history:
       - working: false
         agent: "testing"
         comment: "Tested webhook endpoints (/api/payments/paypal/capture/{order_id}, /api/payments/cryptomus/webhook, /api/payments/nowpayments/webhook) but all returned 404 Not Found. The webhook code exists in server.py but is not currently active. The server is running with a simplified version that only includes the basic endpoints."
+      - working: false
+        agent: "testing"
+        comment: "Attempted to test webhook endpoints again. The endpoints are now active but cannot be fully tested without valid order IDs and payment IDs, which we cannot create due to issues with the payment gateway integrations. The webhook endpoints are implemented but their functionality cannot be verified at this time."
 
   - task: "Utility Endpoints"
     implemented: true
