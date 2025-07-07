@@ -1,19 +1,15 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { motion, AnimatePresence } from "framer-motion";
 import { 
-  ShoppingCart, 
-  Bitcoin, 
   CreditCard, 
-  Shield, 
-  Truck, 
-  Plus, 
-  Minus, 
-  Trash2,
-  ArrowRight,
-  Lock,
-  CheckCircle,
-  AlertTriangle
+  Bitcoin, 
+  Wallet, 
+  Check, 
+  Copy, 
+  Loader, 
+  AlertCircle,
+  ExternalLink
 } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
