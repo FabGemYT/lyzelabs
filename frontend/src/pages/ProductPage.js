@@ -94,6 +94,9 @@ const ProductPage = () => {
     // Save updated cart to localStorage
     localStorage.setItem('cart', JSON.stringify(currentCart));
     
+    // Trigger cart update event
+    window.dispatchEvent(new Event('cartUpdated'));
+    
     // Show cart animation
     setShowCart(true);
     
