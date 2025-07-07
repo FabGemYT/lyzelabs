@@ -25,30 +25,37 @@ const CheckoutPage = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const [paymentMethod, setPaymentMethod] = useState("crypto");
-  const [shippingInfo, setShippingInfo] = useState({
+  // Shipping form state
+  const [shippingForm, setShippingForm] = useState({
     name: "",
-    institution: "",
     email: "",
-    address: "",
+    phone: "",
+    address_line_1: "",
+    address_line_2: "",
     city: "",
     state: "",
-    pincode: "",
-    country: "India"
+    postal_code: "",
+    country: ""
   });
-  const [cryptoWallet, setCryptoWallet] = useState("bitcoin");
-  const [step, setStep] = useState(1); // 1: Cart, 2: Shipping, 3: Payment, 4: Review
 
-  const updateQuantity = (id, change) => {
-    setCartItems(cartItems.map(item => 
-      item.id === id 
-        ? { ...item, quantity: Math.max(1, item.quantity + change) }
-        : item
-    ));
+  useEffect(() => {
+    loadCartItems();
+    loadCryptoCurrencies();
+  }, []);
+
+  const loadCartItems = () => {
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    setCartItems(cart);
   };
 
-  const removeItem = (id) => {
-    setCartItems(cartItems.filter(item => item.id !== id));
+  const loadCryptoCurrencies = async () => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/crypto/currencies`);
+      const data = await response.json();
+      setCryptoCurrencies(data.currencies || []);
+    } catch (error) {
+      console.error('Error loading crypto currencies:', error);
+    }
   };
 
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
