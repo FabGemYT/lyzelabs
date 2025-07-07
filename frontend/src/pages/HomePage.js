@@ -705,6 +705,33 @@ const HomePage = () => {
 
                   <div className="flex gap-2 mb-4">
                     <motion.button
+                      onClick={() => {
+                        // Add to cart functionality
+                        const currentCart = JSON.parse(localStorage.getItem('cart') || '[]');
+                        const cartItem = {
+                          id: product.id,
+                          name: product.name,
+                          variant: 'Standard',
+                          price: product.price,
+                          quantity: 1,
+                          image: product.image
+                        };
+                        
+                        const existingItemIndex = currentCart.findIndex(
+                          item => item.id === cartItem.id && item.variant === cartItem.variant
+                        );
+                        
+                        if (existingItemIndex > -1) {
+                          currentCart[existingItemIndex].quantity += 1;
+                        } else {
+                          currentCart.push(cartItem);
+                        }
+                        
+                        localStorage.setItem('cart', JSON.stringify(currentCart));
+                        
+                        // Show success feedback
+                        alert(`Added ${product.name} to cart!`);
+                      }}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white px-4 py-3 rounded-lg font-semibold text-sm transition-all shadow-lg border border-blue-500"
