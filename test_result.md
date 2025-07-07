@@ -154,16 +154,19 @@ backend:
         comment: "Attempted to test payment gateway integrations again. The endpoints are now active but there are issues with the implementation. When creating an order with PayPal, the server returns a 500 error with the message 'unsupported operand type(s) for +: 'NoneType' and 'str''. This suggests there's an issue with string concatenation in the PayPal client where a None value is being used. Similarly, NOWPayments integration has an issue with 'Header value must be str or bytes, not <class 'NoneType'>'. The payment gateway modules (payment_clients.py, models.py, notification_service.py) are now being imported but there are implementation issues that need to be fixed."
 
   - task: "Order Management System"
-    implemented: false
+    implemented: true
     working: false
     file: "/app/backend/server.py"
-    stuck_count: 1
+    stuck_count: 2
     priority: "high"
     needs_retesting: true
     status_history:
       - working: false
         agent: "testing"
         comment: "Tested order management endpoints (/api/orders, /api/orders/{order_id}, /api/payments/{payment_id}/status) but all returned 404 Not Found. The order management code exists in server.py but is not currently active. The server is running with a simplified version that only includes the basic endpoints."
+      - working: false
+        agent: "testing"
+        comment: "Attempted to test order management endpoints again. The endpoints are now active but there are issues with the implementation. The POST /api/orders endpoint fails with a 500 error due to issues with the payment gateway integrations. The GET /api/orders/{order_id} endpoint cannot be tested without a valid order ID, which we cannot create due to the payment gateway issues. The order management system is implemented but not working correctly due to dependencies on the payment gateway integrations."
 
   - task: "Admin Dashboard APIs"
     implemented: true
