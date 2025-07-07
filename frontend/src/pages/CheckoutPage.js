@@ -612,17 +612,11 @@ const CheckoutPage = () => {
                     {shipping === 0 ? "Free" : `₹${shipping.toLocaleString()}`}
                   </span>
                 </div>
-                {paymentMethod === "crypto" && (
-                  <div className="flex justify-between text-green-600">
-                    <span>Crypto Discount (5%)</span>
-                    <span>-₹{Math.round(subtotal * 0.05).toLocaleString()}</span>
-                  </div>
-                )}
                 <div className="border-t pt-3">
                   <div className="flex justify-between">
                     <span className="text-lg font-bold text-gray-900">Total</span>
                     <span className="text-lg font-bold text-gray-900">
-                      ₹{(paymentMethod === "crypto" ? Math.round(total * 0.95) : total).toLocaleString()}
+                      ₹{total.toLocaleString()}
                     </span>
                   </div>
                 </div>
