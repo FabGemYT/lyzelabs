@@ -100,9 +100,19 @@ const CartPage = () => {
                       <div className="flex-1 min-w-0">
                         <h3 className="text-sm font-medium text-gray-900">{item.name}</h3>
                         <p className="text-sm text-gray-500">{item.variant}</p>
-                        <p className="text-sm font-medium text-gray-900 mt-1">
-                          {formatPriceSimple(item.price)}
-                        </p>
+                        <div className="text-sm font-medium text-gray-900 mt-1">
+                          {(() => {
+                            const priceData = formatPriceSimple(item.price);
+                            
+                            // If it's just a string (USD region), show normally
+                            if (typeof priceData === 'string') {
+                              return priceData;
+                            }
+                            
+                            // If it's an object (has local currency), show formatted
+                            return priceData.formatted;
+                          })()}
+                        </div>
                       </div>
                       <div className="flex items-center space-x-2">
                         <button
