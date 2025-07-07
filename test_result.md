@@ -261,11 +261,11 @@ frontend:
 
   - task: "Fix cart icon functionality"
     implemented: true
-    working: false
+    working: true
     file: "/app/frontend/src/components/Header.js, /app/frontend/src/pages/CartPage.js, /app/frontend/src/App.js"
-    stuck_count: 1
+    stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "main"
@@ -276,6 +276,9 @@ frontend:
       - working: false
         agent: "testing"
         comment: "Cart icon now links to the correct page, but the cart counter in the header is not updating when items are added to cart. The counter remains at 0 even though items are being added to localStorage correctly."
+      - working: true
+        agent: "testing"
+        comment: "Cart icon functionality is now working correctly. The cart icon links to the correct /cart page, and the cart counter in the header updates properly when items are added from the product page. The CartContext in App.js is working as expected, listening for the 'cartUpdated' event and updating the cart count."
 
   - task: "Products page search and filtering"
     implemented: true
