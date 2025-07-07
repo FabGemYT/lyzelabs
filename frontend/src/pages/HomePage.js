@@ -215,7 +215,7 @@ const HomePage = ({ cartCount }) => {
       <meta name="twitter:description" content="Shop high-purity peptides, SARMs & research agents. Stealth shipping. Crypto accepted. For research use only." />
       <meta name="twitter:image" content="https://images.unsplash.com/photo-1626420925443-c6421f87daa9" />
 
-      <Header />
+      <Header cartCount={cartCount} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-gray-900 to-black text-white overflow-hidden min-h-screen flex items-center">
