@@ -319,15 +319,11 @@ test_plan:
   current_focus: 
     - "Payment Gateway Integrations"
     - "Order Management System"
-    - "Admin Dashboard APIs"
     - "Webhook Endpoints"
-    - "Utility Endpoints"
   stuck_tasks: 
     - "Payment Gateway Integrations"
     - "Order Management System"
-    - "Admin Dashboard APIs"
     - "Webhook Endpoints"
-    - "Utility Endpoints"
   test_all: false
   test_priority: "high_first"
 
