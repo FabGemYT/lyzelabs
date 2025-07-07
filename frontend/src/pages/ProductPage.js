@@ -21,7 +21,7 @@ import Footer from "../components/Footer";
 import { products, getProductById } from "../data/products";
 import { formatPrice, formatPriceSimple } from "../utils/currency";
 
-const ProductPage = () => {
+const ProductPage = ({ cartCount }) => {
   const { productId } = useParams();
   const [activeFAQ, setActiveFAQ] = useState(null);
   const [quantity, setQuantity] = useState(1);
