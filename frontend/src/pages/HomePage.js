@@ -1113,7 +1113,7 @@ const HomePage = ({ cartCount }) => {
                     type="submit"
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
                   >
-                    Get 10% Off
+                    Get 5% Off
                   </button>
                 </form>
                 <p className="text-xs text-gray-500 mt-4">
