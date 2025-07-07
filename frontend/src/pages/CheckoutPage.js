@@ -15,27 +15,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const CheckoutPage = () => {
-  const navigate = useNavigate();
-  const [cartItems, setCartItems] = useState([
-    {
-      id: "retatrutide",
-      name: "Retatrutide RC",
-      variant: "10mg",
-      price: 12999,
-      originalPrice: 15999,
-      quantity: 1,
-      image: "https://images.unsplash.com/photo-1626420925443-c6421f87daa9"
-    },
-    {
-      id: "semaglutide",
-      name: "Semaglutide RC",
-      variant: "2mg/mL",
-      price: 8999,
-      originalPrice: 11999,
-      quantity: 1,
-      image: "https://images.unsplash.com/photo-1595500382155-e7cd8180c301"
-    }
-  ]);
+  const [cartItems, setCartItems] = useState([]);
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState("");
+  const [selectedCrypto, setSelectedCrypto] = useState("");
+  const [cryptoCurrencies, setCryptoCurrencies] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [orderData, setOrderData] = useState(null);
+  const [paymentData, setPaymentData] = useState(null);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const [paymentMethod, setPaymentMethod] = useState("crypto");
   const [shippingInfo, setShippingInfo] = useState({
