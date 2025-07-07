@@ -347,14 +347,17 @@ async def nowpayments_webhook(request: Request):
     """Handle NOWPayments webhook"""
     try:
         body = await request.body()
-        signature = request.headers.get("x-nowpayments-sig")
+        signature = request.headers.get("x-nowpayments-sig", "")
         
-        if not nowpayments_client.verify_ipn_signature(body.decode('utf-8'), signature):
+        if not signature or not nowpayments_client.verify_ipn_signature(body.decode('utf-8'), signature):
             raise HTTPException(status_code=400, detail="Invalid signature")
         
         webhook_data = json.loads(body.decode('utf-8'))
         order_id = webhook_data.get("order_id")
         status = webhook_data.get("payment_status")
+        
+        if not order_id:
+            raise HTTPException(status_code=400, detail="Missing order_id")
         
         # Update payment status
         if status == "finished":
