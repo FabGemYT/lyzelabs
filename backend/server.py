@@ -13,12 +13,12 @@ from datetime import datetime
 import json
 
 # Import our payment and notification modules
-from payment_clients import paypal_client, cryptomus_client, nowpayments_client
-from models import (
+from backend.payment_clients import paypal_client, cryptomus_client, nowpayments_client
+from backend.models import (
     Order, Payment, CreateOrderRequest, PaymentResponse, 
     PaymentMethod, PaymentStatus, OrderStatus, OrderItem, ShippingAddress
 )
-from notification_service import notification_service
+from backend.notification_service import notification_service
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
