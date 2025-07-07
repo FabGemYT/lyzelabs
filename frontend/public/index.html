@@ -84,6 +84,172 @@
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         
+        <!-- Google Analytics 4 (GA4) - Advanced E-commerce Tracking -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-37C0P5DHJZ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          // Enhanced E-commerce Configuration
+          gtag('config', 'G-37C0P5DHJZ', {
+            // Enhanced E-commerce settings
+            send_page_view: true,
+            allow_google_signals: true,
+            allow_ad_personalization_signals: true,
+            
+            // Custom parameters for research compounds tracking
+            custom_map: {
+              'custom_parameter_1': 'product_category',
+              'custom_parameter_2': 'research_type'
+            },
+            
+            // Enhanced measurement features
+            enhanced_measurement: {
+              scrolls: true,
+              outbound_clicks: true,
+              site_search: true,
+              video_engagement: true,
+              file_downloads: true
+            },
+            
+            // User engagement tracking
+            engagement_time_msec: 100,
+            session_timeout: 1800, // 30 minutes
+            
+            // Content grouping for research compounds
+            content_group1: 'Research Compounds',
+            content_group2: 'E-commerce Store',
+            
+            // Demographics and interests
+            allow_display_features: true,
+            
+            // Debug mode (remove in production)
+            debug_mode: false
+          });
+          
+          // Enhanced E-commerce Events for Research Compounds
+          
+          // Track product views
+          function trackProductView(productId, productName, category, price) {
+            gtag('event', 'view_item', {
+              currency: 'USD',
+              value: price,
+              items: [{
+                item_id: productId,
+                item_name: productName,
+                category: category,
+                quantity: 1,
+                price: price
+              }]
+            });
+          }
+          
+          // Track add to cart
+          function trackAddToCart(productId, productName, category, price, quantity) {
+            gtag('event', 'add_to_cart', {
+              currency: 'USD',
+              value: price * quantity,
+              items: [{
+                item_id: productId,
+                item_name: productName,
+                category: category,
+                quantity: quantity,
+                price: price
+              }]
+            });
+          }
+          
+          // Track purchases
+          function trackPurchase(transactionId, totalValue, items) {
+            gtag('event', 'purchase', {
+              transaction_id: transactionId,
+              value: totalValue,
+              currency: 'USD',
+              items: items
+            });
+          }
+          
+          // Track search events
+          function trackSearch(searchTerm) {
+            gtag('event', 'search', {
+              search_term: searchTerm,
+              content_type: 'research_compounds'
+            });
+          }
+          
+          // Track WhatsApp clicks
+          function trackWhatsAppClick() {
+            gtag('event', 'whatsapp_click', {
+              event_category: 'engagement',
+              event_label: 'whatsapp_support',
+              custom_parameter_1: 'customer_support'
+            });
+          }
+          
+          // Track newsletter signups
+          function trackNewsletterSignup() {
+            gtag('event', 'sign_up', {
+              method: 'newsletter',
+              event_category: 'engagement',
+              event_label: 'newsletter_subscription'
+            });
+          }
+          
+          // Track crypto payment attempts
+          function trackCryptoPayment(currency, amount) {
+            gtag('event', 'crypto_payment_attempt', {
+              event_category: 'ecommerce',
+              event_label: currency,
+              value: amount,
+              currency: 'USD',
+              custom_parameter_1: 'crypto_payment'
+            });
+          }
+          
+          // Track lab report downloads
+          function trackLabReportDownload(productName) {
+            gtag('event', 'file_download', {
+              event_category: 'engagement',
+              event_label: 'lab_report',
+              file_name: productName + '_lab_report.pdf',
+              custom_parameter_1: 'lab_verification'
+            });
+          }
+          
+          // Track category browsing
+          function trackCategoryView(categoryName) {
+            gtag('event', 'view_item_list', {
+              item_list_name: categoryName,
+              content_type: 'product_category',
+              custom_parameter_1: categoryName.toLowerCase()
+            });
+          }
+          
+          // Automatic scroll tracking (25%, 50%, 75%, 100%)
+          let scrollTracked = {25: false, 50: false, 75: false, 100: false};
+          window.addEventListener('scroll', function() {
+            let scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            
+            Object.keys(scrollTracked).forEach(threshold => {
+              if (scrollPercent >= threshold && !scrollTracked[threshold]) {
+                gtag('event', 'scroll', {
+                  event_category: 'engagement',
+                  event_label: threshold + '%',
+                  value: parseInt(threshold)
+                });
+                scrollTracked[threshold] = true;
+              }
+            });
+          });
+          
+          // Track time on site milestones (30s, 1min, 2min, 5min)
+          setTimeout(() => gtag('event', 'timing_complete', {name: 'engagement_30s', value: 30000}), 30000);
+          setTimeout(() => gtag('event', 'timing_complete', {name: 'engagement_1min', value: 60000}), 60000);
+          setTimeout(() => gtag('event', 'timing_complete', {name: 'engagement_2min', value: 120000}), 120000);
+          setTimeout(() => gtag('event', 'timing_complete', {name: 'engagement_5min', value: 300000}), 300000);
+        </script>
+        
         <!-- Structured Data - JSON-LD Schema -->
         <script type="application/ld+json">
         {
