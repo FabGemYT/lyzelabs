@@ -675,7 +675,11 @@ const HomePage = () => {
 
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <span className="text-2xl font-bold text-gray-900">{formatPriceSimple(product.price)}</span>
+                      <span className="text-2xl font-bold text-gray-900">{(() => {
+                        const formatted = formatPriceSimple(product.price);
+                        console.log(`Product ${product.name} - Original price: $${product.price}, Formatted: ${formatted}`);
+                        return formatted;
+                      })()}</span>
                       <span className="text-sm text-gray-500 ml-2">per box (10 vials)</span>
                     </div>
                     <div className="text-right">
