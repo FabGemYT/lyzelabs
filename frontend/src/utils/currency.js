@@ -78,17 +78,20 @@ const roundToNearestFive = (price) => {
 };
 
 export const formatPrice = (usdPrice, options = {}) => {
-  const { currency, symbol, rate } = getCurrencyInfo();
+  const { currency, symbol, rate, country } = getCurrencyInfo();
   const { showOriginal = true, showBoth = true } = options;
   
   // First, round USD price to nearest 0 or 5
   const roundedUsdPrice = roundToNearestFive(usdPrice);
   
+  // ALWAYS show USD as the primary currency
+  const usdDisplay = `$${roundedUsdPrice}`;
+  
   // If user is in USD region, just show the rounded USD price
   if (currency === 'USD') {
     return {
-      converted: `$${roundedUsdPrice}`,
-      original: `$${roundedUsdPrice}`,
+      converted: usdDisplay,
+      original: usdDisplay,
       currency: 'USD',
       rate: 1,
       usdPrice: roundedUsdPrice
@@ -97,11 +100,12 @@ export const formatPrice = (usdPrice, options = {}) => {
   
   // Convert the rounded USD price to local currency
   const convertedPrice = Math.round(roundedUsdPrice * rate);
+  const localDisplay = `${symbol}${convertedPrice}`;
   
   if (showBoth) {
     return {
-      converted: `${symbol}${convertedPrice}`,
-      original: `$${roundedUsdPrice}`,
+      converted: `${usdDisplay} (${localDisplay})`,
+      original: usdDisplay,
       currency,
       rate,
       usdPrice: roundedUsdPrice
@@ -109,8 +113,8 @@ export const formatPrice = (usdPrice, options = {}) => {
   }
   
   return {
-    converted: `${symbol}${convertedPrice}`,
-    original: `${symbol}${convertedPrice}`,
+    converted: localDisplay,
+    original: usdDisplay,
     currency,
     rate,
     usdPrice: roundedUsdPrice
