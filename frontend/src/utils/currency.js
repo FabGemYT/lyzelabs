@@ -115,7 +115,7 @@ export const formatPriceSimple = (usdPrice) => {
   // First, round USD price to nearest 0 or 5
   const roundedUsdPrice = roundToNearestFive(usdPrice);
   
-  // ALWAYS show USD first as the base currency
+  // ALWAYS show USD as the primary currency (global base)
   const usdDisplay = `$${roundedUsdPrice}`;
   
   // If user is in USD region, just show USD
@@ -126,6 +126,13 @@ export const formatPriceSimple = (usdPrice) => {
   // Convert the rounded USD price to local currency
   const convertedPrice = Math.round(roundedUsdPrice * rate);
   
-  // Show USD with local currency in parentheses
-  return `${usdDisplay} (${symbol}${convertedPrice})`;
+  // Show USD with local currency in a nice format
+  return (
+    <span className="inline-flex items-center gap-2">
+      <span className="text-inherit font-bold">{usdDisplay}</span>
+      <span className="text-sm text-gray-500 font-normal">
+        (~{symbol}{convertedPrice})
+      </span>
+    </span>
+  );
 };
