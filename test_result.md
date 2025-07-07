@@ -333,6 +333,18 @@ frontend:
       - working: false
         agent: "testing"
         comment: "Root cause identified: The HomePage and ProductPage components are not passing the cartCount prop to the Header component. Only the CartPage component is correctly calculating and passing the cartCount prop. This explains why the cart counter only updates when viewing the cart page. The solution would be to either implement a global state management solution (like React Context) or make each page component read from localStorage and pass the correct cartCount to Header."
+
+  - task: "Fix checkout functionality"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/pages/CheckoutPage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: false
+        agent: "testing"
+        comment: "Tested the checkout functionality. The checkout process works up to a point: 1) Cart step works correctly, 2) Shipping information step works correctly, 3) Payment method step works but has issues (crypto selection doesn't appear, card form doesn't appear), 4) Review step works and shows the Complete Order button, 5) Clicking Complete Order button doesn't redirect to the confirmation page. There are also backend API errors (502) when trying to load crypto currencies. The checkout process is partially working but has several issues that need to be fixed."
 metadata:
   created_by: "main_agent"
   version: "2.0"
