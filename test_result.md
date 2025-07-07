@@ -261,11 +261,11 @@ frontend:
 
   - task: "Fix cart icon functionality"
     implemented: true
-    working: true
+    working: false
     file: "/app/frontend/src/components/Header.js, /app/frontend/src/pages/CartPage.js, /app/frontend/src/App.js"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: false
         agent: "main"
@@ -273,6 +273,9 @@ frontend:
       - working: true
         agent: "main"
         comment: "IMPLEMENTED: Created CartPage component, updated header to link to /cart, added cart route to App.js. Cart page includes item management, quantity controls, order summary, and checkout flow."
+      - working: false
+        agent: "testing"
+        comment: "Cart icon now links to the correct page, but the cart counter in the header is not updating when items are added to cart. The counter remains at 0 even though items are being added to localStorage correctly."
 
   - task: "Products page search and filtering"
     implemented: true
@@ -288,15 +291,18 @@ frontend:
 
   - task: "Product page functionality"
     implemented: true
-    working: true
+    working: false
     file: "/app/frontend/src/pages/ProductPage.js"
-    stuck_count: 0
+    stuck_count: 1
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
         comment: "VERIFIED: Product pages load correctly with variant selector, pricing, benefits, specifications, reviews, Add to Cart buttons. Direct navigation to /product/semaglutide works perfectly."
+      - working: false
+        agent: "testing"
+        comment: "Product page 'Add to Cart' button works and adds items to localStorage correctly, but the cart counter in the header does not update. The success message appears correctly."
 
   - task: "Complete customer journey testing"
     implemented: true
@@ -312,6 +318,18 @@ frontend:
       - working: true
         agent: "testing"
         comment: "Conducted rapid testing of the complete customer journey. Successfully verified all key pages (homepage, products, product detail, cart, checkout). Added products to cart, modified quantities, and proceeded to checkout. All core functionality is working correctly. The checkout page loads properly and shows form fields for shipping information. The customer journey is fully functional."
+
+  - task: "Fix Add to Cart functionality"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/pages/HomePage.js, /app/frontend/src/pages/ProductPage.js, /app/frontend/src/components/Header.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: false
+        agent: "testing"
+        comment: "Identified multiple issues with the Add to Cart functionality: 1) Homepage 'Add to Cart' buttons don't update localStorage or cart counter, 2) Product page 'Add to Cart' works correctly and updates localStorage but doesn't update the cart counter in header, 3) Cart page correctly displays items from localStorage. The cart counter in the header is not updating properly despite items being added to localStorage."
 metadata:
   created_by: "main_agent"
   version: "2.0"
