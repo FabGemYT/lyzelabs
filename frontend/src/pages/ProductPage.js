@@ -146,7 +146,7 @@ const ProductPage = ({ cartCount }) => {
         })}
       </script>
 
-      <Header />
+      <Header cartCount={cartCount} />
 
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
